@@ -4,20 +4,37 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "SQLiteBridge.generated.h"
 
-// Nosso pacote de dados (Struct) que será enviado para o Blueprint
+// Struct que representa uma única linha da tabela
+USTRUCT(BlueprintType)
+struct FLinhaSQL
+{
+	GENERATED_BODY()
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "SQL")
+	TArray<FString> Valores;
+};
+
+// Atualize sua FResultadoSQL para ficar assim:
 USTRUCT(BlueprintType)
 struct FResultadoSQL
 {
 	GENERATED_BODY()
 
-	UPROPERTY(BlueprintReadOnly, Category = "Motor SQL")
-	FString TextoTerminal;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "SQL")
+	bool bSucesso = false;
 
-	UPROPERTY(BlueprintReadOnly, Category = "Progressao")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Motor SQL")
+	FString TextoTerminal = TEXT("");
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Progressao")
 	bool bEncontrouPistaJose = false;
 
-	UPROPERTY(BlueprintReadWrite, Category = "SQL")
-	bool bSucesso = false;
+	// NOVAS VARIÁVEIS PARA A TABELA SGBD:
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Motor SQL")
+	TArray<FString> NomesColunas;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Motor SQL")
+	TArray<FLinhaSQL> Registros;
 };
 
 UCLASS()

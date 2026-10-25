@@ -7,12 +7,9 @@
 FResultadoSQL USQLiteBridge::ExecutarQuery(FString QueryTexto)
 {
 	FResultadoSQL Retorno;
-	// Assumimos que falhou até provar o contrário
 	Retorno.bSucesso = false;
 
-	// ---------------------------------------------------------
 	// BLINDAGEM 1: Evitar Crash por texto vazio ou espaços
-	// ---------------------------------------------------------
 	FString QueryLimpa = QueryTexto.TrimStartAndEnd();
 
 	if (QueryLimpa.IsEmpty())
@@ -30,15 +27,13 @@ FResultadoSQL USQLiteBridge::ExecutarQuery(FString QueryTexto)
 
 	if (!Database.Open(*DbPath, ESQLiteDatabaseOpenMode::ReadWriteCreate))
 	{
-		Retorno.TextoTerminal = TEXT("ERRO FATAL: Nao foi possivel conectar ao banco de dados.");
+		Retorno.TextoTerminal = TEXT("ERRO FATAL: Nao foi possivel conectar ao banco de dados.\n") + Database.GetLastError();
 		return Retorno;
 	}
 
 	FSQLitePreparedStatement Statement;
 
-	// ---------------------------------------------------------
 	// BLINDAGEM 2: Se o SQLite falhar ao criar o statement
-	// ---------------------------------------------------------
 	if (!Statement.Create(Database, *QueryLimpa))
 	{
 		FString Erro = Database.GetLastError();
@@ -47,9 +42,7 @@ FResultadoSQL USQLiteBridge::ExecutarQuery(FString QueryTexto)
 		return Retorno;
 	}
 
-	// ---------------------------------------------------------
-	// BLINDAGEM 3: Impedir o Assertion (O erro que crashou a engine)
-	// ---------------------------------------------------------
+	// BLINDAGEM 3: Impedir o Assertion
 	if (!Statement.IsValid())
 	{
 		Statement.Destroy();
@@ -58,10 +51,14 @@ FResultadoSQL USQLiteBridge::ExecutarQuery(FString QueryTexto)
 		return Retorno;
 	}
 
-	// Executa a Query e formata a string (Camada 1)
+	// Executa a Query e formata a string e a Struct (Camada 1)
 	if (QueryLimpa.StartsWith(TEXT("SELECT"), ESearchCase::IgnoreCase))
 	{
 		TArray<FString> NomesColunas = Statement.GetColumnNames();
+
+		// SALVA OS NOMES DAS COLUNAS PARA A UI
+		Retorno.NomesColunas = NomesColunas;
+
 		int32 ContadorRegistros = 1;
 
 		ResultadoFinal += TEXT("================================================\n");
@@ -72,19 +69,22 @@ FResultadoSQL USQLiteBridge::ExecutarQuery(FString QueryTexto)
 		{
 			ResultadoFinal += FString::Printf(TEXT("--- [ REGISTRO %d ] ---\n"), ContadorRegistros);
 
+			FLinhaSQL NovaLinha; // Cria a linha para armazenar as células separadas
+
 			for (int32 i = 0; i < NomesColunas.Num(); i++)
 			{
 				FString ValorColuna;
 				Statement.GetColumnValueByIndex(i, ValorColuna);
 
-				// Formata como "nome_coluna: valor"
+				NovaLinha.Valores.Add(ValorColuna); // Salva o valor puro na célula
 				ResultadoFinal += NomesColunas[i] + TEXT(": ") + ValorColuna + TEXT("\n");
 			}
-			ResultadoFinal += TEXT("\n"); // Espaço extra entre os registros
+			Retorno.Registros.Add(NovaLinha); // Adiciona a linha pronta no Array final
+
+			ResultadoFinal += TEXT("\n");
 			ContadorRegistros++;
 		}
 
-		// Caso não retorne nenhuma linha
 		if (ContadorRegistros == 1)
 		{
 			ResultadoFinal += TEXT("Nenhum registro encontrado.\n");
@@ -97,13 +97,11 @@ FResultadoSQL USQLiteBridge::ExecutarQuery(FString QueryTexto)
 		if (Statement.Execute())
 		{
 			ResultadoFinal = TEXT("COMANDO EXECUTADO COM SUCESSO.\nLinhas afetadas verificadas no sistema remoto.");
-			// A execução de DML/DDL (INSERT, UPDATE, CREATE) foi bem sucedida!
 			Retorno.bSucesso = true;
 		}
 		else
 		{
 			ResultadoFinal = FString::Printf(TEXT("FALHA NA EXECUCAO:\n%s"), *Database.GetLastError());
-			// Se caiu aqui, a sintaxe estava certa, mas deu erro de integridade (ex: tabela não existe). bSucesso continua false.
 		}
 	}
 
@@ -112,9 +110,7 @@ FResultadoSQL USQLiteBridge::ExecutarQuery(FString QueryTexto)
 
 	Retorno.TextoTerminal = ResultadoFinal;
 
-	// ---------------------------------------------------------
 	// Camada 2: Validação e Progressão
-	// ---------------------------------------------------------
 	FString QueryMin = QueryLimpa.ToLower();
 
 	if (QueryMin.Contains(TEXT("select")) && QueryMin.Contains(TEXT("suspicion_level")) && QueryMin.Contains(TEXT("4")))
