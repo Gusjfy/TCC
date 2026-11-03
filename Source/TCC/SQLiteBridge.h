@@ -60,6 +60,11 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Motor SQL")
 	static bool GarantirBanco(FString& MensagemErro);
 
+	// Roda um script de Content/SQL/ no banco atual (ex: "glitch_dia3.sql").
+	// Use para eventos da historia que alteram o banco.
+	UFUNCTION(BlueprintCallable, Category = "Motor SQL")
+	static bool ExecutarScriptSQL(FString NomeArquivo, FString& MensagemErro);
+
 	// Compara o resultado do jogador com o resultado da query-gabarito do objetivo.
 	// Passa se: mesmo numero de linhas E cada linha do gabarito tem todos os seus valores
 	// numa linha diferente do jogador. Assim SELECT * e SELECT nome valem igual,
@@ -74,8 +79,9 @@ public:
 
 private:
 	static FString CaminhoBanco();
-	static FString CaminhoScript();
+	static FString CaminhoScript(const FString& NomeArquivo);
 	static bool EhConsulta(const FString& Query);
 	static bool RodarConsulta(const FString& Query, FResultadoSQL& Saida);
 	static TArray<FString> DividirScript(const FString& Script);
+	static bool RodarScript(const FString& DbPath, const FString& NomeArquivo, bool bCriarArquivo, FString& MensagemErro);
 };

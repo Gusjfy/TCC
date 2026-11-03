@@ -15,11 +15,11 @@ FString USQLiteBridge::CaminhoBanco()
 	return FPaths::Combine(FPaths::ProjectSavedDir(), TEXT("Databases"), TEXT("sql_test.db"));
 }
 
-FString USQLiteBridge::CaminhoScript()
+FString USQLiteBridge::CaminhoScript(const FString& NomeArquivo)
 {
 	// Precisa de DirectoriesToAlwaysStageAsNonUFS=(Path="SQL") no DefaultGame.ini
-	// para o arquivo ir solto no build empacotado
-	return FPaths::Combine(FPaths::ProjectContentDir(), TEXT("SQL"), TEXT("caso_maria.sql"));
+	// para os arquivos irem soltos no build empacotado
+	return FPaths::Combine(FPaths::ProjectContentDir(), TEXT("SQL"), NomeArquivo);
 }
 
 bool USQLiteBridge::EhConsulta(const FString& Query)
@@ -83,34 +83,21 @@ TArray<FString> USQLiteBridge::DividirScript(const FString& Script)
 	return Comandos;
 }
 
-bool USQLiteBridge::RecriarBanco(FString& MensagemErro)
+bool USQLiteBridge::RodarScript(const FString& DbPath, const FString& NomeArquivo, bool bCriarArquivo, FString& MensagemErro)
 {
-	MensagemErro.Reset();
-
 	FString Script;
-	if (!FFileHelper::LoadFileToString(Script, *CaminhoScript()))
+	if (!FFileHelper::LoadFileToString(Script, *CaminhoScript(NomeArquivo)))
 	{
-		MensagemErro = FString::Printf(TEXT("Script do banco nao encontrado: %s"), *CaminhoScript());
+		MensagemErro = FString::Printf(TEXT("Script nao encontrado: %s"), *CaminhoScript(NomeArquivo));
 		UE_LOG(LogTemp, Error, TEXT("%s"), *MensagemErro);
 		return false;
 	}
-
-	const FString DbPath = CaminhoBanco();
-	IFileManager& FM = IFileManager::Get();
-	FM.MakeDirectory(*FPaths::GetPath(DbPath), true);
-
-	if (FM.FileExists(*DbPath) && !FM.Delete(*DbPath, false, true, true))
-	{
-		MensagemErro = TEXT("Nao foi possivel apagar o banco antigo (arquivo em uso?).");
-		UE_LOG(LogTemp, Error, TEXT("%s"), *MensagemErro);
-		return false;
-	}
-	FM.Delete(*(DbPath + TEXT("-journal")), false, true, true);
 
 	FSQLiteDatabase Database;
-	if (!Database.Open(*DbPath, ESQLiteDatabaseOpenMode::ReadWriteCreate))
+	const ESQLiteDatabaseOpenMode Modo = bCriarArquivo ? ESQLiteDatabaseOpenMode::ReadWriteCreate : ESQLiteDatabaseOpenMode::ReadWrite;
+	if (!Database.Open(*DbPath, Modo))
 	{
-		MensagemErro = TEXT("Nao foi possivel criar o banco: ") + Database.GetLastError();
+		MensagemErro = TEXT("Nao foi possivel abrir o banco: ") + Database.GetLastError();
 		UE_LOG(LogTemp, Error, TEXT("%s"), *MensagemErro);
 		return false;
 	}
@@ -136,14 +123,14 @@ bool USQLiteBridge::RecriarBanco(FString& MensagemErro)
 	const TArray<FString> Comandos = DividirScript(Script);
 	FString Erro;
 
-	// Uma transacao so: deixa a criacao instantanea
+	// Uma transacao so: tudo ou nada, e bem mais rapido
 	Rodar(TEXT("BEGIN TRANSACTION"), Erro);
 
 	for (int32 i = 0; i < Comandos.Num(); i++)
 	{
 		if (!Rodar(Comandos[i], Erro))
 		{
-			MensagemErro = FString::Printf(TEXT("Erro no comando %d do script: %s\n%s"), i + 1, *Erro, *Comandos[i].Left(200));
+			MensagemErro = FString::Printf(TEXT("Erro no comando %d de %s: %s\n%s"), i + 1, *NomeArquivo, *Erro, *Comandos[i].Left(200));
 			UE_LOG(LogTemp, Error, TEXT("%s"), *MensagemErro);
 			Rodar(TEXT("ROLLBACK"), Erro);
 			Database.Close();
@@ -154,8 +141,44 @@ bool USQLiteBridge::RecriarBanco(FString& MensagemErro)
 	Rodar(TEXT("COMMIT"), Erro);
 	Database.Close();
 
-	UE_LOG(LogTemp, Log, TEXT("Banco recriado com %d comandos."), Comandos.Num());
+	UE_LOG(LogTemp, Log, TEXT("%s: %d comandos executados."), *NomeArquivo, Comandos.Num());
 	return true;
+}
+
+bool USQLiteBridge::RecriarBanco(FString& MensagemErro)
+{
+	MensagemErro.Reset();
+
+	if (!IFileManager::Get().FileExists(*CaminhoScript(TEXT("caso_maria.sql"))))
+	{
+		MensagemErro = FString::Printf(TEXT("Script do banco nao encontrado: %s"), *CaminhoScript(TEXT("caso_maria.sql")));
+		UE_LOG(LogTemp, Error, TEXT("%s"), *MensagemErro);
+		return false;
+	}
+
+	const FString DbPath = CaminhoBanco();
+	IFileManager& FM = IFileManager::Get();
+	FM.MakeDirectory(*FPaths::GetPath(DbPath), true);
+
+	if (FM.FileExists(*DbPath) && !FM.Delete(*DbPath, false, true, true))
+	{
+		MensagemErro = TEXT("Nao foi possivel apagar o banco antigo (arquivo em uso?).");
+		UE_LOG(LogTemp, Error, TEXT("%s"), *MensagemErro);
+		return false;
+	}
+	FM.Delete(*(DbPath + TEXT("-journal")), false, true, true);
+
+	return RodarScript(DbPath, TEXT("caso_maria.sql"), true, MensagemErro);
+}
+
+bool USQLiteBridge::ExecutarScriptSQL(FString NomeArquivo, FString& MensagemErro)
+{
+	MensagemErro.Reset();
+	if (!GarantirBanco(MensagemErro))
+	{
+		return false;
+	}
+	return RodarScript(CaminhoBanco(), NomeArquivo, false, MensagemErro);
 }
 
 bool USQLiteBridge::GarantirBanco(FString& MensagemErro)
