@@ -35,7 +35,7 @@ CREATE TABLE movimentacao (
 CREATE TABLE evidencias (
     id             INTEGER PRIMARY KEY,
     descricao      TEXT    NOT NULL,
-    tipo           TEXT    NOT NULL,    -- 'Objeto' | 'Laudo' | 'Depoimento'
+    tipo           TEXT    NOT NULL,    -- 'Objeto' | 'Laudo' | 'Depoimento' | 'Relatório'
     ambiente_id    INTEGER REFERENCES ambientes(id),
     suspeito_id    INTEGER REFERENCES suspeitos(id),  -- pessoa ligada à evidência (digitais, laudo, autor)
     detalhe        TEXT,
@@ -121,7 +121,7 @@ INSERT INTO movimentacao (id, suspeito_id, ambiente_id, hora_entrada, hora_saida
 
 -- ---------------------------------------------------------------------
 -- evidencias
--- id 4 = taco (resposta do Dia 1). ids 5 a 8 = laudos (Dia 2).
+-- id 4 = taco (resposta do Dia 1). ids 5 a 8 = laudos (Dia 2). id 11 = caso ainda aberto.
 -- ---------------------------------------------------------------------
 INSERT INTO evidencias (id, descricao, tipo, ambiente_id, suspeito_id, detalhe, data_registro) VALUES
 (1,  'Garrafa de vodka vazia',              'Objeto', 2,    NULL, 'Encontrada na pia. Sem digitais úteis.',                                               '1998-09-27'),
@@ -133,7 +133,8 @@ INSERT INTO evidencias (id, descricao, tipo, ambiente_id, suspeito_id, detalhe, 
 (7,  'Laudo toxicológico - João',           'Laudo',  NULL, 8,    'Álcool etílico 1,6 g/L. Cocaína. Portava 2 g da mesma substância.',                     '1998-09-29'),
 (8,  'Laudo necroscópico - Maria',          'Laudo',  4,    1,    'Traumatismo craniano compatível com queda na pia. Petéquias nos olhos (não investigado).', '1998-09-30'),
 (9,  'Mancha de sangue na pia',             'Objeto', 4,    1,    'Altura compatível com uma queda.',                                                       '1998-09-27'),
-(10, 'Copo com resíduo branco',             'Objeto', 5,    NULL, 'Encontrado no quarto de hóspedes. Resíduo não analisado.',                              '1998-09-27');
+(10, 'Copo com resíduo branco',             'Objeto', 5,    NULL, 'Encontrado no quarto de hóspedes. Resíduo não analisado.',                              '1998-09-27'),
+(11, 'Caso 98-031 Maria: status EM ANDAMENTO', 'Relatório', NULL, NULL, 'Versão à imprensa: acidente por overdose. Investigação interna continua. Uso restrito.', '1998-10-08');
 
 -- ---------------------------------------------------------------------
 -- historico_mensagens (pager e telefone da casa)
@@ -157,4 +158,5 @@ INSERT INTO sys_audit_log (id, usuario, terminal, tipo_comando, tabela_afetada, 
 (1, 'User001', 'T-001-DEL', 'DML', 'evidencias', 'INSERT INTO evidencias ... (taco de mini-golfe)',              NULL,                NULL,                 '1998-09-27 05:10'),
 (2, 'User001', 'T-001-DEL', 'DML', 'suspeitos',  'UPDATE suspeitos SET nivel_suspeita = 0 WHERE id = 3',         'nivel_suspeita = 3', 'nivel_suspeita = 0', '1998-09-28 23:47'),
 (3, 'User001', 'T-001-DEL', 'DML', 'evidencias', 'UPDATE evidencias SET detalhe = ... WHERE id = 8',             'Causa: em análise', 'Traumatismo craniano compatível com queda na pia. Petéquias nos olhos (não investigado).', '1998-09-30 18:02'),
-(4, 'User002', 'T-894-INV', 'DQL', 'arquivo',    'SELECT * FROM arquivo_morto WHERE ano = 1997',                 NULL,                NULL,                 '1998-10-05 14:02');
+(4, 'User002', 'T-894-INV', 'DQL', 'arquivo',    'SELECT * FROM arquivo_morto WHERE ano = 1997',                 NULL,                NULL,                 '1998-10-05 14:02'),
+(5, 'User001', 'T-001-DEL', 'DML', 'evidencias', 'INSERT INTO evidencias ... (relatório caso 98-031)',           NULL,                'status = EM ANDAMENTO', '1998-10-08 22:31');
