@@ -78,6 +78,13 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Progressao")
 	static bool ChecarEstadoBanco(FString QueryVerificacao);
 
+	// Para a DDL do Dia 3: procura uma tabela criada pelo jogador (qualquer nome que nao
+	// seja das 6 do caso). Se ColunaExigida nao for vazia, so aceita tabela com essa coluna
+	// (ex: "observacao" para o ALTER). Devolve o nome e quantas linhas ela tem.
+	// Objetivos: CREATE = retorno true. INSERT = true e NumLinhas > 0.
+	UFUNCTION(BlueprintCallable, Category = "Progressao")
+	static bool BuscarTabelaDoJogador(FString ColunaExigida, FString& NomeTabela, int32& NumLinhas);
+
 private:
 	static FString CaminhoBanco();
 	static FString CaminhoScript(const FString& NomeArquivo);

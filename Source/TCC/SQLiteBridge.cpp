@@ -601,3 +601,71 @@ bool USQLiteBridge::ChecarEstadoBanco(FString QueryVerificacao)
 	FResultadoSQL Saida;
 	return RodarConsulta(QueryVerificacao.TrimStartAndEnd(), Saida) && Saida.Registros.Num() > 0;
 }
+
+bool USQLiteBridge::BuscarTabelaDoJogador(FString ColunaExigida, FString& NomeTabela, int32& NumLinhas)
+{
+	NomeTabela.Reset();
+	NumLinhas = 0;
+
+	FResultadoSQL Tabelas;
+	if (!RodarConsulta(TEXT("SELECT name FROM sqlite_master WHERE type = 'table' AND name NOT LIKE 'sqlite_%' ORDER BY rowid"), Tabelas))
+	{
+		return false;
+	}
+
+	const FString Coluna = ColunaExigida.TrimStartAndEnd().Replace(TEXT("'"), TEXT("''"));
+	bool bAchou = false;
+
+	for (const FLinhaSQL& Linha : Tabelas.Registros)
+	{
+		if (Linha.Valores.Num() == 0)
+		{
+			continue;
+		}
+		const FString& Nome = Linha.Valores[0];
+
+		bool bDoCaso = false;
+		for (const TCHAR* Tabela : TabelasDoCaso)
+		{
+			if (Nome.Equals(Tabela, ESearchCase::IgnoreCase))
+			{
+				bDoCaso = true;
+				break;
+			}
+		}
+		if (bDoCaso)
+		{
+			continue;
+		}
+
+		const FString NomeAspas = Nome.Replace(TEXT("'"), TEXT("''"));
+		if (!Coluna.IsEmpty())
+		{
+			FResultadoSQL TemColuna;
+			const FString Q = FString::Printf(TEXT("SELECT 1 FROM pragma_table_info('%s') WHERE name = '%s' COLLATE NOCASE"), *NomeAspas, *Coluna);
+			if (!RodarConsulta(Q, TemColuna) || TemColuna.Registros.Num() == 0)
+			{
+				continue;
+			}
+		}
+
+		FResultadoSQL Contagem;
+		const FString NomeSql = Nome.Replace(TEXT("\""), TEXT("\"\""));
+		int32 Linhas = 0;
+		if (RodarConsulta(FString::Printf(TEXT("SELECT COUNT(*) FROM \"%s\""), *NomeSql), Contagem)
+			&& Contagem.Registros.Num() > 0 && Contagem.Registros[0].Valores.Num() > 0)
+		{
+			Linhas = FCString::Atoi(*Contagem.Registros[0].Valores[0]);
+		}
+
+		// Se houver mais de uma tabela do jogador, fica com a que tem mais linhas
+		if (!bAchou || Linhas > NumLinhas)
+		{
+			NomeTabela = Nome;
+			NumLinhas = Linhas;
+			bAchou = true;
+		}
+	}
+
+	return bAchou;
+}
