@@ -28,6 +28,68 @@ bool USQLiteBridge::EhConsulta(const FString& Query)
 	return Q.StartsWith(TEXT("SELECT"), ESearchCase::IgnoreCase) || Q.StartsWith(TEXT("WITH"), ESearchCase::IgnoreCase);
 }
 
+bool USQLiteBridge::DanificaTabelaDoCaso(const FString& Query)
+{
+	// Bloqueia DROP TABLE e ALTER TABLE (RENAME / DROP COLUMN) nas tabelas do caso.
+	// O jogador pode criar, alterar e apagar as proprias tabelas (ex: provas_pedro)
+	// e pode fazer ALTER TABLE ... ADD COLUMN em qualquer tabela.
+	static const TCHAR* TabelasDoCaso[] = {
+		TEXT("SUSPEITOS"), TEXT("AMBIENTES"), TEXT("MOVIMENTACAO"),
+		TEXT("EVIDENCIAS"), TEXT("HISTORICO_MENSAGENS"), TEXT("SYS_AUDIT_LOG")
+	};
+
+	FString Q = Query.ToUpper();
+	for (const TCHAR* Sinal : { TEXT("\""), TEXT("'"), TEXT("`"), TEXT("["), TEXT("]"), TEXT(";"), TEXT("("), TEXT(")"), TEXT("\t"), TEXT("\r"), TEXT("\n") })
+	{
+		Q.ReplaceInline(Sinal, TEXT(" "));
+	}
+
+	TArray<FString> Palavras;
+	Q.ParseIntoArrayWS(Palavras);
+	if (Palavras.Num() < 3 || Palavras[1] != TEXT("TABLE"))
+	{
+		return false;
+	}
+
+	const bool bDrop = Palavras[0] == TEXT("DROP");
+	const bool bAlter = Palavras[0] == TEXT("ALTER");
+	if (!bDrop && !bAlter)
+	{
+		return false;
+	}
+
+	// Nome da tabela: pula "IF EXISTS" e um eventual prefixo "main."
+	int32 IndiceNome = 2;
+	if (bDrop && Palavras.Num() > 4 && Palavras[2] == TEXT("IF") && Palavras[3] == TEXT("EXISTS"))
+	{
+		IndiceNome = 4;
+	}
+	FString Nome = Palavras[IndiceNome];
+	Nome.RemoveFromStart(TEXT("MAIN."));
+
+	bool bTabelaDoCaso = false;
+	for (const TCHAR* Tabela : TabelasDoCaso)
+	{
+		if (Nome == Tabela)
+		{
+			bTabelaDoCaso = true;
+			break;
+		}
+	}
+	if (!bTabelaDoCaso)
+	{
+		return false;
+	}
+
+	if (bDrop)
+	{
+		return true;
+	}
+
+	// ALTER TABLE <tabela> ADD [COLUMN] ... e permitido
+	return !(Palavras.Num() > IndiceNome + 1 && Palavras[IndiceNome + 1] == TEXT("ADD"));
+}
+
 // ---------------------------------------------------------------------------
 // Banco: recriar a partir do script
 // ---------------------------------------------------------------------------
@@ -247,7 +309,14 @@ FResultadoSQL USQLiteBridge::ExecutarQuery(FString QueryTexto)
 		return Retorno;
 	}
 
-	// BLINDAGEM 2: se o banco sumiu, recria antes de rodar
+	// BLINDAGEM 2: o jogador nao pode apagar nem renomear as tabelas do caso
+	if (DanificaTabelaDoCaso(QueryLimpa))
+	{
+		Retorno.TextoTerminal = TEXT("ACESSO NEGADO: tabela protegida pelo sistema da policia.\nVoce pode criar, alterar e apagar apenas as suas proprias tabelas.");
+		return Retorno;
+	}
+
+	// BLINDAGEM 3: se o banco sumiu, recria antes de rodar
 	FString ErroBanco;
 	if (!GarantirBanco(ErroBanco))
 	{
@@ -264,7 +333,7 @@ FResultadoSQL USQLiteBridge::ExecutarQuery(FString QueryTexto)
 
 	FSQLitePreparedStatement Statement;
 
-	// BLINDAGEM 3: erro de sintaxe
+	// BLINDAGEM 4: erro de sintaxe
 	if (!Statement.Create(Database, *QueryLimpa))
 	{
 		const FString Erro = Database.GetLastError();
@@ -273,7 +342,7 @@ FResultadoSQL USQLiteBridge::ExecutarQuery(FString QueryTexto)
 		return Retorno;
 	}
 
-	// BLINDAGEM 4: statement invalido (evita assertion)
+	// BLINDAGEM 5: statement invalido (evita assertion)
 	if (!Statement.IsValid())
 	{
 		Statement.Destroy();

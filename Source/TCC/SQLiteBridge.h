@@ -81,6 +81,7 @@ private:
 	static FString CaminhoBanco();
 	static FString CaminhoScript(const FString& NomeArquivo);
 	static bool EhConsulta(const FString& Query);
+	static bool DanificaTabelaDoCaso(const FString& Query);
 	static bool RodarConsulta(const FString& Query, FResultadoSQL& Saida);
 	static TArray<FString> DividirScript(const FString& Script);
 	static bool RodarScript(const FString& DbPath, const FString& NomeArquivo, bool bCriarArquivo, FString& MensagemErro);
