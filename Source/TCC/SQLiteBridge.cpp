@@ -28,16 +28,17 @@ bool USQLiteBridge::EhConsulta(const FString& Query)
 	return Q.StartsWith(TEXT("SELECT"), ESearchCase::IgnoreCase) || Q.StartsWith(TEXT("WITH"), ESearchCase::IgnoreCase);
 }
 
+// Tabelas criadas pelo caso_maria.sql. As outras tabelas sao do jogador.
+static const TCHAR* TabelasDoCaso[] = {
+	TEXT("SUSPEITOS"), TEXT("AMBIENTES"), TEXT("MOVIMENTACAO"),
+	TEXT("EVIDENCIAS"), TEXT("HISTORICO_MENSAGENS"), TEXT("SYS_AUDIT_LOG")
+};
+
 bool USQLiteBridge::DanificaTabelaDoCaso(const FString& Query)
 {
 	// Bloqueia DROP TABLE e ALTER TABLE (RENAME / DROP COLUMN) nas tabelas do caso.
 	// O jogador pode criar, alterar e apagar as proprias tabelas (ex: provas_pedro)
 	// e pode fazer ALTER TABLE ... ADD COLUMN em qualquer tabela.
-	static const TCHAR* TabelasDoCaso[] = {
-		TEXT("SUSPEITOS"), TEXT("AMBIENTES"), TEXT("MOVIMENTACAO"),
-		TEXT("EVIDENCIAS"), TEXT("HISTORICO_MENSAGENS"), TEXT("SYS_AUDIT_LOG")
-	};
-
 	FString Q = Query.ToUpper();
 	for (const TCHAR* Sinal : { TEXT("\""), TEXT("'"), TEXT("`"), TEXT("["), TEXT("]"), TEXT(";"), TEXT("("), TEXT(")"), TEXT("\t"), TEXT("\r"), TEXT("\n") })
 	{
@@ -222,7 +223,11 @@ bool USQLiteBridge::RecriarBanco(FString& MensagemErro)
 	IFileManager& FM = IFileManager::Get();
 	FM.MakeDirectory(*FPaths::GetPath(DbPath), true);
 
-	if (FM.FileExists(*DbPath) && !FM.Delete(*DbPath, false, true, true))
+	// O banco antigo vira uma copia temporaria, para devolver as tabelas do jogador depois
+	const FString DbAnterior = DbPath + TEXT(".anterior");
+	FM.Delete(*DbAnterior, false, true, true);
+	const bool bTinhaBanco = FM.FileExists(*DbPath);
+	if (bTinhaBanco && !FM.Move(*DbAnterior, *DbPath, true, true))
 	{
 		MensagemErro = TEXT("Nao foi possivel apagar o banco antigo (arquivo em uso?).");
 		UE_LOG(LogTemp, Error, TEXT("%s"), *MensagemErro);
@@ -230,7 +235,103 @@ bool USQLiteBridge::RecriarBanco(FString& MensagemErro)
 	}
 	FM.Delete(*(DbPath + TEXT("-journal")), false, true, true);
 
-	return RodarScript(DbPath, TEXT("caso_maria.sql"), true, MensagemErro);
+	if (!RodarScript(DbPath, TEXT("caso_maria.sql"), true, MensagemErro))
+	{
+		// Falhou: devolve o banco antigo para o jogo nao ficar sem banco
+		FM.Delete(*DbPath, false, true, true);
+		if (bTinhaBanco)
+		{
+			FM.Move(*DbPath, *DbAnterior, true, true);
+		}
+		return false;
+	}
+
+	if (bTinhaBanco)
+	{
+		CopiarTabelasDoJogador(DbAnterior, DbPath);
+		FM.Delete(*DbAnterior, false, true, true);
+	}
+	return true;
+}
+
+void USQLiteBridge::CopiarTabelasDoJogador(const FString& DbAnterior, const FString& DbNovo)
+{
+	// Melhor esforco: se o banco antigo estiver estragado, so nao copia nada
+	FSQLiteDatabase Database;
+	if (!Database.Open(*DbNovo, ESQLiteDatabaseOpenMode::ReadWrite))
+	{
+		return;
+	}
+
+	auto Rodar = [&Database](const FString& Sql) -> bool
+	{
+		FSQLitePreparedStatement Stmt;
+		if (!Stmt.Create(Database, *Sql) || !Stmt.IsValid())
+		{
+			Stmt.Destroy();
+			return false;
+		}
+		const bool bOk = Stmt.Execute();
+		Stmt.Destroy();
+		return bOk;
+	};
+
+	const FString CaminhoSql = DbAnterior.Replace(TEXT("'"), TEXT("''"));
+	if (!Rodar(FString::Printf(TEXT("ATTACH DATABASE '%s' AS antigo"), *CaminhoSql)))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Restaurar: nao foi possivel ler o banco antigo. %s"), *Database.GetLastError());
+		Database.Close();
+		return;
+	}
+
+	// Lista as tabelas do jogador (tudo que nao e do caso nem interno do SQLite)
+	TArray<FString> Nomes;
+	TArray<FString> Criacoes;
+	{
+		FSQLitePreparedStatement Lista;
+		if (Lista.Create(Database, TEXT("SELECT name, sql FROM antigo.sqlite_master WHERE type = 'table' AND name NOT LIKE 'sqlite_%'")) && Lista.IsValid())
+		{
+			while (Lista.Step() == ESQLitePreparedStatementStepResult::Row)
+			{
+				FString Nome, Sql;
+				Lista.GetColumnValueByIndex(0, Nome);
+				Lista.GetColumnValueByIndex(1, Sql);
+
+				bool bDoCaso = false;
+				for (const TCHAR* Tabela : TabelasDoCaso)
+				{
+					if (Nome.Equals(Tabela, ESearchCase::IgnoreCase))
+					{
+						bDoCaso = true;
+						break;
+					}
+				}
+				if (!bDoCaso && !Sql.IsEmpty())
+				{
+					Nomes.Add(Nome);
+					Criacoes.Add(Sql);
+				}
+			}
+		}
+		Lista.Destroy();
+	}
+
+	for (int32 i = 0; i < Nomes.Num(); i++)
+	{
+		const FString NomeSql = Nomes[i].Replace(TEXT("\""), TEXT("\"\""));
+		// O sql guardado e o CREATE TABLE original do jogador; roda no banco novo (main)
+		if (Rodar(Criacoes[i]))
+		{
+			Rodar(FString::Printf(TEXT("INSERT INTO main.\"%s\" SELECT * FROM antigo.\"%s\""), *NomeSql, *NomeSql));
+		}
+		else
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Restaurar: nao foi possivel recriar a tabela %s. %s"), *Nomes[i], *Database.GetLastError());
+		}
+	}
+
+	Rodar(TEXT("DETACH DATABASE antigo"));
+	Database.Close();
 }
 
 bool USQLiteBridge::ExecutarScriptSQL(FString NomeArquivo, FString& MensagemErro)

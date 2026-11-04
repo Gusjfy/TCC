@@ -52,6 +52,7 @@ public:
 	static FResultadoSQL ExecutarQuery(FString QueryTexto);
 
 	// Apaga o banco do jogador e recria do zero a partir de Content/SQL/caso_maria.sql.
+	// As tabelas criadas pelo jogador (ex: provas_pedro) sao copiadas para o banco novo.
 	// Chamar em "Iniciar nova instancia" e no "Restaurar backup" do SYS_CONFIG.
 	UFUNCTION(BlueprintCallable, Category = "Motor SQL")
 	static bool RecriarBanco(FString& MensagemErro);
@@ -82,6 +83,7 @@ private:
 	static FString CaminhoScript(const FString& NomeArquivo);
 	static bool EhConsulta(const FString& Query);
 	static bool DanificaTabelaDoCaso(const FString& Query);
+	static void CopiarTabelasDoJogador(const FString& DbAnterior, const FString& DbNovo);
 	static bool RodarConsulta(const FString& Query, FResultadoSQL& Saida);
 	static TArray<FString> DividirScript(const FString& Script);
 	static bool RodarScript(const FString& DbPath, const FString& NomeArquivo, bool bCriarArquivo, FString& MensagemErro);
