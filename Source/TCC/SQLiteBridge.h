@@ -85,6 +85,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Progressao")
 	static bool BuscarTabelaDoJogador(FString ColunaExigida, FString& NomeTabela, int32& NumLinhas);
 
+	// Roda "SELECT 1 FROM <dossie do jogador> WHERE <Condicao>" e passa se achar linha.
+	// Usar na acusacao. Ex: LOWER(TRIM(tabela_origem)) = 'sys_audit_log' AND registro_id IN
+	// (SELECT id FROM sys_audit_log WHERE terminal = 'PREF-TI-07')
+	UFUNCTION(BlueprintCallable, Category = "Progressao")
+	static bool DossieContem(FString Condicao, FString& NomeTabela);
+
 private:
 	static FString CaminhoBanco();
 	static FString CaminhoScript(const FString& NomeArquivo);

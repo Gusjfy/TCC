@@ -669,3 +669,22 @@ bool USQLiteBridge::BuscarTabelaDoJogador(FString ColunaExigida, FString& NomeTa
 
 	return bAchou;
 }
+
+bool USQLiteBridge::DossieContem(FString Condicao, FString& NomeTabela)
+{
+	int32 NumLinhas = 0;
+	if (!BuscarTabelaDoJogador(TEXT(""), NomeTabela, NumLinhas) || NumLinhas == 0)
+	{
+		return false;
+	}
+
+	const FString NomeSql = NomeTabela.Replace(TEXT("\""), TEXT("\"\""));
+	const FString Cond = Condicao.TrimStartAndEnd();
+	const FString Q = Cond.IsEmpty()
+		? FString::Printf(TEXT("SELECT 1 FROM \"%s\""), *NomeSql)
+		: FString::Printf(TEXT("SELECT 1 FROM \"%s\" WHERE %s"), *NomeSql, *Cond);
+
+	// Se o jogador criou o dossie com outras colunas, a consulta falha e conta como false
+	FResultadoSQL Saida;
+	return RodarConsulta(Q, Saida) && Saida.Registros.Num() > 0;
+}
