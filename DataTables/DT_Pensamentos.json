@@ -1,0 +1,59 @@
+[
+	{
+		"Name": "P_Inicio",
+		"Falas": [
+			"Ok. HD do delegado conectado.",
+			"A ronda passa lá pelas onze. Até lá, o sistema é meu.",
+			"Agora eu tenho acesso aos dados. O problema é que não faço ideia do que mexer.",
+			"Talvez tenha alguma coisa no fórum."
+		]
+	},
+	{
+		"Name": "P_PosCarlos",
+		"Falas": [
+			"\"Vivia chapada.\" Ele nem conhecia ela direito.",
+			"...que banda?",
+			"E o que ele achou que eu tinha feito?",
+			"Melhor anotar. Do jeito que minha cabeça tá, amanhã eu já esqueci."
+		]
+	},
+	{
+		"Name": "P_BashPisca",
+		"Falas": [
+			"Que aba é essa piscando?",
+			"Nunca vi isso aqui."
+		]
+	},
+	{
+		"Name": "P_QuemEEle",
+		"Falas": [
+			"Quem é esse cara? Como ele sabe meu nome?",
+			"Investigador... sei.",
+			"Mas ele sabe onde e como procurar. Eu não. Vou seguir o jogo dele."
+		]
+	},
+	{
+		"Name": "P_Taco",
+		"Falas": [
+			"Um taco?",
+			"Ninguém falou de taco nenhum. Nem no jornal, nem no depoimento.",
+			"Taco. Item 4. Isso eu não posso esquecer. Melhor anotar."
+		]
+	},
+	{
+		"Name": "P_Ronda",
+		"Falas": [
+			"Passos no corredor.",
+			"Se me pegam aqui com o HD do delegado, acabou o estágio. E acabou tudo.",
+			"Desliga. Desliga tudo."
+		]
+	},
+	{
+		"Name": "P_InicioDia2",
+		"Falas": [
+			"Cheguei mais cedo hoje. O guarda nem olhou pra mim.",
+			"Ontem só deu tempo de uma consulta. Uma.",
+			"Hoje eu quero saber quem estava naquela casa."
+		]
+	}
+]

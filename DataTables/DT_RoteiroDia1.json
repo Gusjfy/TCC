@@ -1,0 +1,429 @@
+[
+	{
+		"Name": "010",
+		"Acao": "Entrada",
+		"Linha": "Not_ArquivoMovel",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "020",
+		"Acao": "Entrada",
+		"Linha": "Not_Overdose",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "030",
+		"Acao": "Entrada",
+		"Linha": "Not_Telefone",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "040",
+		"Acao": "Entrada",
+		"Linha": "Not_FimDasFichas",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "050",
+		"Acao": "Entrada",
+		"Linha": "Not_Galinhas",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "060",
+		"Acao": "Entrada",
+		"Linha": "Not_ColunaSQL",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "070",
+		"Acao": "Entrada",
+		"Linha": "Not_Hackers",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "080",
+		"Acao": "Entrada",
+		"Linha": "Not_ShowYuri",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "090",
+		"Acao": "Entrada",
+		"Linha": "Not_Vereador",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "100",
+		"Acao": "Entrada",
+		"Linha": "Not_CremeCristal",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "110",
+		"Acao": "Entrada",
+		"Linha": "Not_Guerra",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "120",
+		"Acao": "Entrada",
+		"Linha": "Not_Motoboy",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "130",
+		"Acao": "Entrada",
+		"Linha": "Not_GrandePane",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "140",
+		"Acao": "Entrada",
+		"Linha": "For_Regras",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "150",
+		"Acao": "Entrada",
+		"Linha": "For_SGBD",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "160",
+		"Acao": "Entrada",
+		"Linha": "For_OQueESQL",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "170",
+		"Acao": "Entrada",
+		"Linha": "For_Select",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "180",
+		"Acao": "Entrada",
+		"Linha": "For_PontoVirgula",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "190",
+		"Acao": "Entrada",
+		"Linha": "For_Where",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "200",
+		"Acao": "Entrada",
+		"Linha": "For_Maiusculas",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "210",
+		"Acao": "Entrada",
+		"Linha": "For_Digitacao",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "220",
+		"Acao": "Entrada",
+		"Linha": "For_HistoriaSQL",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "230",
+		"Acao": "Entrada",
+		"Linha": "For_PrimeiroSelect",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "240",
+		"Acao": "Entrada",
+		"Linha": "Em_Maria_Sabado",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "250",
+		"Acao": "Entrada",
+		"Linha": "Em_Corrente",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "260",
+		"Acao": "Entrada",
+		"Linha": "Em_Carlos_1",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "270",
+		"Acao": "Entrada",
+		"Linha": "Em_OlhoVivo",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "280",
+		"Acao": "Entrada",
+		"Linha": "Em_Mae_Jantar",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "290",
+		"Acao": "Entrada",
+		"Linha": "Em_Faculdade",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "300",
+		"Acao": "Entrada",
+		"Linha": "Em_Carlos_2",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "310",
+		"Acao": "Entrada",
+		"Linha": "Em_Circular041",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "320",
+		"Acao": "Entrada",
+		"Linha": "Em_RH_HoraExtra",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "330",
+		"Acao": "Entrada",
+		"Linha": "Em_Delegado_HD",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "340",
+		"Acao": "Entrada",
+		"Linha": "Dia_3009",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "350",
+		"Acao": "Entrada",
+		"Linha": "Dia_0310",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "360",
+		"Acao": "Entrada",
+		"Linha": "Dia_0610",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "370",
+		"Acao": "Pensamento",
+		"Linha": "P_Inicio",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "380",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 60.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "390",
+		"Acao": "Ligacao",
+		"Linha": "Lig01_Carlos",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "400",
+		"Acao": "Pensamento",
+		"Linha": "P_PosCarlos",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "410",
+		"Acao": "Entrada",
+		"Linha": "Nota_Lig01_Carlos",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "420",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 10.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "430",
+		"Acao": "Entrada",
+		"Linha": "Em_Mae",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "440",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 15.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "450",
+		"Acao": "Conversa",
+		"Linha": "Ano01_Apresentacao",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "460",
+		"Acao": "Trilha",
+		"Linha": "",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "470",
+		"Acao": "Conversa",
+		"Linha": "Ano01_ConfirmaRef",
+		"Segundos": 0.0,
+		"Trilha": "Reforco"
+	},
+	{
+		"Name": "480",
+		"Acao": "Trilha",
+		"Linha": "",
+		"Segundos": 0.0,
+		"Trilha": "Reforco"
+	},
+	{
+		"Name": "490",
+		"Acao": "Pensamento",
+		"Linha": "P_QuemEEle",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "500",
+		"Acao": "Conversa",
+		"Linha": "Ano02_IniTudo",
+		"Segundos": 0.0,
+		"Trilha": "Iniciante"
+	},
+	{
+		"Name": "510",
+		"Acao": "Entrada",
+		"Linha": "Tut01_Select",
+		"Segundos": 0.0,
+		"Trilha": "Iniciante"
+	},
+	{
+		"Name": "520",
+		"Acao": "Objetivo",
+		"Linha": "Obj_SelectTudo",
+		"Segundos": 0.0,
+		"Trilha": "Iniciante"
+	},
+	{
+		"Name": "530",
+		"Acao": "Conversa",
+		"Linha": "Ano02_IniItem4",
+		"Segundos": 0.0,
+		"Trilha": "Iniciante"
+	},
+	{
+		"Name": "540",
+		"Acao": "Conversa",
+		"Linha": "Ano02_RefItem4",
+		"Segundos": 0.0,
+		"Trilha": "Reforco"
+	},
+	{
+		"Name": "550",
+		"Acao": "Entrada",
+		"Linha": "Tut01_Select",
+		"Segundos": 0.0,
+		"Trilha": "Reforco"
+	},
+	{
+		"Name": "560",
+		"Acao": "Entrada",
+		"Linha": "Tut02_Where",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "570",
+		"Acao": "Objetivo",
+		"Linha": "Obj_Item4",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "580",
+		"Acao": "Pensamento",
+		"Linha": "P_Taco",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "590",
+		"Acao": "Conversa",
+		"Linha": "Ano02_Reacao",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "600",
+		"Acao": "Pensamento",
+		"Linha": "P_Ronda",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "610",
+		"Acao": "Especial",
+		"Linha": "FimDia1",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	}
+]

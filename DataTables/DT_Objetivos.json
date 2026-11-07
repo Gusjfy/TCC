@@ -1,0 +1,30 @@
+[
+	{
+		"Name": "Obj_SelectTudo",
+		"Tipo": "Gabarito",
+		"Query": "SELECT * FROM evidencias",
+		"DicasIniciante": [
+			"é só copiar a linha que eu mandei e executar no console do SGBD.",
+			"confere se tá igualzinho: SELECT, o asterisco (*), FROM e o nome da tabela, evidencias.",
+			"SELECT * FROM evidencias;"
+		],
+		"DicasReforco": [
+			"SELECT * FROM evidencias;"
+		]
+	},
+	{
+		"Name": "Obj_Item4",
+		"Tipo": "Gabarito",
+		"Query": "SELECT descricao FROM evidencias WHERE id = 4",
+		"DicasIniciante": [
+			"o filtro é o WHERE. qual coluna diz qual é o item?",
+			"a coluna é id, e o item é o 4. completa a lacuna com isso.",
+			"SELECT descricao FROM evidencias WHERE id = 4;"
+		],
+		"DicasReforco": [
+			"a tabela é evidencias. você quer uma linha só.",
+			"filtra pelo id com WHERE.",
+			"SELECT descricao FROM evidencias WHERE id = 4;"
+		]
+	}
+]

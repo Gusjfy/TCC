@@ -1,0 +1,107 @@
+[
+	{
+		"Name": "Lig01_Carlos",
+		"Falas": [
+			{
+				"Falante": "Carlos",
+				"Texto": "Pedro? É o Carlos.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Carlos... oi. Tá tarde.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Carlos",
+				"Texto": "Eu sei, foi mal. É que... você viu o jornal hoje?",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Vi.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Carlos",
+				"Texto": "Overdose, cara. Fecharam o caso.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Eu li.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Carlos",
+				"Texto": "Eu não consigo parar de pensar naquela noite. Você sentado lá no chão do banheiro.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Então não pensa.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Carlos",
+				"Texto": "É sério. Você tava branco, Pedro. Não falava nada. Eu achei que você tinha... sei lá.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Que eu tinha o quê?",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Carlos",
+				"Texto": "Nada. Esquece. Olha, ela usava, todo mundo sabia. Não é culpa sua.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "A Maria não usava nada.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Carlos",
+				"Texto": "Cara... ela vivia chapada depois dos ensaios. Você que nunca ia.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Que ensaios?",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Carlos",
+				"Texto": "...",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Carlos",
+				"Texto": "Da banda. Ela nunca te contou?",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "...Ela nunca falou de banda nenhuma. Por que ela não ia me contar?",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Carlos",
+				"Texto": "Tá. Tá bom. Esquece o que eu falei.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Carlos",
+				"Texto": "Minha mãe mandou dizer que a sorveteria tá aberta pra você. Se quiser sair de casa um pouco.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Valeu, Carlos. Boa noite.",
+				"bLigacao": true
+			}
+		]
+	}
+]
