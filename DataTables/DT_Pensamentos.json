@@ -39,6 +39,28 @@
 		]
 	},
 	{
+		"Name": "P_Banheiro",
+		"Falas": [
+			"O banheiro da suíte.",
+			"Foi lá que eu encontrei ela."
+		]
+	},
+	{
+		"Name": "P_DepCarlos",
+		"Falas": [
+			"\"Encontrei o Pedro em choque no quarto.\"",
+			"Pra polícia, eu era só o cara em choque.",
+			"Pra mim, ele quase disse outra coisa."
+		]
+	},
+	{
+		"Name": "P_Suspeita",
+		"Falas": [
+			"Três. Eu sou o mais suspeito da lista.",
+			"E o José tá com zero. Zero?"
+		]
+	},
+	{
 		"Name": "P_Ronda",
 		"Falas": [
 			"Passos no corredor.",

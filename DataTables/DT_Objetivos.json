@@ -26,5 +26,50 @@
 			"filtra pelo id com WHERE.",
 			"SELECT descricao FROM evidencias WHERE id = 4;"
 		]
+	},
+	{
+		"Name": "Obj_Banheiro",
+		"Tipo": "Gabarito",
+		"Query": "SELECT nome FROM ambientes WHERE id = 4",
+		"DicasIniciante": [
+			"é a mesma ideia do item 4, só que em outra tabela.",
+			"a tabela é ambientes. filtra pelo id, igual você fez antes.",
+			"SELECT nome FROM ambientes WHERE id = 4;"
+		],
+		"DicasReforco": [
+			"outra tabela, mesmo filtro.",
+			"ambientes, WHERE no id.",
+			"SELECT nome FROM ambientes WHERE id = 4;"
+		]
+	},
+	{
+		"Name": "Obj_DepCarlos",
+		"Tipo": "Gabarito",
+		"Query": "SELECT depoimento FROM suspeitos WHERE nome = 'Carlos'",
+		"DicasIniciante": [
+			"dessa vez o filtro é por texto, não por número.",
+			"texto vai entre aspas simples, com a maiúscula igual ao banco: 'Carlos'.",
+			"SELECT depoimento FROM suspeitos WHERE nome = 'Carlos';"
+		],
+		"DicasReforco": [
+			"filtra pelo nome.",
+			"texto vai entre aspas simples.",
+			"SELECT depoimento FROM suspeitos WHERE nome = 'Carlos';"
+		]
+	},
+	{
+		"Name": "Obj_Suspeita",
+		"Tipo": "Gabarito",
+		"Query": "SELECT nome FROM suspeitos WHERE nivel_suspeita > 1",
+		"DicasIniciante": [
+			"\"acima de 1\" quer dizer maior que 1.",
+			"o sinal de maior é >. a coluna é nivel_suspeita.",
+			"SELECT nome FROM suspeitos WHERE nivel_suspeita > 1;"
+		],
+		"DicasReforco": [
+			"a coluna é nivel_suspeita.",
+			"maior que é >.",
+			"SELECT nome FROM suspeitos WHERE nivel_suspeita > 1;"
+		]
 	}
 ]

@@ -444,18 +444,123 @@
 		"Name": "640",
 		"Acao": "Esperar",
 		"Linha": "",
-		"Segundos": 60.0,
+		"Segundos": 8.0,
 		"Trilha": "Ambas"
 	},
 	{
 		"Name": "650",
+		"Acao": "Conversa",
+		"Linha": "Ano03_Ambiente",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "660",
+		"Acao": "Objetivo",
+		"Linha": "Obj_Banheiro",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "670",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 2.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "680",
+		"Acao": "Pensamento",
+		"Linha": "P_Banheiro",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "690",
+		"Acao": "Conversa",
+		"Linha": "Ano03_Carlos",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "700",
+		"Acao": "Objetivo",
+		"Linha": "Obj_DepCarlos",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "710",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 2.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "720",
+		"Acao": "Pensamento",
+		"Linha": "P_DepCarlos",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "730",
+		"Acao": "Conversa",
+		"Linha": "Ano03_Nota",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "740",
+		"Acao": "Entrada",
+		"Linha": "Tut03_Comparar",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "750",
+		"Acao": "Objetivo",
+		"Linha": "Obj_Suspeita",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "760",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 2.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "770",
+		"Acao": "Pensamento",
+		"Linha": "P_Suspeita",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "780",
+		"Acao": "Conversa",
+		"Linha": "Ano03_Fim",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "790",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 60.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "800",
 		"Acao": "Pensamento",
 		"Linha": "P_Ronda",
 		"Segundos": 0.0,
 		"Trilha": "Ambas"
 	},
 	{
-		"Name": "660",
+		"Name": "810",
 		"Acao": "Especial",
 		"Linha": "FimDia1",
 		"Segundos": 0.0,

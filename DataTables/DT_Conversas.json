@@ -185,5 +185,105 @@
 				"Texto": "eu vejo parte dos dados, lembra? só não consigo abrir tudo. dessa tabela eu só enxergo os itens 4, 5 e 9. o resto é com você."
 			}
 		]
+	},
+	{
+		"Name": "Ano03_Ambiente",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "olha a coluna ambiente_id do taco. tá 4."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "esse 4 não é o lugar. é o id de uma linha de outra tabela: ambientes."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "descobre que lugar é o ambiente 4."
+			}
+		],
+		"OpcaoA": "",
+		"OpcaoB": "",
+		"RespostaA": [],
+		"RespostaB": []
+	},
+	{
+		"Name": "Ano03_Carlos",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "quem ligou pra emergência foi o carlos."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "a polícia guardou o que cada um disse. coluna depoimento, na tabela suspeitos."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "lê o depoimento dele. só o dele."
+			}
+		],
+		"OpcaoA": "Ele me ligou hoje.",
+		"OpcaoB": "Por que o do Carlos?",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "então você vai saber se ele contou a mesma coisa."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "quem acha o corpo sempre viu alguma coisa."
+			}
+		]
+	},
+	{
+		"Name": "Ano03_Nota",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "a polícia deu uma nota de suspeita pra cada um. coluna nivel_suspeita, de 0 a 5."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "quero saber quem tá acima de 1."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "dá pra comparar com mais coisa além do igual. te mandei outro e-mail."
+			}
+		],
+		"OpcaoA": "",
+		"OpcaoB": "",
+		"RespostaA": [],
+		"RespostaB": []
+	},
+	{
+		"Name": "Ano03_Fim",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "você é o primeiro da lista, pedro."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "e quem colocou você lá não te perguntou nada."
+			}
+		],
+		"OpcaoA": "Eu não fiz nada.",
+		"OpcaoB": "E se eu fiz?",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "então os dados vão mostrar isso. amanhã a gente continua."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "você não lembra. não é a mesma coisa. amanhã a gente continua."
+			}
+		]
 	}
 ]

@@ -288,6 +288,14 @@
 		"Conteudo": "WHERE = \"onde\". é o filtro: só passam as linhas que batem com a condição.\n\nSELECT nome FROM suspeitos WHERE id = 3; se lê \"selecione nome de suspeitos onde o id é 3\".\n\nnúmero vai sem aspas. texto vai entre aspas simples:\n\nSELECT nome FROM suspeitos WHERE ocupacao = 'Guitarrista';\n\no texto entre aspas é comparado letra por letra. 'guitarrista' e 'Guitarrista' não são a mesma coisa.\n\npense antes de pedir."
 	},
 	{
+		"Name": "Tut03_Comparar",
+		"Tipo": "Email",
+		"Titulo": "03 - comparando",
+		"Data": "08/10/1998 22:45",
+		"CC": "cavalo.preto@ymail.com",
+		"Conteudo": "o = não é o único jeito de filtrar.\n\n= igual\n<> diferente\n> maior que\n< menor que\n>= maior ou igual\n<= menor ou igual\n\nSELECT nome FROM suspeitos WHERE idade > 20; → quem tem mais de 20 anos\nSELECT nome FROM suspeitos WHERE ocupacao <> 'Estudante'; → todo mundo que não é estudante\n\ncom número é o que você imagina. com texto, compara em ordem alfabética.\n\numa coisa de cada vez."
+	},
+	{
 		"Name": "Dia_3009",
 		"Tipo": "Diario",
 		"Titulo": "30/09/1998",
