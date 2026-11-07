@@ -57,6 +57,11 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Motor SQL")
 	static bool RecriarBanco(FString& MensagemErro);
 
+	// Apaga o banco inteiro (inclusive as tabelas criadas pelo jogador) e recria do zero
+	// a partir de Content/SQL/caso_maria.sql. Chamar no "Novo jogo".
+	UFUNCTION(BlueprintCallable, Category = "Motor SQL")
+	static bool NovoBancoLimpo(FString& MensagemErro);
+
 	// Recria o banco somente se o arquivo ainda nao existir (chamar ao carregar um save).
 	UFUNCTION(BlueprintCallable, Category = "Motor SQL")
 	static bool GarantirBanco(FString& MensagemErro);

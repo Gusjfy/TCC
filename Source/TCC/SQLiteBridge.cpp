@@ -334,6 +334,39 @@ void USQLiteBridge::CopiarTabelasDoJogador(const FString& DbAnterior, const FStr
 	Database.Close();
 }
 
+bool USQLiteBridge::NovoBancoLimpo(FString& MensagemErro)
+{
+	MensagemErro.Reset();
+
+	if (!IFileManager::Get().FileExists(*CaminhoScript(TEXT("caso_maria.sql"))))
+	{
+		MensagemErro = FString::Printf(TEXT("Script do banco nao encontrado: %s"), *CaminhoScript(TEXT("caso_maria.sql")));
+		UE_LOG(LogTemp, Error, TEXT("%s"), *MensagemErro);
+		return false;
+	}
+
+	const FString DbPath = CaminhoBanco();
+	IFileManager& FM = IFileManager::Get();
+	FM.MakeDirectory(*FPaths::GetPath(DbPath), true);
+
+	// Jogo novo: nada do banco antigo sobrevive, nem as tabelas do jogador
+	FM.Delete(*(DbPath + TEXT(".anterior")), false, true, true);
+	FM.Delete(*(DbPath + TEXT("-journal")), false, true, true);
+	if (FM.FileExists(*DbPath) && !FM.Delete(*DbPath, false, true, true))
+	{
+		MensagemErro = TEXT("Nao foi possivel apagar o banco antigo (arquivo em uso?).");
+		UE_LOG(LogTemp, Error, TEXT("%s"), *MensagemErro);
+		return false;
+	}
+
+	if (!RodarScript(DbPath, TEXT("caso_maria.sql"), true, MensagemErro))
+	{
+		FM.Delete(*DbPath, false, true, true);
+		return false;
+	}
+	return true;
+}
+
 bool USQLiteBridge::ExecutarScriptSQL(FString NomeArquivo, FString& MensagemErro)
 {
 	MensagemErro.Reset();
