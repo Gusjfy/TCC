@@ -4,8 +4,7 @@
 		"Falas": [
 			"Ok. HD do delegado conectado.",
 			"A ronda passa lá pelas onze. Até lá, o sistema é meu.",
-			"Agora eu tenho acesso aos dados. O problema é que não faço ideia do que mexer.",
-			"Talvez tenha alguma coisa no fórum."
+			"Agora eu tenho acesso aos dados. O problema é que não faço ideia do que mexer."
 		]
 	},
 	{
@@ -27,9 +26,8 @@
 	{
 		"Name": "P_QuemEEle",
 		"Falas": [
-			"Quem é esse cara? Como ele sabe meu nome?",
-			"Investigador... sei.",
-			"Mas ele sabe onde e como procurar. Eu não. Vou seguir o jogo dele."
+			"Freelancer... sei.",
+			"Mas ele sabe onde e como procurar. Eu não. Melhor seguir o jogo dele."
 		]
 	},
 	{
@@ -53,7 +51,7 @@
 		"Falas": [
 			"Cheguei mais cedo hoje. O guarda nem olhou pra mim.",
 			"Ontem só deu tempo de uma consulta. Uma.",
-			"Hoje eu quero saber quem estava naquela casa."
+			"Quem mais estava naquela casa?"
 		]
 	}
 ]

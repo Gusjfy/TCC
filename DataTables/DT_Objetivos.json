@@ -2,14 +2,14 @@
 	{
 		"Name": "Obj_SelectTudo",
 		"Tipo": "Gabarito",
-		"Query": "SELECT * FROM evidencias",
+		"Query": "SELECT * FROM suspeitos",
 		"DicasIniciante": [
 			"é só copiar a linha que eu mandei e executar no console do SGBD.",
-			"confere se tá igualzinho: SELECT, o asterisco (*), FROM e o nome da tabela, evidencias.",
-			"SELECT * FROM evidencias;"
+			"confere se tá igualzinho: SELECT, o asterisco (*), FROM e o nome da tabela, suspeitos.",
+			"SELECT * FROM suspeitos;"
 		],
 		"DicasReforco": [
-			"SELECT * FROM evidencias;"
+			"SELECT * FROM suspeitos;"
 		]
 	},
 	{

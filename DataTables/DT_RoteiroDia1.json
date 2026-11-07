@@ -262,7 +262,7 @@
 		"Name": "380",
 		"Acao": "Esperar",
 		"Linha": "",
-		"Segundos": 60.0,
+		"Segundos": 120.0,
 		"Trilha": "Ambas"
 	},
 	{
@@ -290,7 +290,7 @@
 		"Name": "420",
 		"Acao": "Esperar",
 		"Linha": "",
-		"Segundos": 10.0,
+		"Segundos": 20.0,
 		"Trilha": "Ambas"
 	},
 	{
@@ -304,7 +304,7 @@
 		"Name": "440",
 		"Acao": "Esperar",
 		"Linha": "",
-		"Segundos": 15.0,
+		"Segundos": 45.0,
 		"Trilha": "Ambas"
 	},
 	{
@@ -316,111 +316,146 @@
 	},
 	{
 		"Name": "460",
-		"Acao": "Trilha",
-		"Linha": "",
-		"Segundos": 0.0,
-		"Trilha": "Ambas"
-	},
-	{
-		"Name": "470",
-		"Acao": "Conversa",
-		"Linha": "Ano01_ConfirmaRef",
-		"Segundos": 0.0,
-		"Trilha": "Reforco"
-	},
-	{
-		"Name": "480",
-		"Acao": "Trilha",
-		"Linha": "",
-		"Segundos": 0.0,
-		"Trilha": "Reforco"
-	},
-	{
-		"Name": "490",
 		"Acao": "Pensamento",
 		"Linha": "P_QuemEEle",
 		"Segundos": 0.0,
 		"Trilha": "Ambas"
 	},
 	{
+		"Name": "470",
+		"Acao": "Conversa",
+		"Linha": "Ano01_PerguntaSQL",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "480",
+		"Acao": "Trilha",
+		"Linha": "",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "490",
+		"Acao": "Conversa",
+		"Linha": "Ano01_ConfirmaRef",
+		"Segundos": 0.0,
+		"Trilha": "Reforco"
+	},
+	{
 		"Name": "500",
+		"Acao": "Trilha",
+		"Linha": "",
+		"Segundos": 0.0,
+		"Trilha": "Reforco"
+	},
+	{
+		"Name": "510",
 		"Acao": "Conversa",
 		"Linha": "Ano02_IniTudo",
 		"Segundos": 0.0,
 		"Trilha": "Iniciante"
 	},
 	{
-		"Name": "510",
+		"Name": "520",
 		"Acao": "Entrada",
 		"Linha": "Tut01_Select",
 		"Segundos": 0.0,
 		"Trilha": "Iniciante"
 	},
 	{
-		"Name": "520",
+		"Name": "530",
 		"Acao": "Objetivo",
 		"Linha": "Obj_SelectTudo",
 		"Segundos": 0.0,
 		"Trilha": "Iniciante"
 	},
 	{
-		"Name": "530",
+		"Name": "540",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 20.0,
+		"Trilha": "Iniciante"
+	},
+	{
+		"Name": "550",
 		"Acao": "Conversa",
 		"Linha": "Ano02_IniItem4",
 		"Segundos": 0.0,
 		"Trilha": "Iniciante"
 	},
 	{
-		"Name": "540",
+		"Name": "560",
 		"Acao": "Conversa",
 		"Linha": "Ano02_RefItem4",
 		"Segundos": 0.0,
 		"Trilha": "Reforco"
 	},
 	{
-		"Name": "550",
+		"Name": "570",
 		"Acao": "Entrada",
 		"Linha": "Tut01_Select",
 		"Segundos": 0.0,
 		"Trilha": "Reforco"
 	},
 	{
-		"Name": "560",
+		"Name": "580",
 		"Acao": "Entrada",
 		"Linha": "Tut02_Where",
 		"Segundos": 0.0,
 		"Trilha": "Ambas"
 	},
 	{
-		"Name": "570",
+		"Name": "590",
 		"Acao": "Objetivo",
 		"Linha": "Obj_Item4",
 		"Segundos": 0.0,
 		"Trilha": "Ambas"
 	},
 	{
-		"Name": "580",
+		"Name": "600",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 2.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "610",
 		"Acao": "Pensamento",
 		"Linha": "P_Taco",
 		"Segundos": 0.0,
 		"Trilha": "Ambas"
 	},
 	{
-		"Name": "590",
+		"Name": "620",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 10.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "630",
 		"Acao": "Conversa",
 		"Linha": "Ano02_Reacao",
 		"Segundos": 0.0,
 		"Trilha": "Ambas"
 	},
 	{
-		"Name": "600",
+		"Name": "640",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 60.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "650",
 		"Acao": "Pensamento",
 		"Linha": "P_Ronda",
 		"Segundos": 0.0,
 		"Trilha": "Ambas"
 	},
 	{
-		"Name": "610",
+		"Name": "660",
 		"Acao": "Especial",
 		"Linha": "FimDia1",
 		"Segundos": 0.0,

@@ -17,7 +17,16 @@
 			{
 				"Tipo": "Anonimo",
 				"Texto": "preciso de você, assim como você precisa de mim."
-			},
+			}
+		],
+		"OpcaoA": "",
+		"OpcaoB": "",
+		"RespostaA": [],
+		"RespostaB": []
+	},
+	{
+		"Name": "Ano01_PerguntaSQL",
+		"Mensagens": [
 			{
 				"Tipo": "Anonimo",
 				"Texto": "os dados estão num SGBD. pra tirar algo de lá você precisa falar a língua dele: SQL. você sabe SQL?"
@@ -43,10 +52,10 @@
 		"Mensagens": [
 			{
 				"Tipo": "Anonimo",
-				"Texto": "beleza. só confirmando: daqui pra frente eu te passo só o objetivo, sem query pronta. tranquilo?"
+				"Texto": "tem certeza? vou te passar só o objetivo sempre, sem query pronta. confirma?"
 			}
 		],
-		"OpcaoA": "Tranquilo, manda o objetivo.",
+		"OpcaoA": "Confirmo. Manda o objetivo.",
 		"OpcaoB": "Pensando bem, me explica do começo.",
 		"RespostaA": [
 			{
@@ -74,11 +83,11 @@
 			},
 			{
 				"Tipo": "Codigo",
-				"Texto": "SELECT * FROM evidencias;"
+				"Texto": "SELECT * FROM suspeitos;"
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "o asterisco (*) quer dizer \"todas as colunas\". evidencias é o nome da tabela."
+				"Texto": "o asterisco (*) quer dizer \"todas as colunas\". suspeitos é o nome da tabela."
 			},
 			{
 				"Tipo": "Anonimo",
@@ -105,11 +114,11 @@
 		"Mensagens": [
 			{
 				"Tipo": "Anonimo",
-				"Texto": "isso. cada linha é uma evidência. cada coluna, uma informação sobre ela."
+				"Texto": "boa, fez certo. cada linha é uma pessoa. cada coluna, uma informação sobre ela."
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "agora quero só a descrição do item 4. completa o que falta:"
+				"Texto": "agora outra tabela: evidencias. quero só a descrição do item 4. completa o que falta:"
 			},
 			{
 				"Tipo": "Codigo",
