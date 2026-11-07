@@ -3,6 +3,10 @@
 -- Recriado do zero por USQLiteBridge::RecriarBanco.
 -- Datas no formato 'AAAA-MM-DD HH:MM' para ORDER BY e comparacoes funcionarem.
 -- Festa: sab 26/09/1998. Crime: dom 27/09/1998, 03h00.
+--
+-- O DOSSIE DO JOGADOR NAO E CRIADO AQUI. Pedro cria a propria tabela com
+-- CREATE TABLE no fim do Dia 2 (Con04). O RecriarBanco copia essa tabela
+-- para o banco novo. Gabaritos do CREATE/INSERT/ALTER: guias/banco_e_gabaritos.md.
 -- =====================================================================
 
 CREATE TABLE suspeitos (
@@ -80,10 +84,12 @@ INSERT INTO suspeitos (id, nome, idade, ocupacao, relacao_vitima, status, nivel_
 
 -- ---------------------------------------------------------------------
 -- ambientes (casa dos pais de Maria)
+-- id 2 vem com o nome digitado errado ('Cozinah'). O Anonimo usa isso no Dia 3
+-- para ensinar UPDATE num registro inofensivo antes da restauracao de José.
 -- ---------------------------------------------------------------------
 INSERT INTO ambientes (id, nome, andar, descricao) VALUES
 (1, 'Sala de estar',          1, 'Onde montaram o mini-golfe.'),
-(2, 'Cozinha',                1, 'Bebidas e a porta para o quintal.'),
+(2, 'Cozinah',                1, 'Bebidas e a porta para o quintal.'),  -- erro de digitacao proposital: treino de UPDATE do Dia 3 (iniciante)
 (3, 'Suíte (quarto dos pais)',2, 'Quarto do casal, com banheiro próprio.'),
 (4, 'Banheiro da suíte',      2, 'Local onde o corpo foi encontrado.'),
 (5, 'Quarto de hóspedes',     2, 'Onde parte do grupo usou drogas.'),
