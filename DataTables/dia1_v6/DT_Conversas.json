@@ -109,6 +109,10 @@
 			},
 			{
 				"Tipo": "Anonimo",
+				"Texto": "esse comando abre qualquer tabela, é só trocar o nome. as tabelas que existem tão na aba [DIAGRAMA]."
+			},
+			{
+				"Tipo": "Anonimo",
 				"Texto": "te mandei um e-mail com o básico. se travar, olha lá."
 			}
 		],
@@ -136,6 +140,10 @@
 			},
 			{
 				"Tipo": "Anonimo",
+				"Texto": "antes, sempre apague o que tá no console. ele roda uma consulta por vez."
+			},
+			{
+				"Tipo": "Anonimo",
 				"Texto": "agora outra tabela: evidencias. quero só a descrição do item 4. completa o que falta:"
 			},
 			{
@@ -144,11 +152,15 @@
 			},
 			{
 				"Tipo": "Anonimo",
+				"Texto": "o ___ não é pra digitar. apaga ele e coloca o número do item no lugar."
+			},
+			{
+				"Tipo": "Anonimo",
 				"Texto": "WHERE é o filtro. só passam as linhas que batem com a condição."
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "o detalhe tá no e-mail."
+				"Texto": "o detalhe tá no e-mail. e no fórum da web tem gente explicando melhor que eu."
 			}
 		],
 		"OpcaoA": "",
@@ -165,7 +177,7 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "mandei um resumo no seu e-mail, caso precise."
+				"Texto": "as tabelas e as colunas tão na aba [DIAGRAMA]. mandei um resumo no seu e-mail, caso precise. o fórum da web também ajuda."
 			}
 		],
 		"OpcaoA": "",
@@ -214,6 +226,10 @@
 			{
 				"Tipo": "Anonimo",
 				"Texto": "esse 4 não é o lugar. é o id de uma linha de outra tabela: ambientes."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "no [DIAGRAMA] dá pra ver: ambiente_id na evidencias, id na ambientes."
 			},
 			{
 				"Tipo": "Anonimo",

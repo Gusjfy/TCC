@@ -103,5 +103,210 @@
 				"bLigacao": true
 			}
 		]
+	},
+	{
+		"Name": "Lig02_Ana",
+		"Falas": [
+			{
+				"Falante": "Ana",
+				"Texto": "Pedrinho? Sou eu, Ana. Do curso de bombeiro, lembra?",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Lembro. Oi, Ana.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Ana",
+				"Texto": "Desculpa ligar aí. Sua mãe me deu o número. Disse que você tá trabalhando até tarde.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Tô.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Ana",
+				"Texto": "Eu preciso te contar uma coisa da festa. Não consigo dormir com isso.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Fala.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Ana",
+				"Texto": "Lembra que a Maria tava com um cara? Um que ela conheceu num bar. Mais velho, todo educado.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Não.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Ana",
+				"Texto": "Pois é. Eles ficaram de risadinha no corredor a noite inteira. Eu achei engraçado e saí contando pra todo mundo.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Ana",
+				"Texto": "E o José ouviu.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "E aí?",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Ana",
+				"Texto": "Ele socou a parede da cozinha, Pedro. Ficou a marca. Depois subiu atrás dela.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Por que o José ia ligar pra isso?",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Ana",
+				"Texto": "...",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Ana",
+				"Texto": "Você não sabia mesmo, né. Eles tavam juntos. Escondido. Faz meses.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "...",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Ana",
+				"Texto": "E tem a Julia. Ela e a Maria brigaram feio uns meses atrás. Por causa de você, acho.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "De mim?",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Ana",
+				"Texto": "A Julia gostava de você desde o colégio. Todo mundo sabia, menos você.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Ana",
+				"Texto": "Eu falei tudo isso pra polícia, mas o cara nem anotou. Ficou olhando pro relógio.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Valeu por ligar, Ana.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Ana",
+				"Texto": "Se cuida, Pedrinho. Você parecia outra pessoa naquela noite.",
+				"bLigacao": true
+			}
+		]
+	},
+	{
+		"Name": "Lig03_Marta",
+		"Falas": [
+			{
+				"Falante": "Marta",
+				"Texto": "Pedro? É a Marta. Amiga da Ana.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Oi, Marta.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "A Ana me contou que ligou pra você. Eu fiquei pensando a semana toda se ligava também.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Pode falar.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "O jornal disse que a polícia tá olhando pro José. É verdade?",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Não sei.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "Não foi ele, Pedro. O José ficou deitado no sofá da sala desde quinze pras três. Eu vi. Ele tava chorando.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Você tava na sala?",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "Eu tava no quintal, mas subi pra usar o banheiro do corredor. Quando passei, ele já tava no sofá. Quando desci, continuava lá. Só levantou com a gritaria.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "E tem outra coisa. Lá em cima eu vi o André saindo do quarto de hóspedes. Com aquele taco do mini-golfe.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Que horas?",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "Umas dez pras três. Ele riu e disse que ia guardar antes que alguém se machucasse.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "Eu passei a festa inteira conversando com ele. Educado, engraçado. Falou de xadrez a noite toda. Contou que cresceu num orfanato e que um senhor adotou ele aos quinze. Que foi esse senhor que ensinou ele a jogar.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "...",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "Eu contei isso pra polícia. O delegado disse que o André tava com o Yuri e o João a noite toda. Os dois mal paravam em pé.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Obrigado, Marta.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "Se cuida. E Pedro... não fala com ninguém que eu te liguei.",
+				"bLigacao": true
+			}
+		]
 	}
 ]

@@ -1,0 +1,303 @@
+[
+	{
+		"Name": "E01",
+		"Acao": "Entrada",
+		"Linha": "Dia_1010",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "E02",
+		"Acao": "Entrada",
+		"Linha": "Not_Lago1997",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "E03",
+		"Acao": "Entrada",
+		"Linha": "Not_Dedetizacao",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "E04",
+		"Acao": "Entrada",
+		"Linha": "For_Update",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "E05",
+		"Acao": "Entrada",
+		"Linha": "For_Log",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "E06",
+		"Acao": "Entrada",
+		"Linha": "For_Delete",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "010",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 2.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "020",
+		"Acao": "Pensamento",
+		"Linha": "P_InicioDia3",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "030",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 25.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "040",
+		"Acao": "Script",
+		"Linha": "glitch_dia3.sql",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "050",
+		"Acao": "Especial",
+		"Linha": "GlitchDia3",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "060",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 8.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "070",
+		"Acao": "Conversa",
+		"Linha": "Ano10_Volta",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "080",
+		"Acao": "Objetivo",
+		"Linha": "Obj_JoseMov",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "085",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 2.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "090",
+		"Acao": "Pensamento",
+		"Linha": "P_JoseSuite",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "100",
+		"Acao": "Conversa",
+		"Linha": "Ano10_Taco",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "110",
+		"Acao": "Objetivo",
+		"Linha": "Obj_TacoJose",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "115",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 2.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "120",
+		"Acao": "Pensamento",
+		"Linha": "P_TacoJose",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "130",
+		"Acao": "Conversa",
+		"Linha": "Ano10_Pressa",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "140",
+		"Acao": "Entrada",
+		"Linha": "Tut08_Update",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "150i",
+		"Acao": "Conversa",
+		"Linha": "Ano11_Cozinha_Ini",
+		"Segundos": 0.0,
+		"Trilha": "Iniciante"
+	},
+	{
+		"Name": "150r",
+		"Acao": "Conversa",
+		"Linha": "Ano11_Cozinha_Ref",
+		"Segundos": 0.0,
+		"Trilha": "Reforco"
+	},
+	{
+		"Name": "160",
+		"Acao": "Objetivo",
+		"Linha": "Obj_Cozinha",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "165",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 2.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "170",
+		"Acao": "Conversa",
+		"Linha": "Ano11_Dossie",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "180",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 20.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "190",
+		"Acao": "Ligacao",
+		"Linha": "Lig03_Marta",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "200",
+		"Acao": "Pensamento",
+		"Linha": "P_PosMarta",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "205",
+		"Acao": "Entrada",
+		"Linha": "Nota_Lig03_Marta",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "210",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 5.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "220",
+		"Acao": "Pensamento",
+		"Linha": "P_LogNaoMente",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "230",
+		"Acao": "Objetivo",
+		"Linha": "Obj_ProvaLog",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "235",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 2.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "240",
+		"Acao": "Pensamento",
+		"Linha": "P_PrefTi",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "250",
+		"Acao": "Objetivo",
+		"Linha": "Obj_Desfazer",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "255",
+		"Acao": "Esperar",
+		"Linha": "",
+		"Segundos": 2.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "260",
+		"Acao": "Pensamento",
+		"Linha": "P_Desfeito",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "270",
+		"Acao": "Conversa",
+		"Linha": "Ano12_Percebeu",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "280",
+		"Acao": "Especial",
+		"Linha": "Acusacao",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "290",
+		"Acao": "Conversa",
+		"Linha": "Ano13_Ameaca",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	},
+	{
+		"Name": "300",
+		"Acao": "Especial",
+		"Linha": "AcusacaoFinal",
+		"Segundos": 0.0,
+		"Trilha": "Ambas"
+	}
+]

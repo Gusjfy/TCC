@@ -35,7 +35,7 @@
 		"Falas": [
 			"Um taco?",
 			"Ninguém falou de taco nenhum. Nem no jornal, nem no depoimento.",
-			"Taco. Item 4. Isso eu não posso esquecer. Melhor anotar."
+			"Taco. Item 4. Isso eu não posso esquecer."
 		]
 	},
 	{
@@ -69,11 +69,169 @@
 		]
 	},
 	{
+		"Name": "P_BootDia2",
+		"Falas": [
+			"Dormi umas duas horas. Talvez três.",
+			"Cheguei mais cedo hoje. O guarda nem olhou pra mim."
+		]
+	},
+	{
 		"Name": "P_InicioDia2",
 		"Falas": [
-			"Cheguei mais cedo hoje. O guarda nem olhou pra mim.",
-			"Ontem só deu tempo de uma consulta. Uma.",
+			"Ontem eu mal comecei.",
 			"Quem mais estava naquela casa?"
+		]
+	},
+	{
+		"Name": "P_Relatorio",
+		"Falas": [
+			"\"Status: em andamento.\"",
+			"O caso nunca foi fechado. O jornal mentiu.",
+			"Eles sabem que não foi acidente."
+		]
+	},
+	{
+		"Name": "P_Numeros",
+		"Falas": [
+			"Números. Só números e horários.",
+			"O suspeito 2 sou eu."
+		]
+	},
+	{
+		"Name": "P_Ultimo",
+		"Falas": [
+			"O Carlos. Três e dezoito.",
+			"Foi quando ele subiu e me achou lá."
+		]
+	},
+	{
+		"Name": "P_MsgJose",
+		"Falas": [
+			"\"Não acredito que você fez isso.\"",
+			"Fez o quê?"
+		]
+	},
+	{
+		"Name": "P_Laudos",
+		"Falas": [
+			"Cocaína.",
+			"A Maria tinha medo de tomar remédio pra dor de cabeça.",
+			"E no meu... sedativo? Em dose alta?",
+			"Eu não tomei sedativo nenhum. Eu acho."
+		]
+	},
+	{
+		"Name": "P_Log",
+		"Falas": [
+			"O delegado zerou a nota do José. Dois dias depois da festa, quase meia-noite.",
+			"O próprio filho."
+		]
+	},
+	{
+		"Name": "P_Join",
+		"Falas": [
+			"Eu.",
+			"Três e quinze. Sozinho com ela.",
+			"O Carlos só chegou depois."
+		]
+	},
+	{
+		"Name": "P_Conversa",
+		"Falas": [
+			"Ninguém tinha falado assim comigo desde aquela noite.",
+			"Nem a doutora."
+		]
+	},
+	{
+		"Name": "P_PosAna",
+		"Falas": [
+			"A Maria e o José.",
+			"Meses. E eu achando que conhecia ela."
+		]
+	},
+	{
+		"Name": "P_Dossie",
+		"Falas": [
+			"Uma tabela minha, no meio da polícia.",
+			"No meio das tabelas da prefeitura, ninguém vai olhar."
+		]
+	},
+	{
+		"Name": "P_RondaDia2",
+		"Falas": [
+			"Barulho de chave lá embaixo. Mais cedo que ontem.",
+			"Amanhã é sábado. O prédio fecha.",
+			"Desliga."
+		]
+	},
+	{
+		"Name": "P_BootDia3",
+		"Falas": [
+			"Sábado. Plantão de digitalização.",
+			"Eu me ofereci. O delegado nem perguntou por quê."
+		]
+	},
+	{
+		"Name": "P_InicioDia3",
+		"Falas": [
+			"Cheiro de veneno de barata em tudo.",
+			"Ninguém no prédio. Só eu e o guarda lá embaixo."
+		]
+	},
+	{
+		"Name": "P_JoseSuite",
+		"Falas": [
+			"Ontem a linha 14 dizia sala.",
+			"Agora diz suíte. Das quinze pras três até três e vinte."
+		]
+	},
+	{
+		"Name": "P_TacoJose",
+		"Falas": [
+			"\"Digitais de José.\"",
+			"Ontem eram borradas."
+		]
+	},
+	{
+		"Name": "P_PosMarta",
+		"Falas": [
+			"O José no sofá. O André com o taco.",
+			"Xadrez. Orfanato. Quinze anos.",
+			"Eu já li isso em algum lugar."
+		]
+	},
+	{
+		"Name": "P_LogNaoMente",
+		"Falas": [
+			"\"O log não mente.\" Foi ele que disse.",
+			"E tudo que provar alguma coisa vai pra minha tabela."
+		]
+	},
+	{
+		"Name": "P_PrefTi",
+		"Falas": [
+			"User002. Sou eu.",
+			"Seis e doze de sábado. O prédio tava fechado pra dedetização.",
+			"PREF-TI-07. Prefeitura.",
+			"No log tem o valor antigo. O banco lembra onde o José tava."
+		]
+	},
+	{
+		"Name": "P_Desfeito",
+		"Falas": [
+			"Sala de estar. Do jeito que tava ontem."
+		]
+	},
+	{
+		"Name": "P_RecusaSemProva",
+		"Falas": [
+			"Sem prova nenhuma? Não."
+		]
+	},
+	{
+		"Name": "P_RecusaFraca",
+		"Falas": [
+			"Não tenho nada que prove isso."
 		]
 	}
 ]

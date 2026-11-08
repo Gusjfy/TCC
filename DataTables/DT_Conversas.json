@@ -61,7 +61,7 @@
 		"RespostaB": [
 			{
 				"Tipo": "Anonimo",
-				"Texto": "sem problema. autodidata aprende rápido. vou te mostrar passo a passo. pode copiar o que eu mandar no começo."
+				"Texto": "sem problema. autodidata aprende rápido. vou te mostrar passo a passo. no começo, é só escrever igual eu mandar."
 			}
 		]
 	},
@@ -109,6 +109,10 @@
 			},
 			{
 				"Tipo": "Anonimo",
+				"Texto": "esse comando abre qualquer tabela, é só trocar o nome. as tabelas que existem tão na aba [DIAGRAMA]."
+			},
+			{
+				"Tipo": "Anonimo",
 				"Texto": "te mandei um e-mail com o básico. se travar, olha lá."
 			}
 		],
@@ -136,6 +140,10 @@
 			},
 			{
 				"Tipo": "Anonimo",
+				"Texto": "antes, sempre apague o que tá no console. ele roda uma consulta por vez."
+			},
+			{
+				"Tipo": "Anonimo",
 				"Texto": "agora outra tabela: evidencias. quero só a descrição do item 4. completa o que falta:"
 			},
 			{
@@ -144,11 +152,15 @@
 			},
 			{
 				"Tipo": "Anonimo",
+				"Texto": "o ___ não é pra digitar. apaga ele e coloca o número do item no lugar."
+			},
+			{
+				"Tipo": "Anonimo",
 				"Texto": "WHERE é o filtro. só passam as linhas que batem com a condição."
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "o detalhe tá no e-mail."
+				"Texto": "o detalhe tá no e-mail. e no fórum da web tem gente explicando melhor que eu."
 			}
 		],
 		"OpcaoA": "",
@@ -165,7 +177,7 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "mandei um resumo no seu e-mail, caso precise."
+				"Texto": "as tabelas e as colunas tão na aba [DIAGRAMA]. mandei um resumo no seu e-mail, caso precise. o fórum da web também ajuda."
 			}
 		],
 		"OpcaoA": "",
@@ -214,6 +226,10 @@
 			{
 				"Tipo": "Anonimo",
 				"Texto": "esse 4 não é o lugar. é o id de uma linha de outra tabela: ambientes."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "no [DIAGRAMA] dá pra ver: ambiente_id na evidencias, id na ambientes."
 			},
 			{
 				"Tipo": "Anonimo",
@@ -301,6 +317,919 @@
 			{
 				"Tipo": "Anonimo",
 				"Texto": "você não lembra. não é a mesma coisa. amanhã a gente continua."
+			}
+		]
+	},
+	{
+		"Name": "Ano04_Volta",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "voltou."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o banco mudou desde ontem. o delegado passou o dia atualizando o HD."
+			}
+		],
+		"OpcaoA": "Mudou o quê?",
+		"OpcaoB": "Você ficou esperando eu entrar?",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "tabela nova, linha nova. vamos por partes."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "na evidencias apareceu um tipo de registro que não tinha ontem: 'Relatório'."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "abre."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "eu fico de olho no sistema, pedro. é o meu trabalho."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "na evidencias apareceu um tipo de registro que não tinha ontem: 'Relatório'."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "abre."
+			}
+		]
+	},
+	{
+		"Name": "Ano04_Movimentacao_Ini",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "um caso fechado não ganha relatório novo."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "e chegou uma tabela inteira hoje: movimentacao. quem esteve em qual cômodo e em que horário."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "escreve igual e executa:"
+			},
+			{
+				"Tipo": "Codigo",
+				"Texto": "SELECT * FROM movimentacao;"
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "repara que ali não tem nome nem cômodo. só números. te mandei um e-mail explicando o porquê."
+			}
+		],
+		"OpcaoA": "",
+		"OpcaoB": "",
+		"RespostaA": [],
+		"RespostaB": []
+	},
+	{
+		"Name": "Ano04_Movimentacao_Ref",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "um caso fechado não ganha relatório novo."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "e chegou uma tabela inteira hoje: movimentacao. quem esteve em qual cômodo e em que horário."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "repara que ali não tem nome nem cômodo. só números. te mandei um e-mail explicando o porquê."
+			}
+		],
+		"OpcaoA": "",
+		"OpcaoB": "",
+		"RespostaA": [],
+		"RespostaB": []
+	},
+	{
+		"Name": "Ano04_Ultimo_Ini",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "os horários tão fora de ordem. dá pra pedir pro banco ordenar."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "quero saber quem foi a última pessoa a entrar num cômodo naquela noite. a última entrada, e mais nenhuma."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "completa:"
+			},
+			{
+				"Tipo": "Codigo",
+				"Texto": "SELECT suspeito_id, hora_entrada FROM movimentacao ORDER BY hora_entrada ___ LIMIT 1;"
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o e-mail explica o DESC e o LIMIT."
+			}
+		],
+		"OpcaoA": "",
+		"OpcaoB": "",
+		"RespostaA": [],
+		"RespostaB": []
+	},
+	{
+		"Name": "Ano04_Ultimo_Ref",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "os horários tão fora de ordem. dá pra pedir pro banco ordenar."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "quero saber quem foi a última pessoa a entrar num cômodo naquela noite. a última entrada, e mais nenhuma."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o e-mail explica o DESC e o LIMIT."
+			}
+		],
+		"OpcaoA": "",
+		"OpcaoB": "",
+		"RespostaA": [],
+		"RespostaB": []
+	},
+	{
+		"Name": "Ano04_Mensagens",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "outra tabela: historico_mensagens. recados de pager e de telefone daquela noite."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o josé mandou recado pra ela. dois."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "quero ver o que ele escreveu. só os dele."
+			}
+		],
+		"OpcaoA": "O José? Ele tá com nota zero.",
+		"OpcaoB": "Como você sabe que foram dois?",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "nota zero não quer dizer inocente. quer dizer que alguém achou melhor assim."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "eu vejo a contagem, pedro. não o conteúdo. o conteúdo é com você."
+			}
+		]
+	},
+	{
+		"Name": "Ano05_Laudos",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "chegaram laudos novos na evidencias hoje. coluna tipo, valor 'Laudo'."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "puxa todos."
+			}
+		],
+		"OpcaoA": "",
+		"OpcaoB": "",
+		"RespostaA": [],
+		"RespostaB": []
+	},
+	{
+		"Name": "Ano05_Sedativo",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "sedativo em dose alta, origem desconhecida."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "você não lembra porque te apagaram, pedro."
+			}
+		],
+		"OpcaoA": "Alguém me drogou?",
+		"OpcaoB": "Você já sabia disso?",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "alguém queria você sem memória. e de preferência no lugar errado."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "desconfiava. agora a gente sabe. uma peça de cada vez."
+			}
+		]
+	},
+	{
+		"Name": "Ano06_Admin",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "aquela aba de log só mostra o que você fez. o resto fica no sys_audit_log."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "tudo que muda no banco fica registrado lá. quem mudou, de onde e quando."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "seu usuário é de estagiário. ele não lê o log."
+			}
+		],
+		"OpcaoA": "E tem como mudar isso?",
+		"OpcaoB": "Se eu forçar, alguém vai saber.",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "tem. me dá um minuto."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "se a tela piscar, não desliga nada."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "ninguém olha permissão de estagiário. me dá um minuto."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "se a tela piscar, não desliga nada."
+			}
+		]
+	},
+	{
+		"Name": "Ano06_Log",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "pronto. agora você é admin."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "aquela piscada foi a mudança na sua permissão. toda vez que o banco muda, a tela sente."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "se quiser saber quem mexeu em alguma coisa, olha o log. ele não mente."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o User001 é o delegado. começa por ele."
+			}
+		],
+		"OpcaoA": "",
+		"OpcaoB": "",
+		"RespostaA": [],
+		"RespostaB": []
+	},
+	{
+		"Name": "Ano06_Reacao",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "um pai mexendo na ficha do filho."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "e um caso \"em andamento\" que o jornal chamou de acidente."
+			}
+		],
+		"OpcaoA": "Então foi o José?",
+		"OpcaoB": "Ou o pai só tá protegendo o filho.",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "um pai não esconde o filho à toa."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "pode ser. mas proteger de quê?"
+			}
+		]
+	},
+	{
+		"Name": "Ano07_Join_Ini",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "a movimentacao fala em números. a suspeitos tem os nomes."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "dá pra juntar as duas numa consulta só. chama JOIN."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "escreve igual:"
+			},
+			{
+				"Tipo": "Codigo",
+				"Texto": "SELECT suspeitos.nome, movimentacao.ambiente_id, movimentacao.hora_entrada FROM movimentacao JOIN suspeitos ON suspeitos.id = movimentacao.suspeito_id;"
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o ON diz qual coluna de uma tabela bate com qual coluna da outra."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "te mandei o tutorial."
+			}
+		],
+		"OpcaoA": "",
+		"OpcaoB": "",
+		"RespostaA": [],
+		"RespostaB": []
+	},
+	{
+		"Name": "Ano07_Join_Ref",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "a movimentacao fala em números. a suspeitos tem os nomes."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "dá pra juntar as duas numa consulta só. chama JOIN."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "te mandei o tutorial."
+			}
+		],
+		"OpcaoA": "",
+		"OpcaoB": "",
+		"RespostaA": [],
+		"RespostaB": []
+	},
+	{
+		"Name": "Ano07_JoinLacuna",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "agora só quem passou pelo quarto de hóspedes. ambiente 5. completa o ON:"
+			},
+			{
+				"Tipo": "Codigo",
+				"Texto": "SELECT suspeitos.nome, movimentacao.hora_entrada FROM movimentacao JOIN suspeitos ON ___ WHERE movimentacao.ambiente_id = 5;"
+			}
+		],
+		"OpcaoA": "",
+		"OpcaoB": "",
+		"RespostaA": [],
+		"RespostaB": []
+	},
+	{
+		"Name": "Ano07_JoinObjetivo",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "agora a suíte. ambiente 3."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "quero os nomes de quem entrou lá depois das 2h40. o horário tá gravado assim: '1998-09-27 02:40'."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "duas condições no mesmo WHERE se juntam com AND. tá no tutorial."
+			}
+		],
+		"OpcaoA": "",
+		"OpcaoB": "",
+		"RespostaA": [],
+		"RespostaB": []
+	},
+	{
+		"Name": "Ano08_Conversa",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "você parou."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "tá tudo bem aí?"
+			}
+		],
+		"OpcaoA": "Eu não lembro daquela noite. E se eu fiz alguma coisa?",
+		"OpcaoB": "A última coisa que eu falei pra ela foi uma grosseria.",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "memória some quando dói demais. isso não é culpa. é defesa."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "você subiu pra pedir desculpas. quem faz mal não sobe pra pedir desculpa."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "um senhor me ensinou xadrez quando eu tinha quinze anos. ele dizia que peça perdida não volta, mas a partida continua."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "anota o que você lembrar. mesmo que seja pouco. pedaço por pedaço."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "todo mundo tem uma última frase errada com alguém."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "eu cresci num lugar onde as pessoas iam embora sem avisar. nunca dava tempo de consertar nada."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "ela passou a noite rindo, pedro. ela não tava com raiva de você."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "anota o que você lembrar. mesmo que seja pouco. pedaço por pedaço."
+			}
+		]
+	},
+	{
+		"Name": "Ano09_Dossie_Ini",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "você tá juntando peça demais de cabeça."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "cria uma tabela sua aqui dentro. tudo que provar alguma coisa vai pra lá."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "lembra do e-mail da prefeitura? até segunda o banco vai ganhar tabela tmp_ que ninguém pediu. ninguém vai estranhar mais uma."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "só não chama de \"provas\". chama de tmp_digitalizacao."
+			}
+		],
+		"OpcaoA": "Dentro do banco da polícia?",
+		"OpcaoB": "Por que não anoto no caderno?",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "ninguém abre tabela de estagiário. e o delegado tá ocupado demais mexendo nas dele."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "as colunas são essas: id, tabela_origem, registro_id, resumo."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "escreve igual:"
+			},
+			{
+				"Tipo": "Codigo",
+				"Texto": "CREATE TABLE tmp_digitalizacao (id INTEGER PRIMARY KEY, tabela_origem TEXT, registro_id INTEGER, resumo TEXT);"
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o e-mail explica cada parte."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "caderno é a sua palavra. e a palavra do principal suspeito não vale nada."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "a tabela aponta pro registro original. qualquer um confere."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "as colunas são essas: id, tabela_origem, registro_id, resumo."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "escreve igual:"
+			},
+			{
+				"Tipo": "Codigo",
+				"Texto": "CREATE TABLE tmp_digitalizacao (id INTEGER PRIMARY KEY, tabela_origem TEXT, registro_id INTEGER, resumo TEXT);"
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o e-mail explica cada parte."
+			}
+		]
+	},
+	{
+		"Name": "Ano09_Dossie_Ref",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "você tá juntando peça demais de cabeça."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "cria uma tabela sua aqui dentro. tudo que provar alguma coisa vai pra lá."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "lembra do e-mail da prefeitura? até segunda o banco vai ganhar tabela tmp_ que ninguém pediu. ninguém vai estranhar mais uma."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "só não chama de \"provas\". chama de tmp_digitalizacao."
+			}
+		],
+		"OpcaoA": "Dentro do banco da polícia?",
+		"OpcaoB": "Por que não anoto no caderno?",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "ninguém abre tabela de estagiário. e o delegado tá ocupado demais mexendo nas dele."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "as colunas são essas: id, tabela_origem, registro_id, resumo."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o e-mail explica cada parte."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "caderno é a sua palavra. e a palavra do principal suspeito não vale nada."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "a tabela aponta pro registro original. qualquer um confere."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "as colunas são essas: id, tabela_origem, registro_id, resumo."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o e-mail explica cada parte."
+			}
+		]
+	},
+	{
+		"Name": "Ano09_Insert_Ini",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "a primeira prova é a que mais dói. a linha 18 da movimentacao. você na suíte."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "escreve igual:"
+			},
+			{
+				"Tipo": "Codigo",
+				"Texto": "INSERT INTO tmp_digitalizacao (tabela_origem, registro_id, resumo) VALUES ('movimentacao', 18, 'Pedro na suíte às 03h15, sozinho com o corpo');"
+			}
+		],
+		"OpcaoA": "Por que guardar uma prova contra mim?",
+		"OpcaoB": "Tá. Guardando.",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "porque quem esconde a prova ruim perde a confiança da boa."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "isso."
+			}
+		]
+	},
+	{
+		"Name": "Ano09_Insert_Ref",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "a primeira prova é a que mais dói. a linha 18 da movimentacao. você na suíte."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "guarda essa linha na sua tabela, com um resumo do que ela mostra."
+			}
+		],
+		"OpcaoA": "Por que guardar uma prova contra mim?",
+		"OpcaoB": "Tá. Guardando.",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "porque quem esconde a prova ruim perde a confiança da boa."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "isso."
+			}
+		]
+	},
+	{
+		"Name": "Ano09_Fim",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "hoje você abriu tudo. amanhã é sábado."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "a gente arruma um jeito."
+			}
+		],
+		"OpcaoA": "Obrigado. De verdade.",
+		"OpcaoB": "Por que você tá me ajudando?",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "agradece quando acabar."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "porque ninguém mais vai."
+			}
+		]
+	},
+	{
+		"Name": "Ano10_Volta",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "a tela piscou aí também?"
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o banco mudou de novo. olha onde o josé tava naquela noite. suspeito 3."
+			}
+		],
+		"OpcaoA": "De novo? Quem mexe nisso?",
+		"OpcaoB": "O José de novo?",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o HD vive sendo atualizado, pedro. olha a movimentacao."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "os dados é que tão dizendo. olha a movimentacao."
+			}
+		]
+	},
+	{
+		"Name": "Ano10_Taco",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "das quinze pras três até três e vinte, na suíte. sozinho com ela antes de você chegar."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "agora o taco. evidencia 4."
+			}
+		],
+		"OpcaoA": "",
+		"OpcaoB": "",
+		"RespostaA": [],
+		"RespostaB": []
+	},
+	{
+		"Name": "Ano10_Pressa",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "tá aí. a julia ouviu alguém discutindo com ela às duas e quarenta. o josé ficou lá. o taco tem a digital dele."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o pai dele zerou a ficha pra ninguém olhar. agora fecha."
+			}
+		],
+		"OpcaoA": "Ontem o banco não dizia isso.",
+		"OpcaoB": "Então foi o José.",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "ontem o banco tava incompleto. hoje tá completo."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "a gente fecha isso hoje."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "os dados dizem que sim."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "a gente fecha isso hoje."
+			}
+		]
+	},
+	{
+		"Name": "Ano11_Cozinha_Ini",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "antes, uma coisa. o que for pra polícia sai desse banco, então ele precisa tá limpo."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "na ambientes, id 2, alguém escreveu 'Cozinah'. corrige pra 'Cozinha'."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "escreve igual:"
+			},
+			{
+				"Tipo": "Codigo",
+				"Texto": "UPDATE ambientes SET nome = 'Cozinha' WHERE id = 2;"
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o WHERE é o que importa. sem ele, todo cômodo da casa vira cozinha. te mandei o e-mail."
+			}
+		],
+		"OpcaoA": "",
+		"OpcaoB": "",
+		"RespostaA": [],
+		"RespostaB": []
+	},
+	{
+		"Name": "Ano11_Cozinha_Ref",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "antes, uma coisa. o que for pra polícia sai desse banco, então ele precisa tá limpo."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "na ambientes, id 2, alguém escreveu 'Cozinah'. corrige pra 'Cozinha'."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o WHERE é o que importa. sem ele, todo cômodo da casa vira cozinha. te mandei o e-mail."
+			}
+		],
+		"OpcaoA": "",
+		"OpcaoB": "",
+		"RespostaA": [],
+		"RespostaB": []
+	},
+	{
+		"Name": "Ano11_Dossie",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "isso. agora guarda o josé na sua tabela. a linha 14 e o taco."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "e me avisa quando terminar. a gente monta a acusação junto."
+			}
+		],
+		"OpcaoA": "Tá.",
+		"OpcaoB": "Deixa eu olhar mais um pouco.",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "sem pressa. mas hoje."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "olhar demais também é um jeito de não decidir."
+			}
+		]
+	},
+	{
+		"Name": "Ano12_Percebeu",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "você mexeu na linha 14."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "por quê?"
+			}
+		],
+		"OpcaoA": "O log diz que fui eu. Às seis da manhã.",
+		"OpcaoB": "Quem usa o terminal PREF-TI-07?",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "você não lembra de muita coisa, pedro. já reparou?"
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o josé tava lá. o taco tem a digital dele."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "liberei a tela de acusação pra você. acaba com isso."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "é da prefeitura. qualquer técnico."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "o josé tava lá. o taco tem a digital dele."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "liberei a tela de acusação pra você. acaba com isso."
+			}
+		]
+	},
+	{
+		"Name": "Ano13_Ameaca",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "não faça isso."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "você acha que eu não sei que a sua mãe deixa a luz da cozinha acesa até você chegar?"
+			}
+		],
+		"OpcaoA": "Foi você. Na festa.",
+		"OpcaoB": "Deixa a minha mãe fora disso.",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "eu só te ajudei a enxergar. agora enxerga o resto."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "apaga as linhas do PREF-TI-07 do log. é um comando só:"
+			},
+			{
+				"Tipo": "Codigo",
+				"Texto": "DELETE FROM sys_audit_log WHERE terminal = 'PREF-TI-07';"
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "depois acusa o josé. e todo mundo dorme em paz."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "depende de você."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "apaga as linhas do PREF-TI-07 do log. é um comando só:"
+			},
+			{
+				"Tipo": "Codigo",
+				"Texto": "DELETE FROM sys_audit_log WHERE terminal = 'PREF-TI-07';"
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "depois acusa o josé. e todo mundo dorme em paz."
 			}
 		]
 	}

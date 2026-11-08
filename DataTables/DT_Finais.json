@@ -1,0 +1,42 @@
+[
+	{
+		"Name": "Final1",
+		"Tipo": "Diario",
+		"Titulo": "Final1",
+		"Data": "",
+		"CC": "",
+		"Conteudo": "Plantão Gazeta do Vale, segunda-feira, 12 de outubro.\n\nAndré Saldanha, 26 anos, técnico da prefeitura, morreu ontem à noite em confronto com a polícia, quando tentava deixar a cidade.\n\nEle era o principal suspeito pela morte de Maria Lopes, de 19 anos, na festa do dia 26 de setembro. Os registros da investigação tinham sido alterados a partir de um terminal da prefeitura. As provas foram reunidas por um estagiário da 2ª Delegacia.\n\nCom os registros corrigidos, a polícia reabriu o caso de Letícia Brandão, morta no lago do Parque Municipal no ano passado. As duas mortes têm o mesmo autor.\n\nJosé Ferraz, que chegou a ser apontado como suspeito, foi inocentado."
+	},
+	{
+		"Name": "Final2",
+		"Tipo": "Diario",
+		"Titulo": "Final2",
+		"Data": "",
+		"CC": "",
+		"Conteudo": "Plantão Gazeta do Vale, segunda-feira, 12 de outubro.\n\nJosé Ferraz, 20 anos, filho do delegado da 2ª Delegacia, foi preso pela morte de Maria Lopes. As digitais dele estavam na arma do crime.\n\nNa saída da delegacia, José gritou para os jornalistas: \"Eu amava ela. Eu nunca ia fazer isso.\"\n\nO delegado pediu afastamento do cargo."
+	},
+	{
+		"Name": "Epilogo2",
+		"Tipo": "Diario",
+		"Titulo": "Epilogo2",
+		"Data": "",
+		"CC": "",
+		"Conteudo": "14 de outubro de 2003.\n\nOntem um homem chamado André Saldanha morreu num confronto com a polícia, na capital.\n\nEu conheço esse nome. Ele tava na festa.\n\nFaz cinco anos que o José tá preso. Faz cinco anos que eu não durmo direito.\n\nEu ainda tenho o HD."
+	},
+	{
+		"Name": "Final3",
+		"Tipo": "Diario",
+		"Titulo": "Final3",
+		"Data": "",
+		"CC": "",
+		"Conteudo": "Plantão Gazeta do Vale, segunda-feira, 12 de outubro.\n\nPedro, 20 anos, estagiário da 2ª Delegacia, se apresentou à polícia e confessou a morte de Maria Lopes. Ele disse que estava sob efeito de drogas e que não se lembra do que aconteceu.\n\nA defesa diz que o jovem está psicologicamente abalado. A investigação não explica como o crime foi cometido."
+	},
+	{
+		"Name": "Epilogo3",
+		"Tipo": "Diario",
+		"Titulo": "Epilogo3",
+		"Data": "",
+		"CC": "",
+		"Conteudo": "12 de outubro de 2018.\n\nVinte anos. Eu saí ontem.\n\nNunca lembrei de nada. Nem uma imagem. Eu assinei porque era mais fácil do que não saber.\n\nUm homem chamado André morreu num confronto com a polícia em 2003. Ele tava na festa.\n\nEu ainda tenho o HD."
+	}
+]

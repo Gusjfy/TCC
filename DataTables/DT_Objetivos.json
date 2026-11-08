@@ -4,7 +4,7 @@
 		"Tipo": "Gabarito",
 		"Query": "SELECT * FROM suspeitos",
 		"DicasIniciante": [
-			"é só copiar a linha que eu mandei e executar no console do SGBD.",
+			"é só escrever no console do SGBD igual eu mandei e executar.",
 			"confere se tá igualzinho: SELECT, o asterisco (*), FROM e o nome da tabela, suspeitos.",
 			"SELECT * FROM suspeitos;"
 		],
@@ -18,7 +18,7 @@
 		"Query": "SELECT descricao FROM evidencias WHERE id = 4",
 		"DicasIniciante": [
 			"o filtro é o WHERE. qual coluna diz qual é o item?",
-			"a coluna é id, e o item é o 4. completa a lacuna com isso.",
+			"a coluna é id, e o item é o 4.",
 			"SELECT descricao FROM evidencias WHERE id = 4;"
 		],
 		"DicasReforco": [
@@ -70,6 +70,240 @@
 			"a coluna é nivel_suspeita.",
 			"maior que é >.",
 			"SELECT nome FROM suspeitos WHERE nivel_suspeita > 1;"
+		]
+	},
+	{
+		"Name": "Obj_Relatorio",
+		"Tipo": "Gabarito",
+		"Query": "SELECT descricao, detalhe FROM evidencias WHERE tipo = 'Relatório'",
+		"DicasIniciante": [
+			"é um WHERE com texto, igual ao do depoimento do Carlos.",
+			"o valor tem acento: 'Relatório'.",
+			"SELECT descricao, detalhe FROM evidencias WHERE tipo = 'Relatório';"
+		],
+		"DicasReforco": [
+			"WHERE na coluna tipo.",
+			"com acento, entre aspas simples.",
+			"SELECT descricao, detalhe FROM evidencias WHERE tipo = 'Relatório';"
+		]
+	},
+	{
+		"Name": "Obj_Movimentacao",
+		"Tipo": "Gabarito",
+		"Query": "SELECT * FROM movimentacao",
+		"DicasIniciante": [
+			"é só escrever igual a linha que eu mandei.",
+			"SELECT, asterisco, FROM e o nome da tabela: movimentacao.",
+			"SELECT * FROM movimentacao;"
+		],
+		"DicasReforco": [
+			"SELECT * FROM movimentacao;"
+		]
+	},
+	{
+		"Name": "Obj_Ultimo",
+		"Tipo": "Gabarito",
+		"Query": "SELECT suspeito_id, hora_entrada FROM movimentacao ORDER BY hora_entrada DESC LIMIT 1",
+		"DicasIniciante": [
+			"DESC quer dizer do maior pro menor. no horário, do mais tarde pro mais cedo.",
+			"a lacuna é DESC.",
+			"SELECT suspeito_id, hora_entrada FROM movimentacao ORDER BY hora_entrada DESC LIMIT 1;"
+		],
+		"DicasReforco": [
+			"ordena pela hora de entrada.",
+			"do mais tarde pro mais cedo, e só a primeira linha.",
+			"SELECT suspeito_id, hora_entrada FROM movimentacao ORDER BY hora_entrada DESC LIMIT 1;"
+		]
+	},
+	{
+		"Name": "Obj_MsgJose",
+		"Tipo": "Gabarito",
+		"Query": "SELECT conteudo FROM historico_mensagens WHERE remetente = 'José'",
+		"DicasIniciante": [
+			"quem mandou o recado fica na coluna remetente.",
+			"é texto, então vai entre aspas. com acento: 'José'.",
+			"SELECT conteudo FROM historico_mensagens WHERE remetente = 'José';"
+		],
+		"DicasReforco": [
+			"filtra pelo remetente.",
+			"com acento: 'José'.",
+			"SELECT conteudo FROM historico_mensagens WHERE remetente = 'José';"
+		]
+	},
+	{
+		"Name": "Obj_Laudos",
+		"Tipo": "Gabarito",
+		"Query": "SELECT descricao, detalhe FROM evidencias WHERE tipo = 'Laudo'",
+		"DicasIniciante": [
+			"é igual ao do relatório, só muda o valor.",
+			"WHERE tipo = 'Laudo', com L maiúsculo.",
+			"SELECT descricao, detalhe FROM evidencias WHERE tipo = 'Laudo';"
+		],
+		"DicasReforco": [
+			"WHERE com texto.",
+			"aspas simples, com L maiúsculo.",
+			"SELECT descricao, detalhe FROM evidencias WHERE tipo = 'Laudo';"
+		]
+	},
+	{
+		"Name": "Obj_LogDelegado",
+		"Tipo": "Gabarito",
+		"Query": "SELECT * FROM sys_audit_log WHERE usuario = 'User001'",
+		"DicasIniciante": [
+			"a tabela é sys_audit_log. quem fez a mudança fica na coluna usuario.",
+			"WHERE usuario = 'User001'.",
+			"SELECT * FROM sys_audit_log WHERE usuario = 'User001';"
+		],
+		"DicasReforco": [
+			"filtra pelo usuário.",
+			"o valor é texto, entre aspas.",
+			"SELECT * FROM sys_audit_log WHERE usuario = 'User001';"
+		]
+	},
+	{
+		"Name": "Obj_JoinTudo",
+		"Tipo": "Gabarito",
+		"Query": "SELECT suspeitos.nome, movimentacao.hora_entrada FROM movimentacao JOIN suspeitos ON suspeitos.id = movimentacao.suspeito_id",
+		"DicasIniciante": [
+			"é só escrever igual. é comprido, vai com calma.",
+			"confere o ON: suspeitos.id = movimentacao.suspeito_id.",
+			"SELECT suspeitos.nome, movimentacao.ambiente_id, movimentacao.hora_entrada FROM movimentacao JOIN suspeitos ON suspeitos.id = movimentacao.suspeito_id;"
+		],
+		"DicasReforco": [
+			"SELECT suspeitos.nome, movimentacao.ambiente_id, movimentacao.hora_entrada FROM movimentacao JOIN suspeitos ON suspeitos.id = movimentacao.suspeito_id;"
+		]
+	},
+	{
+		"Name": "Obj_JoinHospedes",
+		"Tipo": "Gabarito",
+		"Query": "SELECT suspeitos.nome, movimentacao.hora_entrada FROM movimentacao JOIN suspeitos ON suspeitos.id = movimentacao.suspeito_id WHERE movimentacao.ambiente_id = 5",
+		"DicasIniciante": [
+			"o ON é igual ao da consulta anterior.",
+			"suspeitos.id = movimentacao.suspeito_id.",
+			"SELECT suspeitos.nome, movimentacao.hora_entrada FROM movimentacao JOIN suspeitos ON suspeitos.id = movimentacao.suspeito_id WHERE movimentacao.ambiente_id = 5;"
+		],
+		"DicasReforco": [
+			"SELECT suspeitos.nome, movimentacao.hora_entrada FROM movimentacao JOIN suspeitos ON suspeitos.id = movimentacao.suspeito_id WHERE movimentacao.ambiente_id = 5;"
+		]
+	},
+	{
+		"Name": "Obj_JoinSuite",
+		"Tipo": "Gabarito",
+		"Query": "SELECT suspeitos.nome FROM movimentacao JOIN suspeitos ON suspeitos.id = movimentacao.suspeito_id WHERE movimentacao.ambiente_id = 3 AND movimentacao.hora_entrada > '1998-09-27 02:40'",
+		"DicasIniciante": [
+			"pega a consulta anterior e troca o cômodo pra 3.",
+			"depois do WHERE, junta a segunda condição com AND: movimentacao.hora_entrada > '1998-09-27 02:40'.",
+			"SELECT suspeitos.nome FROM movimentacao JOIN suspeitos ON suspeitos.id = movimentacao.suspeito_id WHERE movimentacao.ambiente_id = 3 AND movimentacao.hora_entrada > '1998-09-27 02:40';"
+		],
+		"DicasReforco": [
+			"JOIN de movimentacao com suspeitos.",
+			"AND entre as duas condições. a hora se compara com >, como texto.",
+			"SELECT suspeitos.nome FROM movimentacao JOIN suspeitos ON suspeitos.id = movimentacao.suspeito_id WHERE movimentacao.ambiente_id = 3 AND movimentacao.hora_entrada > '1998-09-27 02:40';"
+		]
+	},
+	{
+		"Name": "Obj_Dossie",
+		"Tipo": "TabelaJogador",
+		"Query": "",
+		"DicasIniciante": [
+			"escreve o CREATE TABLE inteiro, com os parênteses.",
+			"cada coluna é nome e tipo, separadas por vírgula.",
+			"CREATE TABLE tmp_digitalizacao (id INTEGER PRIMARY KEY, tabela_origem TEXT, registro_id INTEGER, resumo TEXT);"
+		],
+		"DicasReforco": [
+			"CREATE TABLE com as quatro colunas.",
+			"id INTEGER PRIMARY KEY, e as outras TEXT ou INTEGER.",
+			"CREATE TABLE tmp_digitalizacao (id INTEGER PRIMARY KEY, tabela_origem TEXT, registro_id INTEGER, resumo TEXT);"
+		]
+	},
+	{
+		"Name": "Obj_PrimeiraProva",
+		"Tipo": "Dossie",
+		"Query": "LOWER(TRIM(tabela_origem)) = 'movimentacao' AND registro_id IN (SELECT id FROM movimentacao WHERE ambiente_id = 3)",
+		"DicasIniciante": [
+			"escreve o INSERT inteiro. o texto do resumo vai entre aspas simples.",
+			"as colunas entre parênteses, depois VALUES com os valores na mesma ordem.",
+			"INSERT INTO tmp_digitalizacao (tabela_origem, registro_id, resumo) VALUES ('movimentacao', 18, 'Pedro na suíte às 03h15, sozinho com o corpo');"
+		],
+		"DicasReforco": [
+			"INSERT INTO na sua tabela.",
+			"tabela_origem 'movimentacao', registro_id 18.",
+			"INSERT INTO tmp_digitalizacao (tabela_origem, registro_id, resumo) VALUES ('movimentacao', 18, 'Pedro na suíte às 03h15, sozinho com o corpo');"
+		]
+	},
+	{
+		"Name": "Obj_JoseMov",
+		"Tipo": "Gabarito",
+		"Query": "SELECT ambiente_id, hora_entrada FROM movimentacao WHERE suspeito_id = 3",
+		"DicasIniciante": [
+			"o José é o suspeito 3. a coluna é suspeito_id.",
+			"SELECT ambiente_id, hora_entrada na movimentacao, com WHERE.",
+			"SELECT ambiente_id, hora_entrada FROM movimentacao WHERE suspeito_id = 3;"
+		],
+		"DicasReforco": [
+			"WHERE pelo suspeito.",
+			"o cômodo e o horário de entrada.",
+			"SELECT ambiente_id, hora_entrada FROM movimentacao WHERE suspeito_id = 3;"
+		]
+	},
+	{
+		"Name": "Obj_TacoJose",
+		"Tipo": "Gabarito",
+		"Query": "SELECT detalhe FROM evidencias WHERE id = 4",
+		"DicasIniciante": [
+			"a coluna detalhe, na evidencias.",
+			"WHERE id = 4.",
+			"SELECT detalhe FROM evidencias WHERE id = 4;"
+		],
+		"DicasReforco": [
+			"uma coluna, uma linha.",
+			"o id é 4.",
+			"SELECT detalhe FROM evidencias WHERE id = 4;"
+		]
+	},
+	{
+		"Name": "Obj_Cozinha",
+		"Tipo": "Estado",
+		"Query": "SELECT detalhe FROM evidencias WHERE id = 4",
+		"DicasIniciante": [
+			"UPDATE, o nome da tabela, SET e a coluna com o valor novo.",
+			"o texto vai entre aspas simples, e o WHERE escolhe a linha.",
+			"UPDATE ambientes SET nome = 'Cozinha' WHERE id = 2;"
+		],
+		"DicasReforco": [
+			"UPDATE ... SET ... WHERE.",
+			"a linha é a de id 2.",
+			"UPDATE ambientes SET nome = 'Cozinha' WHERE id = 2;"
+		]
+	},
+	{
+		"Name": "Obj_ProvaLog",
+		"Tipo": "Dossie",
+		"Query": "LOWER(TRIM(tabela_origem)) = 'sys_audit_log' AND EXISTS (SELECT 1 FROM sys_audit_log WHERE terminal = 'PREF-TI-07') AND (registro_id IN (SELECT id FROM sys_audit_log WHERE terminal = 'PREF-TI-07') OR UPPER(resumo) LIKE '%PREF-TI-07%')",
+		"DicasIniciante": [
+			"o log guarda quem mexeu em cada tabela. procura quem mexeu na movimentacao.",
+			"SELECT * FROM sys_audit_log WHERE tabela_afetada = 'movimentacao'; e guarda o que achar, citando o terminal no resumo.",
+			"INSERT INTO tmp_digitalizacao (tabela_origem, registro_id, resumo) VALUES ('sys_audit_log', 10, 'User002 mudou o José pra suíte, do terminal PREF-TI-07, às 06h12 de sábado');"
+		],
+		"DicasReforco": [
+			"filtra o log pela tabela afetada.",
+			"guarda a linha no dossiê, com tabela_origem 'sys_audit_log' e o terminal escrito no resumo.",
+			"INSERT INTO tmp_digitalizacao (tabela_origem, registro_id, resumo) VALUES ('sys_audit_log', 10, 'User002 mudou o José pra suíte, do terminal PREF-TI-07, às 06h12 de sábado');"
+		]
+	},
+	{
+		"Name": "Obj_Desfazer",
+		"Tipo": "Estado",
+		"Query": "LOWER(TRIM(tabela_origem)) = 'sys_audit_log' AND EXISTS (SELECT 1 FROM sys_audit_log WHERE terminal = 'PREF-TI-07') AND (registro_id IN (SELECT id FROM sys_audit_log WHERE terminal = 'PREF-TI-07') OR UPPER(resumo) LIKE '%PREF-TI-07%')",
+		"DicasIniciante": [
+			"é igual ao UPDATE da cozinha, em outra tabela.",
+			"a linha é a 14, e o valor antigo está no log: ambiente_id = 1.",
+			"UPDATE movimentacao SET ambiente_id = 1 WHERE id = 14;"
+		],
+		"DicasReforco": [
+			"o valor_antigo do log diz o que era.",
+			"UPDATE na movimentacao, só a linha 14.",
+			"UPDATE movimentacao SET ambiente_id = 1 WHERE id = 14;"
 		]
 	}
 ]

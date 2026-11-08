@@ -269,7 +269,7 @@
 		"Titulo": "(sem assunto)",
 		"Data": "08/10/1998 22:14",
 		"CC": "mae.pedro@correio",
-		"Conteudo": "filho voce comeu hoje? deixei marmita na geladeira, é só esquentar.\n\nnao fica ate tarde nesse computador. a doutora ligou perguntando se voce vai na consulta semana que vem. eu disse que vai.\n\nte amo. mae"
+		"Conteudo": "filho ainda ta nessa delegacia? ja passou das dez. levou a marmita? se nao levou come alguma coisa ai, nao fica de estomago vazio.\n\na doutora ligou perguntando se voce vai na consulta semana que vem. eu disse que vai.\n\nme liga quando sair. te amo. mae"
 	},
 	{
 		"Name": "Tut01_Select",
@@ -326,5 +326,213 @@
 		"Data": "08/10/1998 22:05",
 		"CC": "",
 		"Conteudo": "Carlos ligou. Viu o jornal.\n\nFalou que a Maria \"vivia chapada depois dos ensaios\". Ensaio de uma banda. Ele achou que eu sabia.\n\nEu não sabia.\n\nA mãe dele ofereceu a sorveteria, se eu quiser sair de casa."
+	},
+	{
+		"Name": "Dia_0910",
+		"Tipo": "Diario",
+		"Titulo": "09/10/1998",
+		"Data": "09/10/1998",
+		"CC": "",
+		"Conteudo": "Cheguei em casa à uma. Minha mãe tinha deixado a luz da cozinha acesa.\n\nOntem eu peguei o HD da mesa do delegado. Simples assim. Ninguém olhou. Liguei no terminal da sala de arquivo e tava tudo lá. Ela também.\n\nAí apareceu alguém do outro lado da tela. Sabia meu nome. Sabia onde procurar.\n\nQuem paga um investigador pra um caso fechado? A família dela? Eles nem olham na minha cara no velório.\n\nO que me assusta não é ele. É o que eu posso ter feito naquela noite e não lembro."
+	},
+	{
+		"Name": "Not_Prefeitura",
+		"Tipo": "Noticia",
+		"Titulo": "09/10/1998 - Prefeitura moderniza terminais das delegacias",
+		"Data": "09/10/1998",
+		"CC": "http://gazetadovale.com.br/noticias/cidade/noticia_prefeitura_terminais_delegacia_3901",
+		"Conteudo": "A informática da prefeitura concluiu a troca dos terminais das três delegacias do Vale. Os novos computadores leem o \"Arquivo Móvel\" mais rápido e travam menos.\n\nO serviço foi coordenado por André Saldanha, 26, técnico da prefeitura desde o ano passado. Antes da informática, André disputou campeonatos estaduais de xadrez. \"Computador e xadrez são parecidos. Você precisa pensar duas jogadas à frente\", disse.\n\nA manutenção dos terminais continua com a prefeitura."
+	},
+	{
+		"Name": "Not_ShowAdiado",
+		"Tipo": "Noticia",
+		"Titulo": "08/10/1998 - Show de rock no ginásio é adiado",
+		"Data": "08/10/1998",
+		"CC": "http://gazetadovale.com.br/noticias/cultura/noticia_show_ginasio_adiado_3889",
+		"Conteudo": "O show que o filho do prefeito, Yuri, promovia no ginásio municipal foi adiado sem data. Segundo a produção, a banda \"passa por um momento difícil\".\n\nA vocalista não foi anunciada. Procurado, Yuri não quis comentar."
+	},
+	{
+		"Name": "Not_Bombeiros",
+		"Tipo": "Noticia",
+		"Titulo": "07/10/1998 - Curso de bombeiro voluntário abre nova turma",
+		"Data": "07/10/1998",
+		"CC": "http://gazetadovale.com.br/noticias/cidade/noticia_bombeiros_voluntarios_3871",
+		"Conteudo": "O Corpo de Bombeiros abre inscrições para a segunda turma do curso de brigadista voluntário. A primeira formou 22 alunos em julho.\n\n\"Teve aluno que desmaiou no primeiro dia de sangue falso e terminou o curso como o melhor da turma\", conta o instrutor."
+	},
+	{
+		"Name": "Not_Pombos",
+		"Tipo": "Noticia",
+		"Titulo": "09/10/1998 - Pombos param o relógio da Matriz pela terceira vez",
+		"Data": "09/10/1998",
+		"CC": "http://gazetadovale.com.br/noticias/cidade/noticia_pombos_relogio_matriz_3898",
+		"Conteudo": "O relógio da igreja Matriz parou de novo às 4h17 da madrugada de quinta. A causa, segundo a paróquia, são os pombos. \"Já tentamos tela, coruja de plástico e reza. Nada funciona\", disse o padre."
+	},
+	{
+		"Name": "For_Chaves",
+		"Tipo": "Forum",
+		"Titulo": "PK e FK explicado com fichas de locadora",
+		"Data": "08/10/1998",
+		"CC": "http://sql-underground.net/forum/thread_pk_fk_locadora",
+		"Conteudo": "dvd_ou_vhs: alguém explica chave estrangeira sem desenho? o professor fala e eu só vejo seta\n\nvelho_ibm: pensa na locadora. cada cliente tem uma ficha com número. esse número é a chave primária: não repete.\n\nvelho_ibm: na ficha da fita alugada, em vez de escrever o nome do cliente, você escreve o número da ficha dele. esse número na fita é a chave estrangeira. ela aponta pra outra ficha.\n\ndvd_ou_vhs: ah. então se o cliente muda de nome eu troco num lugar só\n\nvelho_ibm: isso. e ninguém aluga fita pra cliente que não existe."
+	},
+	{
+		"Name": "For_OrderBy",
+		"Tipo": "Forum",
+		"Titulo": "ORDER BY e LIMIT: quem é o último?",
+		"Data": "08/10/1998",
+		"CC": "http://sql-underground.net/forum/thread_order_by_limit",
+		"Conteudo": "gabi_98: quero o produto mais caro da tabela. faço como?\n\nbit_a_bit: SELECT nome FROM produtos ORDER BY preco DESC LIMIT 1;\n\ngabi_98: e sem o DESC?\n\nbit_a_bit: vem o mais barato. ORDER BY sozinho é crescente.\n\ncavalo_branco: o primeiro da lista nem sempre é o mais importante. às vezes é só o que chegou por último."
+	},
+	{
+		"Name": "For_Datas",
+		"Tipo": "Forum",
+		"Titulo": "data como texto?? isso não dá problema?",
+		"Data": "09/10/1998",
+		"CC": "http://sql-underground.net/forum/thread_data_como_texto",
+		"Conteudo": "mau_mau: no meu banco a data é texto. '1998-10-09'. o ORDER BY funciona?\n\nvelho_ibm: funciona se for ANO-MÊS-DIA. o texto é comparado letra por letra, da esquerda pra direita, e o ano vem primeiro.\n\nvelho_ibm: se for '09/10/1998', aí dá ruim. o dia 10 de janeiro vem depois do dia 9 de dezembro.\n\nmau_mau: isso explica meu relatório de natal em março"
+	},
+	{
+		"Name": "For_Join",
+		"Tipo": "Forum",
+		"Titulo": "[IMPORTANTE] JOIN para quem nunca entendeu JOIN",
+		"Data": "09/10/1998",
+		"CC": "http://sql-underground.net/forum/thread_join_para_quem_nunca",
+		"Conteudo": "novato_sp: li três apostilas e não entendi JOIN. alguém?\n\ncavalo_branco: duas tabelas. uma tem o número, a outra tem o nome. o JOIN põe as duas lado a lado onde o número bate.\n\ncavalo_branco: SELECT a.coisa, b.outra FROM a JOIN b ON b.id = a.b_id;\n\ncavalo_branco: o ON é a ponte. sem ponte, o banco junta tudo com tudo e você recebe mil linhas de lixo.\n\nnovato_sp: foi exatamente o que aconteceu\n\ncavalo_branco: pense antes de pedir. quem pede tudo, não enxerga nada."
+	},
+	{
+		"Name": "For_Create",
+		"Tipo": "Forum",
+		"Titulo": "criei uma tabela e sumiu tudo",
+		"Data": "09/10/1998",
+		"CC": "http://sql-underground.net/forum/thread_create_sumiu",
+		"Conteudo": "pao_de_queijo: fiz CREATE TABLE e depois SELECT e veio vazio. bug?\n\nbit_a_bit: CREATE cria a tabela vazia. pra ter linha tem que fazer INSERT.\n\npao_de_queijo: e o DROP TABLE?\n\nbit_a_bit: apaga a tabela inteira. com tudo dentro. sem perguntar.\n\npao_de_queijo: ah. então foi isso que eu fiz depois"
+	},
+	{
+		"Name": "Tut04_Chaves",
+		"Tipo": "Email",
+		"Titulo": "04 - chaves",
+		"Data": "09/10/1998 20:58",
+		"CC": "cavalo.preto@ymail.com",
+		"Conteudo": "toda tabela tem uma coluna que identifica cada linha sem repetir. é a CHAVE PRIMÁRIA (PK). quase sempre é o id.\n\nquando uma tabela guarda o id de uma linha de OUTRA tabela, essa coluna é uma CHAVE ESTRANGEIRA (FK).\n\nna movimentacao:\nsuspeito_id → aponta pro id da suspeitos\nambiente_id → aponta pro id da ambientes\n\né por isso que lá só tem número. o nome mora em outra tabela. guardar o nome uma vez só evita escrever \"Banheiro da suíte\" em cem lugares e errar em um.\n\no desenho das tabelas e das setas tá no [DIAGRAMA]."
+	},
+	{
+		"Name": "Tut05_Ordem",
+		"Tipo": "Email",
+		"Titulo": "05 - ordem",
+		"Data": "09/10/1998 21:12",
+		"CC": "cavalo.preto@ymail.com",
+		"Conteudo": "ORDER BY = \"ordene por\".\n\nSELECT nome, idade FROM suspeitos ORDER BY idade; → do mais novo pro mais velho\nSELECT nome, idade FROM suspeitos ORDER BY idade DESC; → do mais velho pro mais novo\n\nsem nada, a ordem é crescente (ASC). DESC inverte.\n\nLIMIT corta o resultado: LIMIT 1 traz só a primeira linha. junto com ORDER BY, vira \"o maior\", \"o menor\", \"o primeiro\", \"o último\".\n\nSELECT nome FROM suspeitos ORDER BY idade DESC LIMIT 1; → a pessoa mais velha\n\nos horários aqui são texto no formato '1998-09-27 02:40'. ano, mês, dia, hora. nesse formato, a ordem do texto é a ordem do tempo."
+	},
+	{
+		"Name": "Tut06_Join",
+		"Tipo": "Email",
+		"Titulo": "06 - juntando tabelas",
+		"Data": "09/10/1998 21:55",
+		"CC": "cavalo.preto@ymail.com",
+		"Conteudo": "JOIN junta duas tabelas numa consulta só. o ON diz qual coluna de uma bate com qual da outra. quase sempre é a FK de uma com a PK da outra.\n\nSELECT evidencias.descricao, ambientes.nome FROM evidencias JOIN ambientes ON ambientes.id = evidencias.ambiente_id;\n\nse lê: \"pra cada evidência, ache o ambiente cujo id é igual ao ambiente_id dela\".\n\nquando tem duas tabelas, escreve tabela.coluna. as duas têm coluna id, e o banco precisa saber de qual você tá falando.\n\nduas condições no mesmo WHERE:\nAND → as duas precisam ser verdade\nOR → basta uma\n\n... WHERE evidencias.tipo = 'Objeto' AND ambientes.andar = 2;\n\npense antes de pedir."
+	},
+	{
+		"Name": "Tut07_Tabela",
+		"Tipo": "Email",
+		"Titulo": "07 - criando e guardando",
+		"Data": "09/10/1998 22:30",
+		"CC": "cavalo.preto@ymail.com",
+		"Conteudo": "CREATE TABLE cria uma tabela nova. você dá o nome e as colunas, cada uma com um tipo:\nINTEGER = número inteiro\nTEXT = texto\n\nCREATE TABLE fitas (id INTEGER PRIMARY KEY, titulo TEXT, ano INTEGER);\n\no PRIMARY KEY no id faz o banco numerar sozinho.\n\nINSERT INTO coloca uma linha:\n\nINSERT INTO fitas (titulo, ano) VALUES ('Duro de Matar', 1988);\n\nprimeiro as colunas, depois os valores na mesma ordem. texto entre aspas simples. o id você não precisa mandar.\n\npra ver o que guardou: SELECT * FROM fitas;"
+	},
+	{
+		"Name": "Em_ArquivoMovel",
+		"Tipo": "Email",
+		"Titulo": "Arquivo Móvel - atualização aplicada",
+		"Data": "09/10/1998 17:05",
+		"CC": "suporte.informatica@prefeitura.vale",
+		"Conteudo": "MENSAGEM AUTOMÁTICA. NÃO RESPONDA.\n\nA atualização do Arquivo Móvel da 2ª Delegacia foi aplicada com sucesso.\n\nTabelas novas: 2\nRegistros novos: 33\nRegistros alterados: 1\n\nA conferência dos dados segue até segunda-feira (12/10). Nesse período, o sistema pode criar tabelas temporárias (tmp_). Não apague nem altere essas tabelas.\n\nDúvidas: Setor de Informática da Prefeitura do Vale, ramal 207."
+	},
+	{
+		"Name": "Em_RH_Sexta",
+		"Tipo": "Email",
+		"Titulo": "Expediente de sexta-feira",
+		"Data": "09/10/1998 12:30",
+		"CC": "setor.pessoal@delegacia",
+		"Conteudo": "Comunicamos que nesta sexta-feira o expediente administrativo encerra às 17h, em razão da dedetização do prédio no sábado pela manhã.\n\nEstagiários com digitalização pendente podem se inscrever no plantão de sábado à tarde, após a liberação do prédio."
+	},
+	{
+		"Name": "Em_Julia",
+		"Tipo": "Email",
+		"Titulo": "oi",
+		"Data": "09/10/1998 21:34",
+		"CC": "julia.vizinha@correio",
+		"Conteudo": "oi pedro\n\nsei que você não quer falar com ninguém. eu também não queria. mas preciso tirar isso do peito.\n\nnaquela noite a gente ficou. você lembra? depois você mudou do nada. ficou agressivo, gritou com a maria na frente de todo mundo, me empurrou quando eu tentei te segurar. não parecia você.\n\neu subi depois. lá pelas duas e quarenta. fiquei no corredor e ouvi alguém discutindo com ela no quarto. não consegui ver quem era. desci pra cozinha e fiquei lá.\n\neu disse pra você ir pedir desculpa pra ela. às vezes eu acho que a culpa é minha.\n\nme liga quando puder. a gente precisa conversar.\n\njulia"
+	},
+	{
+		"Name": "Nota_Lig02_Ana",
+		"Tipo": "Ligacao",
+		"Titulo": "Ana",
+		"Data": "09/10/1998 22:20",
+		"CC": "",
+		"Conteudo": "A Ana ligou. Do curso de bombeiro.\n\nA Maria passou a noite com um cara que conheceu num bar. Mais velho, educado. A Ana não sabe o nome.\n\nO José socou a parede quando soube. Depois subiu atrás dela.\n\nA Julia e a Maria brigaram uns meses atrás.\n\nA Ana contou tudo pra polícia. Ninguém anotou."
+	},
+	{
+		"Name": "Dia_1010",
+		"Tipo": "Diario",
+		"Titulo": "10/10/1998",
+		"Data": "10/10/1998",
+		"CC": "",
+		"Conteudo": "Sábado. Acordei com o telefone. Era ninguém.\n\nOntem eu descobri que a Maria tinha um namorado e uma vida inteira que eu não conhecia. E que alguém me drogou. E que eu tava sozinho com ela.\n\nO cara do terminal disse que memória some quando dói demais. Ele fala como alguém que já perdeu muita gente.\n\nMinha mãe perguntou se eu tô comendo. Eu disse que sim."
+	},
+	{
+		"Name": "Not_Lago1997",
+		"Tipo": "Noticia",
+		"Titulo": "10/10/1998 - Um ano depois, caso do lago segue arquivado",
+		"Data": "10/10/1998",
+		"CC": "http://gazetadovale.com.br/noticias/policia/noticia_um_ano_lago_3905",
+		"Conteudo": "Faz um ano que Letícia Brandão, 19, foi encontrada morta no lago do Parque Municipal. A polícia concluiu que foi afogamento acidental depois de uma festa.\n\nA família pede a reabertura. \"Ela nadava desde criança\", diz a mãe. Segundo a delegacia, a revisão dos registros, feita com apoio técnico da prefeitura, não encontrou nada de novo."
+	},
+	{
+		"Name": "Not_Dedetizacao",
+		"Tipo": "Noticia",
+		"Titulo": "10/10/1998 - Dedetização da delegacia encontra \"barata do tamanho de um pager\"",
+		"Data": "10/10/1998",
+		"CC": "http://gazetadovale.com.br/noticias/cidade/noticia_dedetizacao_delegacia_3907",
+		"Conteudo": "A dedetização da 2ª Delegacia, neste sábado, terminou com uma descoberta: uma barata que, segundo o funcionário, \"tinha o tamanho de um pager e a mesma cara de pouco caso\". O inseto fugiu pelo ralo do arquivo."
+	},
+	{
+		"Name": "For_Update",
+		"Tipo": "Forum",
+		"Titulo": "UPDATE sem WHERE: relato de um sobrevivente",
+		"Data": "09/10/1998",
+		"CC": "http://sql-underground.net/forum/thread_update_sem_where",
+		"Conteudo": "pao_de_queijo: queria mudar o preço de um produto. esqueci o WHERE.\n\nbit_a_bit: e...\n\npao_de_queijo: agora tudo na loja custa 1,99\n\nvelho_ibm: UPDATE sem WHERE é a forma mais rápida de conhecer o seu chefe."
+	},
+	{
+		"Name": "For_Log",
+		"Tipo": "Forum",
+		"Titulo": "[IMPORTANTE] como desfazer um UPDATE errado",
+		"Data": "10/10/1998",
+		"CC": "http://sql-underground.net/forum/thread_desfazer_update",
+		"Conteudo": "dvd_ou_vhs: fiz um UPDATE errado ontem. tem volta?\n\nvelho_ibm: se o seu banco tem log com valor antigo, tem. olha o que era e faz outro UPDATE colocando de volta.\n\nvelho_ibm: UPDATE tabela SET coluna = <valor antigo> WHERE id = <a linha>;\n\ndvd_ou_vhs: e se não tiver log?\n\nvelho_ibm: aí reza."
+	},
+	{
+		"Name": "For_Delete",
+		"Tipo": "Forum",
+		"Titulo": "DELETE: alguém me explica por que sumiu tudo?",
+		"Data": "10/10/1998",
+		"CC": "http://sql-underground.net/forum/thread_delete_sumiu",
+		"Conteudo": "novato_sp: dei DELETE FROM clientes. sumiram todos.\n\nbit_a_bit: DELETE sem WHERE apaga a tabela inteira. com WHERE, só as linhas que batem.\n\ncavalo_branco: o que você apaga não volta. pense em quem ganha quando uma linha some."
+	},
+	{
+		"Name": "Tut08_Update",
+		"Tipo": "Email",
+		"Titulo": "08 - mudando o que já existe",
+		"Data": "10/10/1998 14:38",
+		"CC": "cavalo.preto@ymail.com",
+		"Conteudo": "UPDATE muda uma linha que já existe.\n\nUPDATE suspeitos SET idade = 21 WHERE id = 7;\n\nse lê: \"na suspeitos, coloca idade 21 na linha de id 7\".\n\no WHERE escolhe a linha. sem WHERE, o banco muda TODAS. não tem desfazer.\n\ntexto vai entre aspas simples. número, sem aspas."
+	},
+	{
+		"Name": "Nota_Lig03_Marta",
+		"Tipo": "Ligacao",
+		"Titulo": "Marta",
+		"Data": "10/10/1998 14:55",
+		"CC": "",
+		"Conteudo": "A Marta ligou. Amiga da Ana.\n\nO José ficou no sofá da sala desde quinze pras três. Só levantou com a gritaria.\n\nÀs dez pras três, ela viu o André sair do quarto de hóspedes com o taco do mini-golfe.\n\nO André falou de xadrez a noite toda. Orfanato. Adotado aos quinze.\n\nA polícia disse que o André tava com o Yuri e o João."
 	}
 ]

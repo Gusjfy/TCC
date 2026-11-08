@@ -18,7 +18,7 @@
 		"Query": "SELECT descricao FROM evidencias WHERE id = 4",
 		"DicasIniciante": [
 			"o filtro é o WHERE. qual coluna diz qual é o item?",
-			"a coluna é id, e o item é o 4. completa a lacuna com isso.",
+			"a coluna é id, e o item é o 4.",
 			"SELECT descricao FROM evidencias WHERE id = 4;"
 		],
 		"DicasReforco": [

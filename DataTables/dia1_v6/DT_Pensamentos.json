@@ -35,7 +35,7 @@
 		"Falas": [
 			"Um taco?",
 			"Ninguém falou de taco nenhum. Nem no jornal, nem no depoimento.",
-			"Taco. Item 4. Isso eu não posso esquecer. Melhor anotar."
+			"Taco. Item 4. Isso eu não posso esquecer."
 		]
 	},
 	{
@@ -69,10 +69,16 @@
 		]
 	},
 	{
+		"Name": "P_BootDia2",
+		"Falas": [
+			"Dormi umas duas horas. Talvez três.",
+			"Cheguei mais cedo hoje. O guarda nem olhou pra mim."
+		]
+	},
+	{
 		"Name": "P_InicioDia2",
 		"Falas": [
-			"Cheguei mais cedo hoje. O guarda nem olhou pra mim.",
-			"Ontem só deu tempo de uma consulta. Uma.",
+			"Ontem eu mal comecei.",
 			"Quem mais estava naquela casa?"
 		]
 	}
