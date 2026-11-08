@@ -1,0 +1,330 @@
+[
+	{
+		"Name": "Not_ArquivoMovel",
+		"Tipo": "Noticia",
+		"Titulo": "22/09/1998 - Delegacias do Vale passam a usar o \"Arquivo Móvel\"",
+		"Data": "22/09/1998",
+		"CC": "http://gazetadovale.com.br/noticias/policia/noticia_delegacias_arquivo_movel_3824",
+		"Conteudo": "A partir deste mês, os dados das delegacias da região deixam de ficar num computador central. Cada delegado titular recebe um HD externo com a cópia completa dos registros da sua unidade. O disco só funciona nos terminais da própria delegacia e, no fim do expediente, vai para o cofre.\n\n\"Desde a Pane, nenhum computador da polícia conversa com outro. Se não tem fio, não tem invasão\", explica o secretário de Segurança. As atualizações entre as delegacias seguem por malote, uma vez por semana.\n\nOs terminais e os discos são mantidos pela equipe de informática da prefeitura, que também treinou os servidores.\n\nCríticos lembram que um disco pode ser perdido ou levado. A secretaria responde que \"um disco perdido é um problema. Um sistema invadido é uma catástrofe\"."
+	},
+	{
+		"Name": "Not_Overdose",
+		"Tipo": "Noticia",
+		"Titulo": "29/09/1998 - Jovem morre durante festa de aniversário; polícia aponta overdose",
+		"Data": "29/09/1998",
+		"CC": "http://gazetadovale.com.br/noticias/policia/noticia_jovem_morre_festa_3861",
+		"Conteudo": "Maria, 18 anos, foi encontrada sem vida na madrugada de domingo (27), no banheiro da casa dos pais, durante a própria festa de aniversário. Segundo a assessoria da delegacia, a jovem teria passado mal após consumir álcool e entorpecentes e batido a cabeça ao cair.\n\nOs pais, que estavam em viagem, retornaram no mesmo dia. Amigos descrevem Maria como \"alegre, cheia de planos\". O caso foi tratado como acidente."
+	},
+	{
+		"Name": "Not_Telefone",
+		"Tipo": "Noticia",
+		"Titulo": "30/09/1998 - Telefone com tela chega ao país e divide especialistas",
+		"Data": "30/09/1998",
+		"CC": "http://gazetadovale.com.br/noticias/tecnologia/noticia_telefone_com_tela_3866",
+		"Conteudo": "Um aparelho japonês, que mostra mensagens escritas numa pequena tela verde, recebeu autorização para ser vendido no Brasil. É o primeiro telefone com tela liberado desde a Lei da Tela Única.\n\nO Conselho Nacional de Informática aprovou o aparelho por 5 votos a 4. Os conselheiros contrários lembram que a Pane começou com \"um programa pequeno, num aparelho que ninguém achava perigoso\".\n\nO fabricante garante que o telefone não mostra imagens \"e nunca vai mostrar\". A primeira remessa esgotou em São Paulo em duas horas."
+	},
+	{
+		"Name": "Not_FimDasFichas",
+		"Tipo": "Noticia",
+		"Titulo": "01/10/1998 - Polícia aposenta as fichas de papel: 40 anos de registros vão para o banco de dados",
+		"Data": "01/10/1998",
+		"CC": "http://gazetadovale.com.br/noticias/policia/noticia_fim_das_fichas_3872",
+		"Conteudo": "As fichas de cartolina que ocupavam três salas da delegacia central estão sendo digitadas por uma equipe de estagiários. A meta é terminar até dezembro. Os registros vão para um banco de dados consultado em SQL, a linguagem exigida de todo servidor desde o Decreto 112/1986.\n\n\"Antes, achar uma ficha levava uma tarde. Agora leva uma linha\", comemora a escrivã Dalva, há 31 anos no arquivo. Ela admite que a digitação nem sempre sai perfeita: \"Os meninos digitam rápido. Às vezes, rápido demais.\""
+	},
+	{
+		"Name": "Not_Galinhas",
+		"Tipo": "Noticia",
+		"Titulo": "02/10/1998 - Caminhão tomba na BR-116 e moradores levam 3 mil galinhas",
+		"Data": "02/10/1998",
+		"CC": "http://gazetadovale.com.br/noticias/local/noticia_caminhao_galinhas_3879",
+		"Conteudo": "Um caminhão que levava aves para um frigorífico tombou na manhã de ontem, perto do trevo de acesso ao Vale. O motorista saiu sem ferimentos. Quando a Polícia Rodoviária chegou, quarenta minutos depois, restavam onze galinhas na pista.\n\n\"Eu só ajudei a recolher\", disse uma moradora, com duas aves debaixo do braço."
+	},
+	{
+		"Name": "Not_ColunaSQL",
+		"Tipo": "Noticia",
+		"Titulo": "03/10/1998 - Saber Mais: a língua que todo servidor precisa falar",
+		"Data": "03/10/1998",
+		"CC": "http://gazetadovale.com.br/noticias/colunas/saber_mais_sql_3883",
+		"Conteudo": "A SQL nasceu no começo dos anos 70, num laboratório da IBM, nos Estados Unidos, com o nome de SEQUEL. A ideia era que qualquer pessoa, e não só programadores, pudesse fazer perguntas a um banco de dados usando palavras simples em inglês. O nome mudou por causa de uma marca registrada, mas muita gente ainda fala \"siquel\".\n\nDepois da Pane, a SQL virou o padrão do serviço público brasileiro por um motivo simples: uma consulta é um texto curto, que qualquer auditor consegue ler. \"Ninguém esconde um vírus num SELECT\", costuma dizer a professora Iolanda Prates, autora da apostila do curso obrigatório."
+	},
+	{
+		"Name": "Not_Hackers",
+		"Tipo": "Noticia",
+		"Titulo": "04/10/1998 - Grupo invade sistema da companhia de água e zera 30 mil contas",
+		"Data": "04/10/1998",
+		"CC": "http://gazetadovale.com.br/noticias/tecnologia/noticia_zeradores_agua_3890",
+		"Conteudo": "Na madrugada de sexta, um grupo que se apresenta como \"Os Zeradores\" invadiu o sistema de cobrança da companhia de água de Porto Alegre e mudou para R$ 0,00 o valor de 30 mil contas. A invasão foi feita por linha telefônica, usando um modem.\n\nÉ o terceiro ataque do grupo este ano. Em março, eles trocaram todos os nomes do cadastro de um banco por \"PANE\". A Polícia Federal pede que as empresas desliguem os modems à noite.\n\nOs moradores afetados não precisam pagar este mês. A companhia avisa que vai cobrar em dobro em novembro."
+	},
+	{
+		"Name": "Not_ShowYuri",
+		"Tipo": "Noticia",
+		"Titulo": "05/10/1998 - Filho do prefeito promove show de rock no ginásio",
+		"Data": "05/10/1998",
+		"CC": "http://gazetadovale.com.br/noticias/cultura/noticia_show_ginasio_3897",
+		"Conteudo": "Yuri Bittencourt, 24 anos, filho do prefeito Ronaldo Bittencourt, anunciou para o dia 31 um show da Estática, banda de rock do Vale que ele empresaria. A entrada no ginásio municipal será gratuita. A prefeitura nega que o evento use dinheiro público.\n\nA banda perdeu recentemente a vocalista e promete uma homenagem. A Gazeta conversou com o empresário.\n\nPor que um show agora?\nPorque a cidade tá precisando, cara. Tá todo mundo pra baixo. Música resolve.\n\nA banda vai tocar sem vocalista?\nA gente vai dar um jeito. Ela ia querer que a gente tocasse. Isso eu garanto.\n\nE a estrutura? Som, luz?\nTem um amigo meu da informática da prefeitura que entende de tudo. Ele que vai cuidar da parte técnica. Gente finíssima.\n\nO prefeito vai comparecer?\nMeu pai? Ele não sabe nem ligar o rádio. Mas vai, vai sim."
+	},
+	{
+		"Name": "Not_Vereador",
+		"Tipo": "Noticia",
+		"Titulo": "05/10/1998 - Vereador quer proibir o \"desfazer\" nos computadores da prefeitura",
+		"Data": "05/10/1998",
+		"CC": "http://gazetadovale.com.br/noticias/politica/noticia_vereador_desfazer_3899",
+		"Conteudo": "O vereador Osmar Telles apresentou um projeto que proíbe o comando \"desfazer\" nos terminais da prefeitura. \"Se o servidor errou, o erro tem que ficar registrado. Quem erra e apaga tem alguma coisa a esconder\", defendeu.\n\nO sindicato dos servidores diz que, se a lei passar, vai faltar papel para tanta errata. A votação fica para a semana que vem."
+	},
+	{
+		"Name": "Not_CremeCristal",
+		"Tipo": "Noticia",
+		"Titulo": "06/10/1998 - Creme promete acabar com o \"rosto de monitor\"",
+		"Data": "06/10/1998",
+		"CC": "http://gazetadovale.com.br/noticias/saude/noticia_rosto_de_monitor_3904",
+		"Conteudo": "Chega às farmácias do Vale o Creme Cristal Noturno, dos Laboratórios Aurora. A fórmula promete combater o \"rosto de monitor\", nome popular para a pele pálida e as olheiras de quem passa o dia na frente do terminal. O pote custa R$ 18,90.\n\nA Sociedade de Dermatologia diz que não existe \"rosto de monitor\". \"O que existe é gente dormindo pouco\", afirma um porta-voz. O laboratório já vende 4 mil potes por semana."
+	},
+	{
+		"Name": "Not_Guerra",
+		"Tipo": "Noticia",
+		"Titulo": "07/10/1998 - Guerra da Erva-Mate: Argentina e Paraguai rompem mais um cessar-fogo",
+		"Data": "07/10/1998",
+		"CC": "http://gazetadovale.com.br/noticias/mundo/noticia_guerra_erva_mate_3911",
+		"Conteudo": "O conflito na fronteira entre Argentina e Paraguai entrou no quarto mês. A crise começou em junho, quando o Paraguai triplicou o imposto de exportação da erva-mate e a Argentina respondeu fechando a ponte de Encarnación. Desde então, os dois exércitos trocam ataques na região de Misiones. A ONU estima 2 mil desalojados.\n\nO Itamaraty mantém a neutralidade brasileira. Em Foz do Iguaçu, o quilo da erva subiu 300%. \"Tô tomando café. Fazer o quê\", lamenta um aposentado gaúcho."
+	},
+	{
+		"Name": "Not_Motoboy",
+		"Tipo": "Noticia",
+		"Titulo": "07/10/1998 - Motociclista morre em batida na Avenida das Indústrias",
+		"Data": "07/10/1998",
+		"CC": "http://gazetadovale.com.br/noticias/local/noticia_acidente_av_industrias_3913",
+		"Conteudo": "Um entregador de 23 anos morreu na noite de segunda após bater em um ônibus no cruzamento com a Rua Sete. Segundo a polícia, o semáforo estava piscando em amarelo. O caso foi registrado como acidente de trânsito."
+	},
+	{
+		"Name": "Not_GrandePane",
+		"Tipo": "Noticia",
+		"Titulo": "08/10/1998 - 14 anos da Grande Pane: especialistas ainda desaconselham imagens em computadores",
+		"Data": "08/10/1998",
+		"CC": "http://gazetadovale.com.br/noticias/tecnologia/noticia_14_anos_pane_3920",
+		"Conteudo": "Catorze anos depois do vírus que derrubou bancos e hospitais pelo mundo, a Lei da Tela Única segue em vigor: computadores no Brasil só podem exibir texto. Imagens, sons gravados e arquivos que um ser humano não consegue ler continuam proibidos.\n\n\"Texto é auditável. Imagem esconde coisas\", resume um técnico da prefeitura. Para o ano 2000, o governo promete uma revisão da lei. Ninguém acredita muito."
+	},
+	{
+		"Name": "For_Regras",
+		"Tipo": "Forum",
+		"Titulo": "[FIXO] Regras do fórum",
+		"Data": "02/01/1998",
+		"CC": "http://sql-underground.net/forum/thread_regras",
+		"Conteudo": "sysop_vale: bem-vindos ao SQL Underground. regras:\n1. aqui é só banco de dados e SQL. futebol é no fórum do Grêmio Recreativo.\n2. nada de anexo. só texto (Lei da Tela Única, não sou eu que inventei).\n3. NÃO postem dados reais de cidadão. nem o seu.\n4. dúvida boba não existe. resposta grossa existe e dá banimento."
+	},
+	{
+		"Name": "For_SGBD",
+		"Tipo": "Forum",
+		"Titulo": "[INICIANTE] o que é um banco de dados e um SGBD?",
+		"Data": "14/09/1998",
+		"CC": "http://sql-underground.net/forum/thread_o_que_e_sgbd",
+		"Conteudo": "novato_98: comecei no cartório e todo mundo fala em \"consultar o banco\". que banco??\n\ndisquete_azul: banco de dados é onde as informações ficam guardadas, em TABELAS. tabela é igual planilha: cada linha é um registro (uma pessoa, um objeto), cada coluna é uma informação sobre ele (nome, idade...).\nO SGBD é o programa que cuida dessas tabelas. Você não mexe nelas direto, você PEDE pro SGBD. E pede em SQL.\n\nnovato_98: ah então é tipo um arquivo de fichas que responde\n\ndisquete_azul: exatamente isso"
+	},
+	{
+		"Name": "For_OQueESQL",
+		"Tipo": "Forum",
+		"Titulo": "[INICIANTE] SQL é programa? é linguagem? socorro",
+		"Data": "17/09/1998",
+		"CC": "http://sql-underground.net/forum/thread_o_que_e_sql",
+		"Conteudo": "tati_protocolo: o curso obrigatório começa mês que vem e eu nem sei o que é SQL. tenho vergonha de perguntar no trabalho\n\ndisquete_azul: SQL quer dizer Structured Query Language, \"linguagem de consulta estruturada\". não é programa. é a LÍNGUA que você usa pra conversar com o SGBD.\nvocê escreve uma frase, que se chama consulta (ou query), e o SGBD te responde com uma tabela.\nSELECT nome FROM pessoas; = \"me mostra o nome das pessoas\"\n\ntati_protocolo: só isso??\n\ndisquete_azul: o começo é só isso. o resto é aprender a perguntar melhor."
+	},
+	{
+		"Name": "For_Select",
+		"Tipo": "Forum",
+		"Titulo": "SELECT: como pegar só as colunas que eu quero",
+		"Data": "21/09/1998",
+		"CC": "http://sql-underground.net/forum/thread_select_colunas",
+		"Conteudo": "ze_do_balcao: SELECT * FROM clientes; me devolve uma tela inteira. dá pra ver só o nome?\n\ncavalo_branco: O * significa \"todas as colunas\". Troque pelos nomes das colunas que você quer, separados por vírgula:\nSELECT nome FROM clientes;\nSELECT nome, telefone FROM clientes;\nPense antes de pedir. Quem pede tudo, não enxerga nada."
+	},
+	{
+		"Name": "For_PontoVirgula",
+		"Tipo": "Forum",
+		"Titulo": "pra que serve o ; no final?",
+		"Data": "24/09/1998",
+		"CC": "http://sql-underground.net/forum/thread_ponto_e_virgula",
+		"Conteudo": "lu_fichario: todo exemplo tem um ; no final, mas aqui roda sem ele. é enfeite?\n\ndisquete_azul: não é enfeite. o ponto e vírgula é o ponto final do SQL: diz onde um comando termina. tem sistema que roda um comando por vez e aceita sem. tem sistema que recusa. e nos que rodam vários comandos de uma vez, é o ; que separa um do outro.\n\nlu_fichario: então é tipo o ponto final numa carta\n\ndisquete_azul: isso. dá pra entender sem, mas fica feio."
+	},
+	{
+		"Name": "For_Where",
+		"Tipo": "Forum",
+		"Titulo": "WHERE com texto precisa de aspas? (e números não)",
+		"Data": "26/09/1998",
+		"CC": "http://sql-underground.net/forum/thread_where_aspas",
+		"Conteudo": "lu_fichario: meu WHERE nao funciona: SELECT * FROM livros WHERE autor = Machado;\n\ndisquete_azul: texto vai entre aspas simples: WHERE autor = 'Machado'\nnúmero vai sem aspas: WHERE id = 4\nsem as aspas o SGBD acha que Machado é o nome de uma coluna.\n\nlu_fichario: funcionou!!! obrigada"
+	},
+	{
+		"Name": "For_Maiusculas",
+		"Tipo": "Forum",
+		"Titulo": "SELECT tem que ser em maiúscula?",
+		"Data": "30/09/1998",
+		"CC": "http://sql-underground.net/forum/thread_maiusculas",
+		"Conteudo": "novato_98: meu chefe escreve tudo em maiúscula e diz que é obrigatório. é?\n\ndisquete_azul: não. select e SELECT funcionam igual. a gente escreve as palavras do SQL em maiúscula só pra ler mais fácil.\nMAS cuidado: o que tá DENTRO das aspas é comparado do jeito que tá. 'Machado' e 'machado' são textos diferentes.\n\nnovato_98: então meu chefe tá meio certo\n\ndisquete_azul: não conta pra ele"
+	},
+	{
+		"Name": "For_Digitacao",
+		"Tipo": "Forum",
+		"Titulo": "o WHERE não acha o registro mas eu SEI que ele tá lá",
+		"Data": "02/10/1998",
+		"CC": "http://sql-underground.net/forum/thread_where_nao_acha",
+		"Conteudo": "ze_do_balcao: procuro WHERE nome = 'Joaquim' e vem vazio. a ficha do Joaquim tá na minha mão!!\n\ndisquete_azul: o WHERE compara letra por letra. se quem digitou escreveu 'Joaqium', ele não acha. faz um SELECT * na tabela e olha com os próprios olhos.\n\nze_do_balcao: ...tava 'Joaqium'\n\ncavalo_branco: Os dados são feitos por pessoas. Pessoas erram. Às vezes, de propósito."
+	},
+	{
+		"Name": "For_HistoriaSQL",
+		"Tipo": "Forum",
+		"Titulo": "[CURIOSIDADE] por que tem gente que fala \"siquel\"?",
+		"Data": "04/10/1998",
+		"CC": "http://sql-underground.net/forum/thread_historia_siquel",
+		"Conteudo": "velho_ibm: porque o nome original era SEQUEL. nasceu na IBM, começo dos anos 70, em cima das ideias de um matemático chamado Codd, que inventou o jeito de guardar dados em tabelas. tiveram que trocar o nome por causa de uma marca registrada. eu trabalhei com a turma que trouxe isso pro Brasil.\n\nnovato_98: e por que virou lei aqui?\n\nvelho_ibm: depois da Pane o governo queria tudo que pudesse ser lido por um humano. uma consulta SQL é uma frase. dá pra imprimir, ler e assinar embaixo."
+	},
+	{
+		"Name": "For_PrimeiroSelect",
+		"Tipo": "Forum",
+		"Titulo": "qual foi o primeiro SELECT de vocês?",
+		"Data": "07/10/1998",
+		"CC": "http://sql-underground.net/forum/thread_primeiro_select",
+		"Conteudo": "tati_protocolo: o meu foi hoje!! SELECT * FROM protocolos; e veio tudo. chorei um pouco\n\nvelho_ibm: o meu foi em 1979 num terminal que esquentava mais que ferro de passar\n\nlu_fichario: SELECT titulo FROM livros WHERE autor = 'Machado'; com aspas, graças a esse fórum\n\ncavalo_branco: SELECT * FROM pecas WHERE cor = 'branca'; Comecei pelas peças. Até hoje começo."
+	},
+	{
+		"Name": "Em_Maria_Sabado",
+		"Tipo": "Email",
+		"Titulo": "sábado!!!",
+		"Data": "24/09/1998 23:41",
+		"CC": "maria.vale@correio",
+		"Conteudo": "pedro se você não vier no sábado eu nunca mais falo com você. é sério. só faz 18 anos uma vez.\n\nquero te apresentar umas pessoas. acho que você vai gostar deles. ou não, mas vem assim mesmo hehe\n\nvai ter bolo de cenoura com cobertura de chocolate. eu sei que você não resiste.\n\nbeijo\nmaria"
+	},
+	{
+		"Name": "Em_Corrente",
+		"Tipo": "Email",
+		"Titulo": "FW: FW: FW: FW: NÃO APAGUE ESTE E-MAIL!!!!",
+		"Data": "26/09/1998 08:12",
+		"CC": "tia.neide@correio",
+		"Conteudo": "URGENTE!!! UM TÉCNICO DA TELEBRÁS CONFIRMOU QUE A PANE VAI VOLTAR NO DIA 01/01/2000 À MEIA NOITE!!! OS COMPUTADORES VÃO ESQUECER QUE ANO É E VÃO APAGAR TUDO!!!\n\nQUEM REPASSAR ESTA MENSAGEM PARA 10 PESSOAS FICA COM O COMPUTADOR PROTEGIDO. NÃO CUSTA NADA!!!\n\nPedrinho repassei pra você porque te amo. Beijo da tia Neide"
+	},
+	{
+		"Name": "Em_Carlos_1",
+		"Tipo": "Email",
+		"Titulo": "oi",
+		"Data": "29/09/1998 21:30",
+		"CC": "carlos.sorvete@correio",
+		"Conteudo": "cara, sei que você não quer falar com ninguém. tudo bem.\n\nsua mãe disse que você não sai do quarto. amanhã eu passo aí depois do turno. não precisa falar nada. a gente joga aquele jogo de texto do dragão e pronto.\n\ncarlos"
+	},
+	{
+		"Name": "Em_OlhoVivo",
+		"Tipo": "Email",
+		"Titulo": "Seus olhos merecem! Óculos Anti-Tela OlhoVivo",
+		"Data": "01/10/1998 10:00",
+		"CC": "ofertas@olhovivo.com",
+		"Conteudo": "Você passa mais de 4 horas por dia na frente do monitor? A radiação do texto verde pode estar cansando seus olhos!\n\nOs óculos OlhoVivo têm lentes cor de âmbar que filtram 98% do brilho da tela.\n\nAprovado por 9 em cada 10 oftalmologistas que nós consultamos.\n\n3x de R$ 19,90 sem juros. Ligue já e ganhe uma flanela!"
+	},
+	{
+		"Name": "Em_Mae_Jantar",
+		"Tipo": "Email",
+		"Titulo": "(sem assunto)",
+		"Data": "03/10/1998 23:58",
+		"CC": "mae.pedro@correio",
+		"Conteudo": "filho, seu pai não falou aquilo por mal. ele tá preocupado e não sabe falar de outro jeito.\n\nninguém acha que você teve culpa de nada. ninguém.\n\namanhã eu faço lasanha. desce pra jantar com a gente?\n\nmae"
+	},
+	{
+		"Name": "Em_Faculdade",
+		"Tipo": "Email",
+		"Titulo": "Trancamento de matrícula: deferido",
+		"Data": "05/10/1998 14:20",
+		"CC": "secretaria@fatec-vale",
+		"Conteudo": "Prezado aluno,\n\nSeu pedido de trancamento do semestre 98/2 do curso de Processamento de Dados foi deferido. A matrícula pode ser reaberta até 15/03/1999.\n\nLembramos que o estágio vinculado ao curso pode ser mantido durante o trancamento, se houver acordo com o órgão contratante.\n\nSecretaria Acadêmica"
+	},
+	{
+		"Name": "Em_Carlos_2",
+		"Tipo": "Email",
+		"Titulo": "?",
+		"Data": "05/10/1998 22:47",
+		"CC": "carlos.sorvete@correio",
+		"Conteudo": "te liguei um monte de vez. sua mãe sempre diz que você tá dormindo.\n\nresponde pelo menos \"ok\", pra eu saber que você tá vivo."
+	},
+	{
+		"Name": "Em_Circular041",
+		"Tipo": "Email",
+		"Titulo": "CIRCULAR 041/98 - Caso 98-031",
+		"Data": "07/10/1998 09:15",
+		"CC": "gabinete@delegacia",
+		"Conteudo": "A todos os servidores,\n\nO caso 98-031 (Maria) foi divulgado à imprensa como acidente. Nenhum servidor está autorizado a comentar o assunto com jornalistas, familiares ou terceiros.\n\nPedidos de entrevista devem ser encaminhados à assessoria.\n\nDelegado Titular"
+	},
+	{
+		"Name": "Em_RH_HoraExtra",
+		"Tipo": "Email",
+		"Titulo": "Hora extra de estagiários",
+		"Data": "08/10/1998 17:02",
+		"CC": "setor.pessoal@delegacia",
+		"Conteudo": "Prezado estagiário (matrícula user002),\n\nLembramos que a hora extra deve ser registrada no ponto até as 22h. Após esse horário o prédio fica sob ronda e o uso dos terminais é restrito a servidores autorizados.\n\nLembramos também que o curso de SQL Básico é obrigatório para todo servidor público (Decreto 112/1986). As inscrições para a turma de novembro seguem abertas.\n\nSetor de Pessoal"
+	},
+	{
+		"Name": "Em_Delegado_HD",
+		"Tipo": "Email",
+		"Titulo": "HD do arquivo",
+		"Data": "08/10/1998 18:40",
+		"CC": "delegado.titular@delegacia",
+		"Conteudo": "Estagiário,\n\nO HD do arquivo ficou na gaveta da sala dos terminais. Amanhã às 8h ele segue no malote para a central.\n\nNão conecte. Não é para consulta.\n\nDelegado Titular"
+	},
+	{
+		"Name": "Em_Mae",
+		"Tipo": "Email",
+		"Titulo": "(sem assunto)",
+		"Data": "08/10/1998 22:14",
+		"CC": "mae.pedro@correio",
+		"Conteudo": "filho ainda ta nessa delegacia? ja passou das dez. levou a marmita? se nao levou come alguma coisa ai, nao fica de estomago vazio.\n\na doutora ligou perguntando se voce vai na consulta semana que vem. eu disse que vai.\n\nme liga quando sair. te amo. mae"
+	},
+	{
+		"Name": "Tut01_Select",
+		"Tipo": "Email",
+		"Titulo": "01 - SELECT",
+		"Data": "08/10/1998 22:31",
+		"CC": "cavalo.preto@ymail.com",
+		"Conteudo": "pedro,\n\nguarda isso.\n\nos dados ficam em TABELAS. cada linha é um registro. cada coluna é uma informação sobre ele.\n\nas palavras do SQL são em inglês, mas são poucas:\nSELECT = \"selecione\". é onde você diz quais colunas quer ver.\nFROM = \"de\". é onde você diz de qual tabela.\n\nentão SELECT nome FROM suspeitos; se lê \"selecione nome de suspeitos\".\n\nSELECT * FROM suspeitos; → o asterisco quer dizer todas as colunas\nSELECT nome FROM suspeitos; → só a coluna nome\nSELECT nome, idade FROM suspeitos; → mais de uma, separadas por vírgula\n\no ponto e vírgula (;) marca o fim do comando. esse console roda um comando por vez, então ele aceita sem. mas em muito sistema por aí ele é obrigatório. acostuma a usar.\n\nSELECT, FROM, select, from: tanto faz maiúscula ou minúscula. mas o nome da tabela e da coluna tem que estar escrito certo."
+	},
+	{
+		"Name": "Tut02_Where",
+		"Tipo": "Email",
+		"Titulo": "02 - WHERE",
+		"Data": "08/10/1998 22:38",
+		"CC": "cavalo.preto@ymail.com",
+		"Conteudo": "WHERE = \"onde\". é o filtro: só passam as linhas que batem com a condição.\n\nSELECT nome FROM suspeitos WHERE id = 3; se lê \"selecione nome de suspeitos onde o id é 3\".\n\nnúmero vai sem aspas. texto vai entre aspas simples:\n\nSELECT nome FROM suspeitos WHERE ocupacao = 'Guitarrista';\n\no texto entre aspas é comparado letra por letra. 'guitarrista' e 'Guitarrista' não são a mesma coisa.\n\npense antes de pedir."
+	},
+	{
+		"Name": "Tut03_Comparar",
+		"Tipo": "Email",
+		"Titulo": "03 - comparando",
+		"Data": "08/10/1998 22:45",
+		"CC": "cavalo.preto@ymail.com",
+		"Conteudo": "o = não é o único jeito de filtrar.\n\n= igual\n<> diferente\n> maior que\n< menor que\n>= maior ou igual\n<= menor ou igual\n\nSELECT nome FROM suspeitos WHERE idade > 20; → quem tem mais de 20 anos\nSELECT nome FROM suspeitos WHERE ocupacao <> 'Estudante'; → todo mundo que não é estudante\n\ncom número é o que você imagina. com texto, compara em ordem alfabética.\n\numa coisa de cada vez."
+	},
+	{
+		"Name": "Dia_3009",
+		"Tipo": "Diario",
+		"Titulo": "30/09/1998",
+		"Data": "30/09/1998",
+		"CC": "",
+		"Conteudo": "A doutora disse pra eu escrever. Que ajuda a organizar a cabeça. Então tá.\n\nHoje foi o enterro. Eu não entrei. Fiquei no carro do meu pai, no estacionamento, vendo as pessoas de preto passarem. Minha mãe voltou com o olho inchado e não falou nada a viagem toda.\n\nEu não lembro direito da festa. Lembro de subir a escada. Lembro do chão do banheiro, gelado. Depois é tudo borrado até a sirene.\n\nA última coisa que eu falei pra ela foi uma grosseria. Não lembro o que foi."
+	},
+	{
+		"Name": "Dia_0310",
+		"Tipo": "Diario",
+		"Titulo": "03/10/1998",
+		"Data": "03/10/1998",
+		"CC": "",
+		"Conteudo": "Briguei com meu pai no jantar. Ele disse que eu preciso \"seguir em frente\". Que já faz uma semana.\n\nUma semana.\n\nLevantei da mesa. Minha mãe bateu na porta depois e eu fingi que tava dormindo.\n\nTranquei a faculdade. Não consigo sentar numa sala com quarenta pessoas que sabem quem eu sou. \"É aquele que achou ela.\" O estágio eu mantenho. Na delegacia ninguém olha pra estagiário."
+	},
+	{
+		"Name": "Dia_0610",
+		"Tipo": "Diario",
+		"Titulo": "06/10/1998",
+		"Data": "06/10/1998",
+		"CC": "",
+		"Conteudo": "O jornal disse overdose.\n\nA Maria tinha medo de tomar remédio pra dor de cabeça. Ficava nervosa até com café. Eu ia falar isso pro delegado. Não falei. Ele passou por mim no corredor e nem olhou.\n\nO Carlos mandou mais um e-mail. Não respondi. Não sei o que dizer pra ele.\n\nHoje eu vi o HD do arquivo na mesa do delegado. Dizem que tá tudo lá dentro.\n\nTudo. Ela também."
+	},
+	{
+		"Name": "Nota_Lig01_Carlos",
+		"Tipo": "Ligacao",
+		"Titulo": "Carlos",
+		"Data": "08/10/1998 22:05",
+		"CC": "",
+		"Conteudo": "Carlos ligou. Viu o jornal.\n\nFalou que a Maria \"vivia chapada depois dos ensaios\". Ensaio de uma banda. Ele achou que eu sabia.\n\nEu não sabia.\n\nA mãe dele ofereceu a sorveteria, se eu quiser sair de casa."
+	}
+]

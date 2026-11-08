@@ -5,7 +5,11 @@
 			{
 				"Tipo": "Anonimo",
 				"Texto": "boa noite, pedro. não se assuste."
-			},
+			}
+		],
+		"OpcaoA": "Quem é você?",
+		"OpcaoB": "Como você sabe meu nome?",
+		"RespostaA": [
 			{
 				"Tipo": "Anonimo",
 				"Texto": "sou investigador. freelancer. tô de olho no caso da maria faz um tempo."
@@ -19,10 +23,24 @@
 				"Texto": "preciso de você, assim como você precisa de mim."
 			}
 		],
-		"OpcaoA": "",
-		"OpcaoB": "",
-		"RespostaA": [],
-		"RespostaB": []
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "eu sei o nome de todo mundo que tava naquela casa."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "sou investigador. freelancer. tô de olho no caso da maria faz um tempo."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "não pergunta como eu tô falando com você. eu só consigo ver parte dos dados."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "preciso de você, assim como você precisa de mim."
+			}
+		]
 	},
 	{
 		"Name": "Ano01_PerguntaSQL",
