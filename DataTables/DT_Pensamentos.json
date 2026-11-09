@@ -230,7 +230,78 @@
 	{
 		"Name": "P_RecusaFraca",
 		"Falas": [
-			"Não tenho nada que prove isso."
+			"Não tem ninguém com esse ID na suspeitos."
+		]
+	},
+	{
+		"Name": "P_Acusa_1",
+		"Falas": [
+			"A Maria?",
+			"Ela é a vítima. Se concentra, Pedro."
+		]
+	},
+	{
+		"Name": "P_Acusa_2",
+		"Falas": [
+			"Eu?",
+			"Não lembrar não é a mesma coisa que ter feito."
+		]
+	},
+	{
+		"Name": "P_Acusa_3",
+		"Falas": [
+			"O José.",
+			"Todo mundo diz que foi ele. Mas eu não guardei nada que mostre isso."
+		]
+	},
+	{
+		"Name": "P_Acusa_4",
+		"Falas": [
+			"A Julia tava comigo na cozinha.",
+			"É a única pessoa que eu sei onde tava."
+		]
+	},
+	{
+		"Name": "P_Acusa_5",
+		"Falas": [
+			"O Carlos achou ela e ligou pra emergência.",
+			"Achar não é fazer."
+		]
+	},
+	{
+		"Name": "P_Acusa_6",
+		"Falas": [
+			"A Marta me ligou pra ajudar.",
+			"Não faz sentido."
+		]
+	},
+	{
+		"Name": "P_Acusa_7",
+		"Falas": [
+			"A Ana passou a noite na churrasqueira.",
+			"Com base em quê?"
+		]
+	},
+	{
+		"Name": "P_Acusa_8",
+		"Falas": [
+			"O João mal parava em pé.",
+			"Não tenho nada sobre ele."
+		]
+	},
+	{
+		"Name": "P_Acusa_9",
+		"Falas": [
+			"O Yuri é ex dela.",
+			"Ser ex não é prova."
+		]
+	},
+	{
+		"Name": "P_Acusa_10",
+		"Falas": [
+			"O André?",
+			"Porque a Marta cruzou com ele no corredor?",
+			"Preciso de mais que isso."
 		]
 	}
 ]
