@@ -78,7 +78,7 @@
 		"RespostaA": [
 			{
 				"Tipo": "Anonimo",
-				"Texto": "show."
+				"Texto": "show. uma regra só: me traz exatamente o que eu pedir. se vier coisa a mais na tela, eu não sei o que você quis me mostrar."
 			}
 		],
 		"RespostaB": [
@@ -173,7 +173,7 @@
 		"Mensagens": [
 			{
 				"Tipo": "Anonimo",
-				"Texto": "tem uma tabela chamada evidencias. me diz o que é o item 4."
+				"Texto": "tem uma tabela chamada evidencias. quero só o item 4, mais nenhum. me diz o que ele é."
 			},
 			{
 				"Tipo": "Anonimo",
@@ -233,7 +233,7 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "descobre que lugar é o ambiente 4."
+				"Texto": "descobre que lugar é o ambiente 4. puxa só essa linha da ambientes."
 			}
 		],
 		"OpcaoA": "",
@@ -281,7 +281,7 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "quero saber quem tá acima de 1."
+				"Texto": "me traz só quem tá acima de 1. quem tem 1 ou menos fica de fora."
 			},
 			{
 				"Tipo": "Anonimo",
@@ -345,7 +345,7 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "abre."
+				"Texto": "filtra pelo tipo e me traz só os relatórios. quando aparecer no log, eu volto a falar."
 			}
 		],
 		"RespostaB": [
@@ -359,7 +359,7 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "abre."
+				"Texto": "filtra pelo tipo e me traz só os relatórios. quando aparecer no log, eu volto a falar."
 			}
 		]
 	},
@@ -503,7 +503,7 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "puxa todos."
+				"Texto": "puxa só os laudos. todos eles, e nada além deles."
 			}
 		],
 		"OpcaoA": "",
@@ -594,7 +594,7 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "o User001 é o delegado. começa por ele."
+				"Texto": "o User001 é o delegado. filtra o log por esse usuário. só as linhas dele."
 			}
 		],
 		"OpcaoA": "",
@@ -709,7 +709,7 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "quero os nomes de quem entrou lá depois das 2h40. o horário tá gravado assim: '1998-09-27 02:40'."
+				"Texto": "quero só os nomes de quem entrou lá depois das 2h40. o horário tá gravado assim: '1998-09-27 02:40'."
 			},
 			{
 				"Tipo": "Anonimo",
@@ -992,7 +992,7 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "o banco mudou de novo. olha onde o josé tava naquela noite. suspeito 3."
+				"Texto": "o banco mudou de novo. filtra a movimentacao pelo josé, suspeito 3. só as linhas dele."
 			}
 		],
 		"OpcaoA": "De novo? Quem mexe nisso?",
@@ -1019,7 +1019,7 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "agora o taco. evidencia 4."
+				"Texto": "agora puxa só o taco. evidencia 4, mais nenhuma."
 			}
 		],
 		"OpcaoA": "",

@@ -264,7 +264,7 @@
 	{
 		"Name": "Obj_Cozinha",
 		"Tipo": "Estado",
-		"Query": "SELECT detalhe FROM evidencias WHERE id = 4",
+		"Query": "SELECT 1 FROM ambientes WHERE id = 2 AND nome = 'Cozinha'",
 		"DicasIniciante": [
 			"UPDATE, o nome da tabela, SET e a coluna com o valor novo.",
 			"o texto vai entre aspas simples, e o WHERE escolhe a linha.",
@@ -294,7 +294,7 @@
 	{
 		"Name": "Obj_Desfazer",
 		"Tipo": "Estado",
-		"Query": "LOWER(TRIM(tabela_origem)) = 'sys_audit_log' AND EXISTS (SELECT 1 FROM sys_audit_log WHERE terminal = 'PREF-TI-07') AND (registro_id IN (SELECT id FROM sys_audit_log WHERE terminal = 'PREF-TI-07') OR UPPER(resumo) LIKE '%PREF-TI-07%')",
+		"Query": "SELECT 1 FROM movimentacao WHERE id = 14 AND ambiente_id = 1",
 		"DicasIniciante": [
 			"é igual ao UPDATE da cozinha, em outra tabela.",
 			"a linha é a 14, e o valor antigo está no log: ambiente_id = 1.",
