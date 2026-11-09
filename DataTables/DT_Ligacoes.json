@@ -234,57 +234,37 @@
 			},
 			{
 				"Falante": "Marta",
-				"Texto": "A Ana me contou que ligou pra você. Eu fiquei pensando a semana toda se ligava também.",
+				"Texto": "Desculpa ligar assim. Um policial me ligou hoje cedo. Queria \"confirmar o meu depoimento\".",
 				"bLigacao": true
 			},
 			{
 				"Falante": "Pedro",
-				"Texto": "Pode falar.",
+				"Texto": "Confirmar o quê?",
 				"bLigacao": true
 			},
 			{
 				"Falante": "Marta",
-				"Texto": "O jornal disse que a polícia tá olhando pro José. É verdade?",
+				"Texto": "Perguntou três vezes se o José subiu a escada. Três. Como se a resposta fosse mudar.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "Ele não subiu. Eu subi pro banheiro umas quinze pras três e desci logo depois. Ele tava no sofá nas duas vezes, encolhido. Chorando.",
 				"bLigacao": true
 			},
 			{
 				"Falante": "Pedro",
-				"Texto": "Não sei.",
+				"Texto": "Você foi lá em cima?",
 				"bLigacao": true
 			},
 			{
 				"Falante": "Marta",
-				"Texto": "Não foi ele, Pedro. O José ficou deitado no sofá da sala desde quinze pras três. Eu vi. Ele tava chorando.",
-				"bLigacao": true
-			},
-			{
-				"Falante": "Pedro",
-				"Texto": "Você tava na sala?",
+				"Texto": "Rapidinho. Lá em cima cruzei com o André no corredor. Segurou a porta do banheiro pra mim, todo educado.",
 				"bLigacao": true
 			},
 			{
 				"Falante": "Marta",
-				"Texto": "Eu tava no quintal, mas subi pra usar o banheiro do corredor. Quando passei, ele já tava no sofá. Quando desci, continuava lá. Só levantou com a gritaria.",
-				"bLigacao": true
-			},
-			{
-				"Falante": "Marta",
-				"Texto": "E tem outra coisa. Lá em cima eu vi o André saindo do quarto de hóspedes.",
-				"bLigacao": true
-			},
-			{
-				"Falante": "Pedro",
-				"Texto": "Que horas?",
-				"bLigacao": true
-			},
-			{
-				"Falante": "Marta",
-				"Texto": "Umas dez pras três. Ele passou por mim no corredor, sorriu e seguiu.",
-				"bLigacao": true
-			},
-			{
-				"Falante": "Marta",
-				"Texto": "Eu passei a festa inteira conversando com ele. Educado, engraçado. Falou de xadrez a noite toda. Contou que cresceu num orfanato e que um senhor adotou ele aos quinze. Que foi esse senhor que ensinou ele a jogar.",
+				"Texto": "O do xadrez, sabe? Passei a festa inteira perdendo pra ele.",
 				"bLigacao": true
 			},
 			{
@@ -294,7 +274,7 @@
 			},
 			{
 				"Falante": "Marta",
-				"Texto": "Eu contei isso pra polícia. O delegado disse que o André tava com o Yuri e o João a noite toda. Os dois mal paravam em pé.",
+				"Texto": "Desculpa, tô falando demais. É que ninguém me pergunta nada direito. Só do José.",
 				"bLigacao": true
 			},
 			{
