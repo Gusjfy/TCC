@@ -445,7 +445,7 @@
 		"Titulo": "Arquivo Móvel - atualização aplicada",
 		"Data": "09/10/1998 17:05",
 		"CC": "suporte.informatica@prefeitura.vale",
-		"Conteudo": "MENSAGEM AUTOMÁTICA. NÃO RESPONDA.\n\nA atualização do Arquivo Móvel da 2ª Delegacia foi aplicada com sucesso.\n\nTabelas novas: 2\nRegistros novos: 33\nRegistros alterados: 1\n\nA conferência dos dados segue até segunda-feira (12/10). Nesse período, o sistema pode criar tabelas temporárias (tmp_). Não apague nem altere essas tabelas.\n\nDúvidas: Setor de Informática da Prefeitura do Vale, ramal 207."
+		"Conteudo": "MENSAGEM AUTOMÁTICA. NÃO RESPONDA.\n\nA atualização do Arquivo Móvel da 2ª Delegacia foi aplicada com sucesso.\n\nTabelas novas: 2\nRegistros novos: 33\nRegistros alterados: 1\n\nA conferência dos dados segue até segunda-feira (12/10). Nesse período, o sistema cria tabelas temporárias (tmp_). Cada caso em aberto ganha a tabela tmp_provas, com uma linha por prova:\n\nsuspeito_id: contra quem é a prova\ntabela_origem: a tabela onde está o registro\nid_origem: o id do registro nessa tabela\n\nA acusação formal lê a tmp_provas e confere cada linha no registro original. Não apague nem altere essas tabelas.\n\nDúvidas: Setor de Informática da Prefeitura do Vale, ramal 207."
 	},
 	{
 		"Name": "Em_RH_Sexta",
@@ -470,6 +470,14 @@
 		"Data": "09/10/1998 22:20",
 		"CC": "",
 		"Conteudo": "A Ana ligou. Do curso de bombeiro.\n\nA Maria passou a noite com um cara que conheceu num bar. Mais velho, educado. A Ana não sabe o nome.\n\nO José socou a parede quando soube. Depois subiu atrás dela.\n\nA Julia e a Maria brigaram uns meses atrás.\n\nA Ana contou tudo pra polícia. Ninguém anotou."
+	},
+	{
+		"Name": "Nota_Lig02_Marta",
+		"Tipo": "Ligacao",
+		"Titulo": "Marta",
+		"Data": "09/10/1998 22:48",
+		"CC": "",
+		"Conteudo": "A Marta ligou. Amiga da Ana.\n\nUmas três horas subiu pro banheiro e cruzou com o André no corredor de cima.\n\nNão contou pra polícia. Ninguém perguntou.\n\nVai fazer um depoimento no plantão hoje."
 	},
 	{
 		"Name": "Dia_1010",
@@ -533,6 +541,6 @@
 		"Titulo": "Marta",
 		"Data": "10/10/1998 14:55",
 		"CC": "",
-		"Conteudo": "A Marta ligou. Amiga da Ana.\n\nUm policial ligou pra ela hoje cedo pra \"confirmar o depoimento\". Perguntou três vezes se o José subiu.\n\nEla subiu pro banheiro umas quinze pras três. O José tava no sofá na ida e na volta.\n\nCruzou com o André no corredor."
+		"Conteudo": "A Marta ligou de novo.\n\nFez o depoimento no plantão. Contou do André.\n\nHoje cedo um policial ligou pra \"confirmar o depoimento\". Perguntou três vezes se o José subiu. Do André, nenhuma pergunta.\n\nO José tava no sofá na ida e na volta dela."
 	}
 ]

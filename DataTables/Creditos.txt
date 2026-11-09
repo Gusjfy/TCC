@@ -1,0 +1,72 @@
+OBRIGADO POR JOGAR
+
+TERMINAL 98
+Um jogo de [seu nome]
+
+
+DIREÇÃO
+[seu nome]
+
+ROTEIRO E NARRATIVA
+[seu nome]
+
+PROGRAMAÇÃO
+[seu nome]
+
+BLUEPRINTS QUE FUNCIONARAM DE PRIMEIRA
+Nenhum
+
+BANCO DE DADOS
+[seu nome]
+SQLite, que aguentou tudo calado
+
+DIREÇÃO DE ARTE
+[seu nome]
+
+INTERFACE E CRT
+[seu nome]
+
+DESIGN DE SOM
+[seu nome]
+A mesma música, em loop, com muito carinho
+
+GLITCHES INTENCIONAIS
+[seu nome]
+
+GLITCHES NÃO INTENCIONAIS
+Unreal Engine 5
+
+CONTROLE DE QUALIDADE
+[nome do seu irmão]
+Que achou mais bug do que o próprio desenvolvedor
+
+CONSULTORIA ARTIFICIAL
+Cláudio
+(que sugeriu um terceiro final e levou um não)
+
+DEPARTAMENTO DE CAFÉ
+[seu nome]
+
+ESTAGIÁRIO
+Pedro
+(sem remuneração, sem hora extra, sem memória)
+
+
+ORIENTAÇÃO
+Prof. [nome do orientador]
+
+TESTADORES
+[nomes de quem testou]
+e todo mundo que respondeu o MEEGA+ até o fim
+
+
+AGRADECIMENTOS ESPECIAIS
+[nome do seu irmão], pelo suporte e pelas tardes de teste
+Aos amigos, pela paciência de ouvir "é um jogo sobre SQL"
+À [sua universidade]
+
+
+Trabalho de Conclusão de Curso · [curso] · 2026
+
+Nenhum banco de dados foi ferido durante a produção deste jogo.
+Exceto o do Pedro.

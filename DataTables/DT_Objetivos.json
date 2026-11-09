@@ -203,32 +203,32 @@
 	},
 	{
 		"Name": "Obj_Dossie",
-		"Tipo": "TabelaJogador",
-		"Query": "",
+		"Tipo": "Estado",
+		"Query": "SELECT 1 FROM (SELECT COUNT(*) AS n FROM pragma_table_info('tmp_provas') WHERE name IN ('suspeito_id', 'tabela_origem', 'id_origem')) WHERE n = 3",
 		"DicasIniciante": [
 			"escreve o CREATE TABLE inteiro, com os parênteses.",
-			"cada coluna é nome e tipo, separadas por vírgula.",
-			"CREATE TABLE tmp_digitalizacao (id INTEGER PRIMARY KEY, tabela_origem TEXT, registro_id INTEGER, resumo TEXT);"
+			"cada coluna é nome e tipo, separadas por vírgula. o nome da tabela é tmp_provas.",
+			"CREATE TABLE tmp_provas (id INTEGER PRIMARY KEY, suspeito_id INTEGER, tabela_origem TEXT, id_origem INTEGER);"
 		],
 		"DicasReforco": [
-			"CREATE TABLE com as quatro colunas.",
-			"id INTEGER PRIMARY KEY, e as outras TEXT ou INTEGER.",
-			"CREATE TABLE tmp_digitalizacao (id INTEGER PRIMARY KEY, tabela_origem TEXT, registro_id INTEGER, resumo TEXT);"
+			"CREATE TABLE tmp_provas com as quatro colunas.",
+			"id INTEGER PRIMARY KEY, suspeito_id INTEGER, tabela_origem TEXT, id_origem INTEGER.",
+			"CREATE TABLE tmp_provas (id INTEGER PRIMARY KEY, suspeito_id INTEGER, tabela_origem TEXT, id_origem INTEGER);"
 		]
 	},
 	{
 		"Name": "Obj_PrimeiraProva",
-		"Tipo": "Dossie",
-		"Query": "LOWER(TRIM(tabela_origem)) = 'movimentacao' AND registro_id IN (SELECT id FROM movimentacao WHERE ambiente_id = 3)",
+		"Tipo": "Estado",
+		"Query": "SELECT 1 FROM tmp_provas WHERE suspeito_id = 2 AND tabela_origem LIKE '%mov%' AND id_origem IN (SELECT id FROM movimentacao WHERE suspeito_id = 2 AND ambiente_id = 3)",
 		"DicasIniciante": [
-			"escreve o INSERT inteiro. o texto do resumo vai entre aspas simples.",
-			"as colunas entre parênteses, depois VALUES com os valores na mesma ordem.",
-			"INSERT INTO tmp_digitalizacao (tabela_origem, registro_id, resumo) VALUES ('movimentacao', 18, 'Pedro na suíte às 03h15, sozinho com o corpo');"
+			"escreve o INSERT inteiro. o nome da tabela de origem vai entre aspas simples.",
+			"as colunas entre parênteses, depois VALUES com os valores na mesma ordem: 2, 'movimentacao', 18.",
+			"INSERT INTO tmp_provas (suspeito_id, tabela_origem, id_origem) VALUES (2, 'movimentacao', 18);"
 		],
 		"DicasReforco": [
-			"INSERT INTO na sua tabela.",
-			"tabela_origem 'movimentacao', registro_id 18.",
-			"INSERT INTO tmp_digitalizacao (tabela_origem, registro_id, resumo) VALUES ('movimentacao', 18, 'Pedro na suíte às 03h15, sozinho com o corpo');"
+			"INSERT INTO na tmp_provas: contra quem, em que tabela, qual linha.",
+			"suspeito_id 2, tabela_origem 'movimentacao', id_origem 18.",
+			"INSERT INTO tmp_provas (suspeito_id, tabela_origem, id_origem) VALUES (2, 'movimentacao', 18);"
 		]
 	},
 	{
@@ -277,18 +277,108 @@
 		]
 	},
 	{
-		"Name": "Obj_ProvaLog",
-		"Tipo": "Dossie",
-		"Query": "LOWER(TRIM(tabela_origem)) = 'sys_audit_log' AND EXISTS (SELECT 1 FROM sys_audit_log WHERE terminal = 'PREF-TI-07') AND (registro_id IN (SELECT id FROM sys_audit_log WHERE terminal = 'PREF-TI-07') OR UPPER(resumo) LIKE '%PREF-TI-07%')",
+		"Name": "Obj_LogMov",
+		"Tipo": "Gabarito",
+		"Query": "SELECT usuario, terminal FROM sys_audit_log WHERE tabela_afetada = 'movimentacao'",
 		"DicasIniciante": [
-			"o log guarda quem mexeu em cada tabela. procura quem mexeu na movimentacao.",
-			"SELECT * FROM sys_audit_log WHERE tabela_afetada = 'movimentacao'; e guarda o que achar, citando o terminal no resumo.",
-			"INSERT INTO tmp_digitalizacao (tabela_origem, registro_id, resumo) VALUES ('sys_audit_log', 10, 'User002 mudou o José pra suíte, do terminal PREF-TI-07, às 06h12 de sábado');"
+			"o log guarda quem mexeu em cada tabela. a coluna é tabela_afetada.",
+			"WHERE tabela_afetada = 'movimentacao'.",
+			"SELECT * FROM sys_audit_log WHERE tabela_afetada = 'movimentacao';"
 		],
 		"DicasReforco": [
 			"filtra o log pela tabela afetada.",
-			"guarda a linha no dossiê, com tabela_origem 'sys_audit_log' e o terminal escrito no resumo.",
-			"INSERT INTO tmp_digitalizacao (tabela_origem, registro_id, resumo) VALUES ('sys_audit_log', 10, 'User002 mudou o José pra suíte, do terminal PREF-TI-07, às 06h12 de sábado');"
+			"a tabela afetada é a movimentacao.",
+			"SELECT * FROM sys_audit_log WHERE tabela_afetada = 'movimentacao';"
+		]
+	},
+	{
+		"Name": "Obj_Ocupacao",
+		"Tipo": "Gabarito",
+		"Query": "SELECT nome, ocupacao FROM suspeitos",
+		"DicasIniciante": [
+			"a ocupação de cada um tá na suspeitos.",
+			"duas colunas: nome e ocupacao.",
+			"SELECT nome, ocupacao FROM suspeitos;"
+		],
+		"DicasReforco": [
+			"olha a suspeitos de novo.",
+			"nome e ocupacao.",
+			"SELECT nome, ocupacao FROM suspeitos;"
+		]
+	},
+	{
+		"Name": "Obj_DepoMarta",
+		"Tipo": "Gabarito",
+		"Query": "SELECT detalhe FROM evidencias WHERE tipo = 'Depoimento'",
+		"DicasIniciante": [
+			"depoimento novo entra como evidência. filtra pelo tipo.",
+			"o tipo é 'Depoimento', entre aspas simples.",
+			"SELECT * FROM evidencias WHERE tipo = 'Depoimento';"
+		],
+		"DicasReforco": [
+			"evidencias, filtrada pelo tipo.",
+			"tipo = 'Depoimento'.",
+			"SELECT * FROM evidencias WHERE tipo = 'Depoimento';"
+		]
+	},
+	{
+		"Name": "Obj_Pager",
+		"Tipo": "Gabarito",
+		"Query": "SELECT remetente, conteudo FROM historico_mensagens WHERE data_hora > '1998-09-27 02:50'",
+		"DicasIniciante": [
+			"os recados da noite tão no historico_mensagens.",
+			"data_hora depois das 02h50. compara com >, como texto.",
+			"SELECT * FROM historico_mensagens WHERE data_hora > '1998-09-27 02:50';"
+		],
+		"DicasReforco": [
+			"historico_mensagens, filtrado pela hora.",
+			"data_hora > '1998-09-27 02:50'.",
+			"SELECT * FROM historico_mensagens WHERE data_hora > '1998-09-27 02:50';"
+		]
+	},
+	{
+		"Name": "Obj_HospedesJoin",
+		"Tipo": "Gabarito",
+		"Query": "SELECT suspeitos.nome FROM movimentacao JOIN suspeitos ON suspeitos.id = movimentacao.suspeito_id WHERE movimentacao.ambiente_id = 5 AND movimentacao.hora_saida > '1998-09-27 02:55'",
+		"DicasIniciante": [
+			"JOIN de movimentacao com suspeitos, igual ontem.",
+			"quarto de hóspedes é o ambiente 5. e quem saiu de lá depois das 02h55: hora_saida >.",
+			"SELECT suspeitos.nome FROM movimentacao JOIN suspeitos ON suspeitos.id = movimentacao.suspeito_id WHERE movimentacao.ambiente_id = 5 AND movimentacao.hora_saida > '1998-09-27 02:55';"
+		],
+		"DicasReforco": [
+			"JOIN de movimentacao com suspeitos.",
+			"ambiente_id = 5 AND hora_saida > '1998-09-27 02:55'.",
+			"SELECT suspeitos.nome FROM movimentacao JOIN suspeitos ON suspeitos.id = movimentacao.suspeito_id WHERE movimentacao.ambiente_id = 5 AND movimentacao.hora_saida > '1998-09-27 02:55';"
+		]
+	},
+	{
+		"Name": "Obj_ProvaPager",
+		"Tipo": "Estado",
+		"Query": "SELECT 1 FROM tmp_provas WHERE suspeito_id = 10 AND (tabela_origem LIKE '%mensag%' OR tabela_origem LIKE '%hist%') AND id_origem = 7",
+		"DicasIniciante": [
+			"uma linha na tmp_provas: contra quem, em que tabela, qual linha.",
+			"o recado é a linha 7 do historico_mensagens.",
+			"INSERT INTO tmp_provas (suspeito_id, tabela_origem, id_origem) VALUES (10, 'historico_mensagens', 7);"
+		],
+		"DicasReforco": [
+			"o recado vai pra tmp_provas.",
+			"tabela_origem 'historico_mensagens', id_origem 7.",
+			"INSERT INTO tmp_provas (suspeito_id, tabela_origem, id_origem) VALUES (10, 'historico_mensagens', 7);"
+		]
+	},
+	{
+		"Name": "Obj_ProvaMarta",
+		"Tipo": "Estado",
+		"Query": "SELECT 1 FROM tmp_provas WHERE suspeito_id = 10 AND ((tabela_origem LIKE '%evid%' AND id_origem = 12) OR (tabela_origem LIKE '%mov%' AND id_origem = 22))",
+		"DicasIniciante": [
+			"mais uma linha na tmp_provas, contra a mesma pessoa.",
+			"o depoimento da Marta é a evidência 12.",
+			"INSERT INTO tmp_provas (suspeito_id, tabela_origem, id_origem) VALUES (10, 'evidencias', 12);"
+		],
+		"DicasReforco": [
+			"o depoimento também vai pra tmp_provas.",
+			"tabela_origem 'evidencias', id_origem 12.",
+			"INSERT INTO tmp_provas (suspeito_id, tabela_origem, id_origem) VALUES (10, 'evidencias', 12);"
 		]
 	},
 	{

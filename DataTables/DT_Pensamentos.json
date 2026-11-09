@@ -150,6 +150,13 @@
 		]
 	},
 	{
+		"Name": "P_MartaDia2",
+		"Falas": [
+			"Três horas, no corredor de cima.",
+			"O André diz que passou a madrugada no quarto de hóspedes."
+		]
+	},
+	{
 		"Name": "P_Dossie",
 		"Falas": [
 			"Uma tabela minha, no meio da polícia.",
@@ -195,15 +202,15 @@
 	{
 		"Name": "P_PosMarta",
 		"Falas": [
-			"Quinze pras três, no sofá.",
-			"O banco diz suíte."
+			"Do André, nem uma palavra.",
+			"E o banco diz que o José tava na suíte."
 		]
 	},
 	{
 		"Name": "P_LogNaoMente",
 		"Falas": [
 			"\"O log não mente.\" Foi ele que disse.",
-			"E tudo que provar alguma coisa vai pra minha tabela."
+			"Quem mexeu na linha 14?"
 		]
 	},
 	{
@@ -211,7 +218,53 @@
 		"Falas": [
 			"User002. Sou eu.",
 			"Seis e doze de sábado. O prédio tava fechado pra dedetização.",
-			"PREF-TI-07. Prefeitura.",
+			"PREF-TI-07. Terminal da prefeitura.",
+			"Alguém da prefeitura usou o meu usuário pra pôr o José na suíte.",
+			"Quem da festa trabalha lá?"
+		]
+	},
+	{
+		"Name": "P_Prefeitura",
+		"Falas": [
+			"Técnico de TI da prefeitura.",
+			"Desconfiar não é prova.",
+			"A Marta disse que contou tudo no plantão."
+		]
+	},
+	{
+		"Name": "P_DepoMarta",
+		"Falas": [
+			"Três horas, no corredor de cima. Indo pro lado da suíte.",
+			"E ele diz que não saiu do quarto de hóspedes.",
+			"Mais alguém se mexeu nessa hora?"
+		]
+	},
+	{
+		"Name": "P_Pager",
+		"Falas": [
+			"\"tô indo aí conversar. A.\"",
+			"Do ramal do quarto de hóspedes. Às 02h55.",
+			"Quem tava lá nessa hora?"
+		]
+	},
+	{
+		"Name": "P_Hospedes",
+		"Falas": [
+			"João, Yuri e André.",
+			"O João mal parava em pé.",
+			"Tudo que provar alguma coisa vai pra tmp_provas."
+		]
+	},
+	{
+		"Name": "P_ProvaMarta",
+		"Falas": [
+			"A Marta não inventou.",
+			"Tá no depoimento dela. No banco."
+		]
+	},
+	{
+		"Name": "P_ValorAntigo",
+		"Falas": [
 			"No log tem o valor antigo. O banco lembra onde o José tava."
 		]
 	},
@@ -300,8 +353,38 @@
 		"Name": "P_Acusa_10",
 		"Falas": [
 			"O André?",
-			"Porque a Marta cruzou com ele no corredor?",
-			"Preciso de mais que isso."
+			"Não tenho nada guardado contra ele."
+		]
+	},
+	{
+		"Name": "P_Acusa_10_SoMarta",
+		"Falas": [
+			"A Marta viu ele no corredor.",
+			"É a palavra dela contra a do Yuri e do João.",
+			"Preciso de mais uma peça."
+		]
+	},
+	{
+		"Name": "P_Acusa_10_SoPager",
+		"Falas": [
+			"Um recado assinado \"A.\".",
+			"Sozinho, podia ser de qualquer um.",
+			"Preciso de mais uma peça."
+		]
+	},
+	{
+		"Name": "P_Acusa_10_PagerSumiu",
+		"Falas": [
+			"O recado das 02h55 sumiu do banco.",
+			"A minha tabela aponta pra uma linha que não existe mais.",
+			"Fui eu que apaguei."
+		]
+	},
+	{
+		"Name": "P_Acusa_3_Desfeito",
+		"Falas": [
+			"O que eu guardei contra o José não bate mais com o banco.",
+			"A linha 14 diz sala de novo."
 		]
 	}
 ]

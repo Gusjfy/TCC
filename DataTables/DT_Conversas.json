@@ -781,15 +781,15 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "cria uma tabela sua aqui dentro. tudo que provar alguma coisa vai pra lá."
+				"Texto": "lembra do e-mail da prefeitura? o sistema novo devia criar uma tmp_provas pra cada caso. a do caso da maria não tá aí. a atualização falhou."
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "lembra do e-mail da prefeitura? até segunda o banco vai ganhar tabela tmp_ que ninguém pediu. ninguém vai estranhar mais uma."
+				"Texto": "cria você. com esse nome ninguém estranha: é a tabela que devia estar aí."
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "só não chama de \"provas\". chama de tmp_digitalizacao."
+				"Texto": "e presta atenção: na hora de acusar alguém, o sistema lê essa tabela. só ela. o que não tiver lá, não existe."
 			}
 		],
 		"OpcaoA": "Dentro do banco da polícia?",
@@ -797,11 +797,27 @@
 		"RespostaA": [
 			{
 				"Tipo": "Anonimo",
-				"Texto": "ninguém abre tabela de estagiário. e o delegado tá ocupado demais mexendo nas dele."
+				"Texto": "ninguém abre tabela temporária. e o delegado tá ocupado demais mexendo nas dele."
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "as colunas são essas: id, tabela_origem, registro_id, resumo."
+				"Texto": "cada linha dessa tabela é uma prova. quatro colunas:"
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "id: o número da prova. o banco numera sozinho, você não manda."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "suspeito_id: contra quem é a prova. o id da pessoa na suspeitos."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "tabela_origem: em que tabela a prova tá. o nome dela, entre aspas simples."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "id_origem: o id da linha lá dentro dessa tabela."
 			},
 			{
 				"Tipo": "Anonimo",
@@ -809,11 +825,7 @@
 			},
 			{
 				"Tipo": "Codigo",
-				"Texto": "CREATE TABLE tmp_digitalizacao (id INTEGER PRIMARY KEY, tabela_origem TEXT, registro_id INTEGER, resumo TEXT);"
-			},
-			{
-				"Tipo": "Anonimo",
-				"Texto": "o e-mail explica cada parte."
+				"Texto": "CREATE TABLE tmp_provas (id INTEGER PRIMARY KEY, suspeito_id INTEGER, tabela_origem TEXT, id_origem INTEGER);"
 			}
 		],
 		"RespostaB": [
@@ -827,7 +839,23 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "as colunas são essas: id, tabela_origem, registro_id, resumo."
+				"Texto": "cada linha dessa tabela é uma prova. quatro colunas:"
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "id: o número da prova. o banco numera sozinho, você não manda."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "suspeito_id: contra quem é a prova. o id da pessoa na suspeitos."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "tabela_origem: em que tabela a prova tá. o nome dela, entre aspas simples."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "id_origem: o id da linha lá dentro dessa tabela."
 			},
 			{
 				"Tipo": "Anonimo",
@@ -835,11 +863,7 @@
 			},
 			{
 				"Tipo": "Codigo",
-				"Texto": "CREATE TABLE tmp_digitalizacao (id INTEGER PRIMARY KEY, tabela_origem TEXT, registro_id INTEGER, resumo TEXT);"
-			},
-			{
-				"Tipo": "Anonimo",
-				"Texto": "o e-mail explica cada parte."
+				"Texto": "CREATE TABLE tmp_provas (id INTEGER PRIMARY KEY, suspeito_id INTEGER, tabela_origem TEXT, id_origem INTEGER);"
 			}
 		]
 	},
@@ -852,15 +876,15 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "cria uma tabela sua aqui dentro. tudo que provar alguma coisa vai pra lá."
+				"Texto": "lembra do e-mail da prefeitura? o sistema novo devia criar uma tmp_provas pra cada caso. a do caso da maria não tá aí. a atualização falhou."
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "lembra do e-mail da prefeitura? até segunda o banco vai ganhar tabela tmp_ que ninguém pediu. ninguém vai estranhar mais uma."
+				"Texto": "cria você. com esse nome ninguém estranha: é a tabela que devia estar aí."
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "só não chama de \"provas\". chama de tmp_digitalizacao."
+				"Texto": "e presta atenção: na hora de acusar alguém, o sistema lê essa tabela. só ela. o que não tiver lá, não existe."
 			}
 		],
 		"OpcaoA": "Dentro do banco da polícia?",
@@ -868,15 +892,15 @@
 		"RespostaA": [
 			{
 				"Tipo": "Anonimo",
-				"Texto": "ninguém abre tabela de estagiário. e o delegado tá ocupado demais mexendo nas dele."
+				"Texto": "ninguém abre tabela temporária. e o delegado tá ocupado demais mexendo nas dele."
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "as colunas são essas: id, tabela_origem, registro_id, resumo."
+				"Texto": "quatro colunas: id, suspeito_id (contra quem), tabela_origem (em que tabela a prova tá) e id_origem (o id da linha lá dentro)."
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "o e-mail explica cada parte."
+				"Texto": "o id o banco numera sozinho."
 			}
 		],
 		"RespostaB": [
@@ -890,11 +914,11 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "as colunas são essas: id, tabela_origem, registro_id, resumo."
+				"Texto": "quatro colunas: id, suspeito_id (contra quem), tabela_origem (em que tabela a prova tá) e id_origem (o id da linha lá dentro)."
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "o e-mail explica cada parte."
+				"Texto": "o id o banco numera sozinho."
 			}
 		]
 	},
@@ -907,11 +931,15 @@
 			},
 			{
 				"Tipo": "Anonimo",
+				"Texto": "contra quem: você, o 2. em que tabela: movimentacao. qual linha: 18."
+			},
+			{
+				"Tipo": "Anonimo",
 				"Texto": "escreve igual:"
 			},
 			{
 				"Tipo": "Codigo",
-				"Texto": "INSERT INTO tmp_digitalizacao (tabela_origem, registro_id, resumo) VALUES ('movimentacao', 18, 'Pedro na suíte às 03h15, sozinho com o corpo');"
+				"Texto": "INSERT INTO tmp_provas (suspeito_id, tabela_origem, id_origem) VALUES (2, 'movimentacao', 18);"
 			}
 		],
 		"OpcaoA": "Por que guardar uma prova contra mim?",
@@ -938,7 +966,7 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "guarda essa linha na sua tabela, com um resumo do que ela mostra."
+				"Texto": "guarda essa linha na sua tabela: contra quem, em que tabela e qual linha."
 			}
 		],
 		"OpcaoA": "Por que guardar uma prova contra mim?",
@@ -1117,7 +1145,7 @@
 		"Mensagens": [
 			{
 				"Tipo": "Anonimo",
-				"Texto": "isso. agora guarda o josé na sua tabela. a linha 14 e o taco."
+				"Texto": "isso. agora guarda o josé na tmp_provas. suspeito 3: a linha 14 da movimentacao e a evidência 4, o taco. uma linha pra cada."
 			},
 			{
 				"Tipo": "Anonimo",
@@ -1140,6 +1168,45 @@
 		]
 	},
 	{
+		"Name": "Ano11_ProvaNaTabela",
+		"Mensagens": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "você guardou um recado de pager na sua tabela."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "contra o andré."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "eu vejo o que entra nas tabelas, pedro. lembra?"
+			}
+		],
+		"OpcaoA": "O A. do recado é ele.",
+		"OpcaoB": "A Marta viu ele no corredor.",
+		"RespostaA": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "a. de ana. a. de qualquer um."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "um recado não prova nada. o taco prova."
+			}
+		],
+		"RespostaB": [
+			{
+				"Tipo": "Anonimo",
+				"Texto": "a marta passou a festa perdendo no xadrez pra ele. gente assim inventa coisa."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "não guarda o que não fecha."
+			}
+		]
+	},
+	{
 		"Name": "Ano12_Percebeu",
 		"Mensagens": [
 			{
@@ -1152,7 +1219,7 @@
 			}
 		],
 		"OpcaoA": "O log diz que fui eu. Às seis da manhã.",
-		"OpcaoB": "Quem usa o terminal PREF-TI-07?",
+		"OpcaoB": "O PREF-TI-07 é da prefeitura.",
 		"RespostaA": [
 			{
 				"Tipo": "Anonimo",
@@ -1164,13 +1231,17 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "liberei a tela de acusação pra você. acaba com isso."
+				"Texto": "você já tem o que precisa. o [ACUSAR] tá no seu console desde o primeiro dia."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "digita o id do suspeito. o sistema lê a sua tmp_provas e confere cada linha no registro original."
 			}
 		],
 		"RespostaB": [
 			{
 				"Tipo": "Anonimo",
-				"Texto": "é da prefeitura. qualquer técnico."
+				"Texto": "a prefeitura tem um monte de terminal desses. qualquer um senta e digita."
 			},
 			{
 				"Tipo": "Anonimo",
@@ -1178,7 +1249,11 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "liberei a tela de acusação pra você. acaba com isso."
+				"Texto": "você já tem o que precisa. o [ACUSAR] tá no seu console desde o primeiro dia."
+			},
+			{
+				"Tipo": "Anonimo",
+				"Texto": "digita o id do suspeito. o sistema lê a sua tmp_provas e confere cada linha no registro original."
 			}
 		]
 	},
@@ -1203,11 +1278,11 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "apaga as linhas do PREF-TI-07 do log. é um comando só:"
+				"Texto": "apaga aquele recado do pager. é um comando só:"
 			},
 			{
 				"Tipo": "Codigo",
-				"Texto": "DELETE FROM sys_audit_log WHERE terminal = 'PREF-TI-07';"
+				"Texto": "DELETE FROM historico_mensagens WHERE id = 7;"
 			},
 			{
 				"Tipo": "Anonimo",
@@ -1221,11 +1296,11 @@
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "apaga as linhas do PREF-TI-07 do log. é um comando só:"
+				"Texto": "apaga aquele recado do pager. é um comando só:"
 			},
 			{
 				"Tipo": "Codigo",
-				"Texto": "DELETE FROM sys_audit_log WHERE terminal = 'PREF-TI-07';"
+				"Texto": "DELETE FROM historico_mensagens WHERE id = 7;"
 			},
 			{
 				"Tipo": "Anonimo",

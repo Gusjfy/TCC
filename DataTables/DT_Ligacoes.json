@@ -220,11 +220,11 @@
 		]
 	},
 	{
-		"Name": "Lig03_Marta",
+		"Name": "Lig02_Marta",
 		"Falas": [
 			{
 				"Falante": "Marta",
-				"Texto": "Pedro? É a Marta. Amiga da Ana.",
+				"Texto": "Pedro? É a Marta. Amiga da Ana. Ela me passou teu número.",
 				"bLigacao": true
 			},
 			{
@@ -234,32 +234,22 @@
 			},
 			{
 				"Falante": "Marta",
-				"Texto": "Desculpa ligar assim. Um policial me ligou hoje cedo. Queria \"confirmar o meu depoimento\".",
+				"Texto": "Desculpa a hora. A Ana disse que você tá mexendo no caso.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "É que eu fico pensando na festa. Tem uma coisa que eu nem contei pra polícia. Ninguém perguntou.",
 				"bLigacao": true
 			},
 			{
 				"Falante": "Pedro",
-				"Texto": "Confirmar o quê?",
+				"Texto": "Que coisa?",
 				"bLigacao": true
 			},
 			{
 				"Falante": "Marta",
-				"Texto": "Perguntou três vezes se o José subiu a escada. Três. Como se a resposta fosse mudar.",
-				"bLigacao": true
-			},
-			{
-				"Falante": "Marta",
-				"Texto": "Ele não subiu. Eu subi pro banheiro umas quinze pras três e desci logo depois. Ele tava no sofá nas duas vezes, encolhido. Chorando.",
-				"bLigacao": true
-			},
-			{
-				"Falante": "Pedro",
-				"Texto": "Você foi lá em cima?",
-				"bLigacao": true
-			},
-			{
-				"Falante": "Marta",
-				"Texto": "Rapidinho. Lá em cima cruzei com o André no corredor. Segurou a porta do banheiro pra mim, todo educado.",
+				"Texto": "Umas três horas eu subi pro banheiro. No corredor lá de cima cruzei com o André. Segurou a porta pra mim, todo educado.",
 				"bLigacao": true
 			},
 			{
@@ -269,12 +259,87 @@
 			},
 			{
 				"Falante": "Pedro",
+				"Texto": "Você contou isso pra eles?",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "Não. Só me perguntaram do José.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Marta, se tem coisa que você não contou, eles precisam saber. Faz um depoimento.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "Mas eu só vi ele no corredor. Não vi nada demais.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Mesmo assim.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "...Tá. O plantão fica aberto. É perto de casa, passo lá agora.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "Boa noite, Pedro.",
+				"bLigacao": true
+			}
+		]
+	},
+	{
+		"Name": "Lig03_Marta",
+		"Falas": [
+			{
+				"Falante": "Marta",
+				"Texto": "Pedro? É a Marta de novo.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Oi, Marta. Você foi no plantão?",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "Fui. Ontem mesmo. Contei do André, contei tudo.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "Só que hoje cedo um policial me ligou. Queria \"confirmar o meu depoimento\".",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
+				"Texto": "Confirmar o quê?",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "Perguntou três vezes se o José subiu a escada. Três. Do André, nem uma palavra.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Marta",
+				"Texto": "O José não subiu. Quando eu subi e quando eu desci, ele tava no sofá. Encolhido. Chorando.",
+				"bLigacao": true
+			},
+			{
+				"Falante": "Pedro",
 				"Texto": "...",
 				"bLigacao": true
 			},
 			{
 				"Falante": "Marta",
-				"Texto": "Desculpa, tô falando demais. É que ninguém me pergunta nada direito. Só do José.",
+				"Texto": "Pedro, parece que eles querem que seja o José.",
 				"bLigacao": true
 			},
 			{
@@ -284,7 +349,7 @@
 			},
 			{
 				"Falante": "Marta",
-				"Texto": "Se cuida. E Pedro... não fala com ninguém que eu te liguei.",
+				"Texto": "Se cuida. E não fala com ninguém que eu te liguei.",
 				"bLigacao": true
 			}
 		]
