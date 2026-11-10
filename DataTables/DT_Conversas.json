@@ -55,7 +55,7 @@
 		"RespostaA": [
 			{
 				"Tipo": "Anonimo",
-				"Texto": "ótimo, então não vou te atrasar. te passo o objetivo e você escreve. os tutoriais ficam na sua inbox se precisar."
+				"Texto": "hm. escrever umas queries é uma coisa. investigar um banco sozinho é outra."
 			}
 		],
 		"RespostaB": [
@@ -70,7 +70,7 @@
 		"Mensagens": [
 			{
 				"Tipo": "Anonimo",
-				"Texto": "tem certeza? vou te passar só o objetivo sempre, sem query pronta. confirma?"
+				"Texto": "se for assim, eu te passo só o objetivo, sem query pronta. os tutoriais ficam na sua inbox. confirma?"
 			}
 		],
 		"OpcaoA": "Confirmo. Manda o objetivo.",
@@ -705,11 +705,11 @@
 		"Mensagens": [
 			{
 				"Tipo": "Anonimo",
-				"Texto": "agora a suíte. ambiente 3."
+				"Texto": "agora a suíte, o ambiente 3. é a mesma junção de antes, movimentacao com suspeitos. a ambientes nem precisa entrar."
 			},
 			{
 				"Tipo": "Anonimo",
-				"Texto": "quero só os nomes de quem entrou lá depois das 2h40. o horário tá gravado assim: '1998-09-27 02:40'."
+				"Texto": "quero só os nomes de quem entrou lá depois das 2h40. depois, não igual: hora_entrada maior que (>) '1998-09-27 02:40'."
 			},
 			{
 				"Tipo": "Anonimo",
