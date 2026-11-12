@@ -22,9 +22,34 @@ FString USQLiteBridge::CaminhoScript(const FString& NomeArquivo)
 	return FPaths::Combine(FPaths::ProjectContentDir(), TEXT("SQL"), NomeArquivo);
 }
 
+// Tira os comentarios do comeco ("-- ..." e "/* ... */"). Sem isso, uma consulta
+// que comeca com comentario nao e reconhecida como SELECT, e um DROP TABLE
+// depois de um comentario escaparia da protecao das tabelas do caso.
+static FString PularComentariosIniciais(const FString& Query)
+{
+	FString Q = Query.TrimStartAndEnd();
+	while (true)
+	{
+		if (Q.StartsWith(TEXT("--")))
+		{
+			int32 Fim = INDEX_NONE;
+			Q = Q.FindChar(TEXT('\n'), Fim) ? Q.Mid(Fim + 1).TrimStart() : FString();
+		}
+		else if (Q.StartsWith(TEXT("/*")))
+		{
+			const int32 Fim = Q.Find(TEXT("*/"), ESearchCase::CaseSensitive, ESearchDir::FromStart, 2);
+			Q = Fim != INDEX_NONE ? Q.Mid(Fim + 2).TrimStart() : FString();
+		}
+		else
+		{
+			return Q;
+		}
+	}
+}
+
 bool USQLiteBridge::EhConsulta(const FString& Query)
 {
-	const FString Q = Query.TrimStartAndEnd();
+	const FString Q = PularComentariosIniciais(Query);
 	return Q.StartsWith(TEXT("SELECT"), ESearchCase::IgnoreCase) || Q.StartsWith(TEXT("WITH"), ESearchCase::IgnoreCase);
 }
 
@@ -39,7 +64,7 @@ bool USQLiteBridge::DanificaTabelaDoCaso(const FString& Query)
 	// Bloqueia DROP TABLE e ALTER TABLE (RENAME / DROP COLUMN) nas tabelas do caso.
 	// O jogador pode criar, alterar e apagar as proprias tabelas (ex: provas_pedro)
 	// e pode fazer ALTER TABLE ... ADD COLUMN em qualquer tabela.
-	FString Q = Query.ToUpper();
+	FString Q = PularComentariosIniciais(Query).ToUpper();
 	for (const TCHAR* Sinal : { TEXT("\""), TEXT("'"), TEXT("`"), TEXT("["), TEXT("]"), TEXT(";"), TEXT("("), TEXT(")"), TEXT("\t"), TEXT("\r"), TEXT("\n") })
 	{
 		Q.ReplaceInline(Sinal, TEXT(" "));
